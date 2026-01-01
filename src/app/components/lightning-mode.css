@@ -1,0 +1,996 @@
+/* Lightning Mode Specific Styles */
+
+
+/* Based on lead-table styling from globals.css */
+
+
+/* Sales Opportunities Table - Lightning Mode */
+
+.sales-opportunities-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 14px;
+    line-height: 1.4;
+    table-layout: fixed;
+}
+
+.sales-opportunities-table th,
+.sales-opportunities-table td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 16px;
+    text-align: left;
+    vertical-align: top;
+    word-break: keep-all !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+    min-width: 80px;
+    /* Prevent vertical text display - CRITICAL for production */
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+    direction: ltr !important;
+    unicode-bidi: normal !important;
+}
+
+
+/* Set proportional widths based on typical content length */
+
+.sales-opportunities-table th:nth-child(1),
+.sales-opportunities-table td:nth-child(1) {
+    width: 12% !important;
+    min-width: 120px !important;
+}
+
+
+/* Company Name */
+
+.sales-opportunities-table th:nth-child(2),
+.sales-opportunities-table td:nth-child(2) {
+    width: 15% !important;
+    min-width: 150px !important;
+}
+
+
+/* Website */
+
+.sales-opportunities-table th:nth-child(3),
+.sales-opportunities-table td:nth-child(3) {
+    width: 8% !important;
+    min-width: 80px !important;
+}
+
+
+/* Industry */
+
+.sales-opportunities-table th:nth-child(4),
+.sales-opportunities-table td:nth-child(4) {
+    width: 8% !important;
+    min-width: 80px !important;
+}
+
+
+/* Sub-Industry */
+
+.sales-opportunities-table th:nth-child(5),
+.sales-opportunities-table td:nth-child(5) {
+    width: 10% !important;
+    min-width: 100px !important;
+}
+
+
+/* Product Line */
+
+.sales-opportunities-table th:nth-child(6),
+.sales-opportunities-table td:nth-child(6) {
+    width: 15% !important;
+    min-width: 200px !important;
+}
+
+
+/* Use Case */
+
+.sales-opportunities-table th:nth-child(7),
+.sales-opportunities-table td:nth-child(7) {
+    width: 6% !important;
+    min-width: 60px !important;
+}
+
+
+/* Employees */
+
+.sales-opportunities-table th:nth-child(8),
+.sales-opportunities-table td:nth-child(8) {
+    width: 6% !important;
+    min-width: 80px !important;
+}
+
+
+/* Revenue */
+
+.sales-opportunities-table th:nth-child(9),
+.sales-opportunities-table td:nth-child(9) {
+    width: 8% !important;
+    min-width: 100px !important;
+}
+
+
+/* Location */
+
+.sales-opportunities-table th:nth-child(10),
+.sales-opportunities-table td:nth-child(10) {
+    width: 8% !important;
+    min-width: 120px !important;
+}
+
+
+/* Key Decision Maker */
+
+.sales-opportunities-table th:nth-child(11),
+.sales-opportunities-table td:nth-child(11) {
+    width: 8% !important;
+    min-width: 100px !important;
+}
+
+
+/* Designation */
+
+.sales-opportunities-table th:nth-child(12),
+.sales-opportunities-table td:nth-child(12) {
+    width: 8% !important;
+    min-width: 120px !important;
+}
+
+
+/* Pain Points */
+
+.sales-opportunities-table th:nth-child(13),
+.sales-opportunities-table td:nth-child(13) {
+    width: 8% !important;
+    min-width: 150px !important;
+}
+
+
+/* Approach Strategy */
+
+
+/* Better text wrapping for Use Case column */
+
+.sales-opportunities-table td:nth-child(6) {
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    white-space: normal !important;
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+}
+
+
+/* Better text wrapping for Website column */
+
+.sales-opportunities-table td:nth-child(2) {
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    white-space: normal !important;
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+}
+
+
+/* Better text wrapping for Location column */
+
+.sales-opportunities-table td:nth-child(9) {
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    white-space: normal !important;
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+}
+
+
+/* Better text wrapping for Revenue column */
+
+.sales-opportunities-table td:nth-child(8) {
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    white-space: normal !important;
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+}
+
+
+/* Better text wrapping for Pain Points column */
+
+.sales-opportunities-table td:nth-child(12) {
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    white-space: normal !important;
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+}
+
+.sales-opportunities-table th {
+    background-color: rgba(59, 130, 246, 0.1);
+    font-weight: 600;
+    color: #60a5fa;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.sales-opportunities-table td {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+
+/* CRITICAL: Prevent any vertical text display in production */
+
+.sales-opportunities-table * {
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+    direction: ltr !important;
+    unicode-bidi: normal !important;
+}
+
+
+/* Override any potential conflicting styles */
+
+.sales-opportunities-table td,
+.sales-opportunities-table th {
+    display: table-cell !important;
+    white-space: normal !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+}
+
+.sales-opportunities-table-container {
+    overflow-x: auto;
+    /* Ensure tables don't get corrupted in production */
+    max-width: 100%;
+    margin: 1rem 0;
+}
+
+
+/* Additional production safeguards */
+
+.sales-opportunities-table {
+    /* Force horizontal text flow */
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+    direction: ltr !important;
+    unicode-bidi: normal !important;
+    /* Prevent any CSS corruption */
+    font-family: inherit !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+
+/* ===========================================
+   RESEARCHGPT OUTPUT - FORCE DARK MODE STYLING
+   =========================================== */
+
+
+/* Force dark mode styling for ResearchGPT output regardless of browser theme */
+
+.researchgpt-table-container,
+.researchgpt-grid-container,
+.researchgpt-focus-mode-container {
+    background: #1F2937 !important;
+    color: #E5E7EB !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.researchgpt-table,
+.researchgpt-grid-header,
+.researchgpt-grid-cell,
+.researchgpt-header,
+.researchgpt-cell {
+    background: #1F2937 !important;
+    color: #E5E7EB !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.researchgpt-header,
+.researchgpt-grid-header {
+    background: linear-gradient(135deg, #374151 0%, #4B5563 100%) !important;
+    color: #F9FAFB !important;
+    border-color: #6B7280 !important;
+}
+
+.researchgpt-cell,
+.researchgpt-grid-cell {
+    background: #1F2937 !important;
+    color: #E5E7EB !important;
+    border-color: #374151 !important;
+}
+
+.researchgpt-row:nth-child(even) .researchgpt-cell,
+.researchgpt-grid-row:nth-child(even) .researchgpt-grid-cell {
+    background: #111827 !important;
+    color: #E5E7EB !important;
+}
+
+.researchgpt-row:nth-child(odd) .researchgpt-cell,
+.researchgpt-grid-row:nth-child(odd) .researchgpt-grid-cell {
+    background: #1F2937 !important;
+    color: #F3F4F6 !important;
+}
+
+
+/* Override any light mode styles that might affect ResearchGPT output */
+
+@media (prefers-color-scheme: light) {
+    .researchgpt-table-container,
+    .researchgpt-grid-container,
+    .researchgpt-focus-mode-container {
+        background: #1F2937 !important;
+        color: #E5E7EB !important;
+        border-color: rgba(255, 255, 255, 0.1) !important;
+    }
+    .researchgpt-table,
+    .researchgpt-grid-header,
+    .researchgpt-grid-cell,
+    .researchgpt-header,
+    .researchgpt-cell {
+        background: #1F2937 !important;
+        color: #E5E7EB !important;
+        border-color: rgba(255, 255, 255, 0.1) !important;
+    }
+    .researchgpt-header,
+    .researchgpt-grid-header {
+        background: linear-gradient(135deg, #374151 0%, #4B5563 100%) !important;
+        color: #F9FAFB !important;
+        border-color: #6B7280 !important;
+    }
+    .researchgpt-cell,
+    .researchgpt-grid-cell {
+        background: #1F2937 !important;
+        color: #E5E7EB !important;
+        border-color: #374151 !important;
+    }
+    .researchgpt-row:nth-child(even) .researchgpt-cell,
+    .researchgpt-grid-row:nth-child(even) .researchgpt-grid-cell {
+        background: #111827 !important;
+        color: #E5E7EB !important;
+    }
+    .researchgpt-row:nth-child(odd) .researchgpt-cell,
+    .researchgpt-grid-row:nth-child(odd) .researchgpt-grid-cell {
+        background: #1F2937 !important;
+        color: #F3F4F6 !important;
+    }
+}
+
+
+/* ===========================================
+   LIGHT MODE SUPPORT FOR SALES OPPORTUNITIES TABLE
+   =========================================== */
+
+@media (prefers-color-scheme: light) {
+    .sales-opportunities-table th,
+    .sales-opportunities-table td {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        color: #171717;
+    }
+    .sales-opportunities-table th {
+        background-color: rgba(59, 130, 246, 0.1);
+        color: #1d4ed8;
+    }
+    .sales-opportunities-table td {
+        background-color: rgba(0, 0, 0, 0.02);
+        color: #171717;
+    }
+}
+
+
+/* ===========================================
+   DARK MODE EXPLICIT STYLES FOR SALES OPPORTUNITIES TABLE
+   =========================================== */
+
+@media (prefers-color-scheme: dark) {
+    .sales-opportunities-table th,
+    .sales-opportunities-table td {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+    }
+    .sales-opportunities-table th {
+        background-color: rgba(59, 130, 246, 0.1);
+        color: #60a5fa;
+    }
+    .sales-opportunities-table td {
+        background-color: rgba(255, 255, 255, 0.02);
+        color: #ffffff;
+    }
+}
+
+
+/* Lightning Mode specific enhancements */
+
+.lightning-mode-table-wrapper {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(16, 185, 129, 0.05));
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+.lightning-mode-table-wrapper * {
+    color: #ffffff !important;
+}
+
+.lightning-mode-table-wrapper .lightning-mode-table-title {
+    color: #3B82F6 !important;
+}
+
+.lightning-mode-table-title {
+    color: #3B82F6;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lightning-mode-table-title::before {
+    content: "⚡";
+    font-size: 20px;
+}
+
+
+/* Responsive design for Lightning Mode tables */
+
+@media screen and (max-width: 640px) {
+    .sales-opportunities-table {
+        font-size: 12px !important;
+        overflow-x: auto !important;
+    }
+    .sales-opportunities-table th,
+    .sales-opportunities-table td {
+        padding: 8px 12px !important;
+        min-width: 60px !important;
+    }
+    .lightning-mode-table-wrapper {
+        padding: 12px !important;
+        margin: 12px 0 !important;
+    }
+    .lightning-mode-table-title {
+        font-size: 16px !important;
+        margin-bottom: 12px !important;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .sales-opportunities-table th,
+    .sales-opportunities-table td {
+        padding: 10px 14px !important;
+    }
+    .lightning-mode-table-wrapper {
+        padding: 16px !important;
+    }
+}
+
+
+/* ===========================================
+   CSS GRID LAYOUT STYLES FOR LIGHTNING MODE
+   =========================================== */
+
+.sales-opportunities-grid-container {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-width: 100%;
+    max-height: 600px;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+
+/* Custom scrollbar styling for prospect list */
+
+.sales-opportunities-grid-container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.sales-opportunities-grid-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.sales-opportunities-grid-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.sales-opportunities-grid-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.sales-opportunities-grid-container::-webkit-scrollbar-corner {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.lead-grid {
+    display: grid;
+    grid-template-columns: 120px/* Company Name */
+    150px/* Website */
+    100px/* Industry */
+    120px/* Sub-Industry */
+    150px/* Product Line */
+    300px/* Use Case */
+    100px/* Employees */
+    120px/* Revenue */
+    150px/* Location */
+    150px/* Key Decision Maker */
+    150px/* Designation */
+    200px/* Pain Points */
+    200px;
+    /* Approach Strategy */
+    gap: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    min-width: 1890px;
+    /* Ensure minimum width for proper display */
+    grid-auto-rows: minmax(60px, auto);
+    /* Allow rows to expand based on content */
+}
+
+.grid-header {
+    background-color: #3b82f6;
+    font-weight: 600;
+    color: #ffffff;
+    border: 1px solid #2563eb;
+    text-align: left;
+    vertical-align: top;
+    word-break: keep-all !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+    min-width: 80px;
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+    direction: ltr !important;
+    unicode-bidi: normal !important;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.grid-cell {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+    vertical-align: top;
+    word-break: keep-all !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+    min-width: 80px;
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+    direction: ltr !important;
+    unicode-bidi: normal !important;
+    padding: 12px 16px;
+    display: block;
+    overflow: visible;
+    line-height: 1.5;
+    max-height: none;
+}
+
+
+/* Specific column width overrides for better content fit */
+
+.grid-header:nth-child(1),
+.grid-cell:nth-child(1) {
+    min-width: 120px !important;
+}
+
+.grid-header:nth-child(2),
+.grid-cell:nth-child(2) {
+    min-width: 150px !important;
+}
+
+.grid-header:nth-child(6),
+.grid-cell:nth-child(6) {
+    min-width: 200px !important;
+}
+
+.grid-header:nth-child(9),
+.grid-cell:nth-child(9) {
+    min-width: 120px !important;
+}
+
+.grid-header:nth-child(12),
+.grid-cell:nth-child(12) {
+    min-width: 150px !important;
+}
+
+
+/* Light mode support for grid */
+
+@media (prefers-color-scheme: light) {
+    .sales-opportunities-grid-container {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background: rgba(0, 0, 0, 0.02);
+    }
+    .grid-header {
+        background-color: #3b82f6;
+        color: #ffffff;
+        border: 1px solid #2563eb;
+    }
+    .grid-cell {
+        background-color: rgba(0, 0, 0, 0.02);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        color: #171717;
+    }
+}
+
+
+/* Dark mode support for grid */
+
+@media (prefers-color-scheme: dark) {
+    .sales-opportunities-grid-container {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.02);
+    }
+    .grid-header {
+        background-color: #3b82f6;
+        color: #ffffff;
+        border: 1px solid #2563eb;
+    }
+    .grid-cell {
+        background-color: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+    }
+}
+
+
+/* Responsive grid design */
+
+@media screen and (max-width: 640px) {
+    .sales-opportunities-grid-container {
+        margin: 12px 0 !important;
+        max-height: 400px !important;
+    }
+    /* Smaller scrollbars for mobile */
+    .sales-opportunities-grid-container::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+    .lead-grid {
+        font-size: 12px !important;
+        min-width: 1200px !important;
+        grid-template-columns: 100px/* Company Name */
+        120px/* Website */
+        80px/* Industry */
+        100px/* Sub-Industry */
+        120px/* Product Line */
+        250px/* Use Case */
+        80px/* Employees */
+        100px/* Revenue */
+        120px/* Location */
+        120px/* Key Decision Maker */
+        120px/* Designation */
+        150px/* Pain Points */
+        150px;
+        /* Approach Strategy */
+    }
+    .grid-header,
+    .grid-cell {
+        padding: 8px 12px !important;
+        min-width: 60px !important;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .sales-opportunities-grid-container {
+        max-height: 500px !important;
+    }
+    .lead-grid {
+        min-width: 1500px !important;
+    }
+    .grid-header,
+    .grid-cell {
+        padding: 10px 14px !important;
+    }
+}
+
+
+/* ===========================================
+   RESEARCHGPT GRID LAYOUT STYLES - HEADERS AND DATA IN SEPARATE ROWS
+   =========================================== */
+
+.researchgpt-grid-container {
+    overflow-x: auto;
+    overflow-y: visible;
+    max-width: 100%;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+
+/* Custom scrollbar styling for ResearchGPT grid */
+
+.researchgpt-grid-container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.researchgpt-grid-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.researchgpt-grid-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.researchgpt-grid-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.researchgpt-grid-container::-webkit-scrollbar-corner {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+/* Header row - separate from data */
+
+.researchgpt-grid-header-row {
+    display: grid;
+    grid-template-columns: 120px/* Company Name */
+    150px/* Website */
+    100px/* Industry */
+    120px/* Sub-Industry */
+    150px/* Product Line */
+    200px/* Use Case */
+    100px/* Employees */
+    120px/* Revenue */
+    150px/* Location */
+    150px/* Key Decision Maker */
+    150px/* Designation */
+    200px/* Pain Points */
+    200px;
+    /* Approach Strategy */
+    gap: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    min-width: 1890px;
+    /* Ensure minimum width for proper display */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+/* Data rows container */
+
+.researchgpt-grid-data {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Individual data rows */
+
+.researchgpt-grid-row {
+    display: grid;
+    grid-template-columns: 120px/* Company Name */
+    150px/* Website */
+    100px/* Industry */
+    120px/* Sub-Industry */
+    150px/* Product Line */
+    200px/* Use Case */
+    100px/* Employees */
+    120px/* Revenue */
+    150px/* Location */
+    150px/* Key Decision Maker */
+    150px/* Designation */
+    200px/* Pain Points */
+    200px;
+    /* Approach Strategy */
+    gap: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    min-width: 1890px;
+    /* Ensure minimum width for proper display */
+    grid-auto-rows: minmax(60px, auto);
+    /* Allow rows to expand based on content */
+}
+
+.researchgpt-grid-header {
+    background-color: #3b82f6;
+    font-weight: 600;
+    color: #ffffff;
+    border: 1px solid #2563eb;
+    text-align: left;
+    vertical-align: top;
+    word-break: keep-all !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+    min-width: 80px;
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+    direction: ltr !important;
+    unicode-bidi: normal !important;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.researchgpt-grid-cell {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+    vertical-align: top;
+    word-break: keep-all !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+    min-width: 80px;
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+    direction: ltr !important;
+    unicode-bidi: normal !important;
+    padding: 12px 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: visible;
+    line-height: 1.5;
+    max-height: none;
+}
+
+
+/* Alternating row colors for better readability */
+
+.researchgpt-grid-row:nth-child(even) .researchgpt-grid-cell {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+
+/* Specific column width overrides for better content fit */
+
+.researchgpt-grid-header:nth-child(1),
+.researchgpt-grid-cell:nth-child(1) {
+    min-width: 120px !important;
+}
+
+.researchgpt-grid-header:nth-child(2),
+.researchgpt-grid-cell:nth-child(2) {
+    min-width: 150px !important;
+}
+
+.researchgpt-grid-header:nth-child(6),
+.researchgpt-grid-cell:nth-child(6) {
+    min-width: 200px !important;
+}
+
+.researchgpt-grid-header:nth-child(9),
+.researchgpt-grid-cell:nth-child(9) {
+    min-width: 120px !important;
+}
+
+.researchgpt-grid-header:nth-child(12),
+.researchgpt-grid-cell:nth-child(12) {
+    min-width: 150px !important;
+}
+
+
+/* Light mode support for ResearchGPT grid */
+
+@media (prefers-color-scheme: light) {
+    .researchgpt-grid-container {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background: rgba(0, 0, 0, 0.02);
+    }
+    .researchgpt-grid-header {
+        background-color: #3b82f6;
+        color: #ffffff;
+        border: 1px solid #2563eb;
+    }
+    .researchgpt-grid-cell {
+        background-color: rgba(0, 0, 0, 0.02);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        color: #171717;
+    }
+    .researchgpt-grid-row:nth-child(even) .researchgpt-grid-cell {
+        background-color: rgba(0, 0, 0, 0.04);
+    }
+}
+
+
+/* Dark mode support for ResearchGPT grid */
+
+@media (prefers-color-scheme: dark) {
+    .researchgpt-grid-container {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.02);
+    }
+    .researchgpt-grid-header {
+        background-color: #3b82f6;
+        color: #ffffff;
+        border: 1px solid #2563eb;
+    }
+    .researchgpt-grid-cell {
+        background-color: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+    }
+    .researchgpt-grid-row:nth-child(even) .researchgpt-grid-cell {
+        background-color: rgba(255, 255, 255, 0.04);
+    }
+}
+
+
+/* Responsive ResearchGPT grid design */
+
+@media screen and (max-width: 640px) {
+    .researchgpt-grid-container {
+        margin: 12px 0 !important;
+    }
+    /* Smaller scrollbars for mobile */
+    .researchgpt-grid-container::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+    .researchgpt-grid-header-row,
+    .researchgpt-grid-row {
+        font-size: 12px !important;
+        min-width: 1200px !important;
+        grid-template-columns: 100px/* Company Name */
+        120px/* Website */
+        80px/* Industry */
+        100px/* Sub-Industry */
+        120px/* Product Line */
+        200px/* Use Case */
+        80px/* Employees */
+        100px/* Revenue */
+        120px/* Location */
+        120px/* Key Decision Maker */
+        120px/* Designation */
+        150px/* Pain Points */
+        150px;
+        /* Approach Strategy */
+    }
+    .researchgpt-grid-header,
+    .researchgpt-grid-cell {
+        padding: 8px 12px !important;
+        min-width: 60px !important;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .researchgpt-grid-container {
+        /* Removed max-height to prevent extra vertical scrollbar */
+    }
+    .researchgpt-grid-header-row,
+    .researchgpt-grid-row {
+        min-width: 1500px !important;
+    }
+    .researchgpt-grid-header,
+    .researchgpt-grid-cell {
+        padding: 10px 14px !important;
+    }
+}

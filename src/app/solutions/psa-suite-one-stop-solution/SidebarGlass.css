@@ -1,0 +1,17 @@
+/* Glassmorphism for sidebar */
+
+.glassy-sidebar {
+    background: rgba(24, 18, 43, 0.55);
+    backdrop-filter: blur(24px) saturate(1.2);
+    -webkit-backdrop-filter: blur(24px) saturate(1.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18), 0 1.5px 0 rgba(59, 130, 246, 0.08) inset;
+    border-right: 1.5px solid rgba(59, 130, 246, 0.18);
+}
+
+.glassy-sidebar-toggle {
+    background: rgba(24, 18, 43, 0.55);
+    backdrop-filter: blur(18px) saturate(1.2);
+    -webkit-backdrop-filter: blur(18px) saturate(1.2);
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.18);
+    border: 1.5px solid rgba(59, 130, 246, 0.18);
+}

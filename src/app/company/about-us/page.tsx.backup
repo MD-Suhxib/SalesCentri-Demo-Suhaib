@@ -1,0 +1,1762 @@
+'use client';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { Target, Eye, Heart, Globe, Zap, Brain, Rocket, TrendingUp, Award, Lightbulb, Sparkles, CheckCircle2, ArrowRight, Users, Building2, Store } from 'lucide-react';
+import { useState, useRef } from 'react';
+import Link from 'next/link';
+
+export default function AboutUsPage() {
+  const [hoveredYear, setHoveredYear] = useState<string | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end start"]
+  });
+
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
+
+  const milestones = [
+    {
+      year: '2021',
+      title: 'Sales Centri Established',
+      date: '24 December 2021',
+      description: 'Sales Centri founded with the vision to revolutionize AI-powered sales automation and empower modern sales teams worldwide.',
+      icon: Rocket,
+      color: 'from-blue-600 to-cyan-600',
+      highlights: [
+        'Company officially established',
+        'Foundational operations begin',
+        'Vision for AI sales automation set'
+      ]
+    },
+    {
+      year: '2024',
+      title: 'DESIDECK LLC Incorporated',
+      date: '21 May 2024',
+      description: 'DESIDECK LLC is officially incorporated as a registered business entity in the USA, marking our first step toward global expansion.',
+      icon: Globe,
+      color: 'from-cyan-600 to-blue-600',
+      highlights: [
+        'USA entity incorporation',
+        'Legal foundation established',
+        'Global expansion initiated'
+      ]
+    },
+    {
+      year: '2025-q2',
+      title: 'DESIDECK LLC Acquisition',
+      date: '09 June 2025',
+      description: 'Sales Centri acquires DESIDECK LLC and rebrands it as Sales Centri AI LLC, enabling expansion into global AI and Agentic AI technologies.',
+      icon: TrendingUp,
+      color: 'from-blue-600 to-indigo-600',
+      highlights: [
+        'Strategic acquisition completed',
+        'Rebranded as Sales Centri AI LLC',
+        'Agentic AI capabilities added',
+        'Global reach expanded'
+      ]
+    },
+    {
+      year: '2025-q3',
+      title: 'MSME/UDYAM Registration',
+      date: '24 September 2025',
+      description: 'Sales Centri secures MSME/UDYAM certification, officially recognizing it as a registered micro-enterprise in India.',
+      icon: Award,
+      color: 'from-indigo-600 to-blue-600',
+      highlights: [
+        'MSME/UDYAM certification obtained',
+        'Recognized micro-enterprise in India',
+        'Government recognition achieved'
+      ]
+    },
+    {
+      year: '2025-q4-oct',
+      title: 'DPIIT Startup Recognition',
+      date: '28 October 2025',
+      description: 'The Department for Promotion of Industry and Internal Trade officially recognizes Sales Centri as a startup in the AI and Machine Learning sectors.',
+      icon: Brain,
+      color: 'from-blue-600 to-cyan-600',
+      highlights: [
+        'DPIIT Startup certification',
+        'AI & ML sector recognition',
+        'Official government backing',
+        'Innovation ecosystem access'
+      ]
+    },
+    {
+      year: '2025-q4-nov',
+      title: 'Bengaluru Tech Summit Recognition',
+      date: '19 November 2025',
+      description: 'At Bengaluru Tech Summit 2025 – Product Launch 4.0, Sales Centri is honored among the Top 50 groundbreaking products for next-gen innovation in AI, Agentic AI, and Sales Technology.',
+      icon: Sparkles,
+      color: 'from-cyan-600 to-blue-600',
+      highlights: [
+        'Top 50 groundbreaking products',
+        'Product Launch 4.0 recognition',
+        'Next-gen innovation award',
+        'Industry leadership validated'
+      ]
+    }
+  ];
+
+  return (
+    <div ref={containerRef} className="relative">
+      <main className="min-h-screen bg-black text-white overflow-hidden">
+
+      {/* Animated Background */}
+      <div className="fixed inset-0 z-0">
+        <motion.div
+          style={{ y: backgroundY }}
+          className="absolute inset-0"
+        >
+          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-[120px] animate-pulse" />
+          <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-cyan-600/20 rounded-full blur-[120px] [animation-delay:2s] animate-pulse" />
+          <div className="absolute bottom-1/4 left-1/3 w-[400px] h-[400px] bg-blue-500/20 rounded-full blur-[100px] [animation-delay:4s] animate-pulse" />
+        </motion.div>
+      </div>
+
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-24 z-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="text-center mb-20"
+          >
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="text-6xl lg:text-8xl font-bold mb-8"
+            >
+              Reimagining Sales{' '}
+              <span className="relative inline-block">
+                <span className="relative z-10 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent animate-gradient">
+                  Automation
+                </span>
+                <motion.div
+                  className="absolute -inset-2 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 blur-2xl"
+                  animate={{
+                    scale: [1, 1.2, 1],
+                    opacity: [0.5, 0.8, 0.5]
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+              </span>
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+              className="text-2xl lg:text-3xl text-gray-400 max-w-4xl mx-auto leading-relaxed mb-12"
+            >
+              For A New Era
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.7 }}
+              className="text-center"
+            >
+              <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-white">
+                Empowering Sales Teams{' '}
+                <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                  Worldwide
+                </span>
+              </h2>
+
+              <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: 0.8 }}
+                  className="group"
+                >
+                  <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300">
+                    <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                      <Brain className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-white mb-2">AI-Powered Intelligence</h3>
+                    <p className="text-gray-400 text-sm">Advanced AI algorithms that understand context and intent</p>
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: 0.9 }}
+                  className="group"
+                >
+                  <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-cyan-500/50 transition-all duration-300">
+                    <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                      <Zap className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-white mb-2">Lightning Fast</h3>
+                    <p className="text-gray-400 text-sm">Get campaigns live in hours, not weeks</p>
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: 1.0 }}
+                  className="group"
+                >
+                  <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300">
+                    <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                      <Globe className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-white mb-2">Global Scale</h3>
+                    <p className="text-gray-400 text-sm">Enterprise-grade solutions for teams worldwide</p>
+                  </div>
+                </motion.div>
+              </div>
+
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                With Sales Centri, you're not just automating sales;{' '}
+                <span className="text-blue-400 font-semibold">you're equipped to transform it.</span>
+              </p>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="relative py-32 z-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="inline-block mb-8"
+              >
+                <div className="px-4 py-2 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 backdrop-blur-xl border border-blue-500/30 rounded-full">
+                  <span className="text-blue-400 font-semibold text-sm">Our Mission</span>
+                </div>
+              </motion.div>
+
+              <h2 className="text-4xl lg:text-6xl font-bold mb-8">
+                Build A Sales{' '}
+                <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                  Intelligence Layer
+                </span>
+              </h2>
+
+              <p className="text-xl text-gray-300 leading-relaxed mb-8">
+                We're utilizing cutting-edge AI to reveal what others can't: hidden opportunities,
+                buyer intent signals, and market insights that drive revenue growth.
+              </p>
+
+              <p className="text-lg text-gray-400 leading-relaxed mb-8">
+                With this level of intelligence, we help sales teams act faster, sell smarter,
+                and close more deals. From lead generation and personalization to workflow
+                automation and analytics, we're building the AI layer the modern sales stack urgently needs.
+              </p>
+
+              <div className="space-y-4">
+                <div className="flex items-center gap-4">
+                  <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">
+                    <Target className="w-4 h-4 text-blue-400" />
+                  </div>
+                  <span className="text-gray-300">AI-powered lead discovery and validation</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center">
+                    <Users className="w-4 h-4 text-cyan-400" />
+                  </div>
+                  <span className="text-gray-300">Personalized outreach at scale</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">
+                    <TrendingUp className="w-4 h-4 text-blue-400" />
+                  </div>
+                  <span className="text-gray-300">Data-driven sales optimization</span>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-3xl blur-3xl" />
+                <div className="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl p-8">
+                  <div className="grid grid-cols-2 gap-6">
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-blue-400 mb-2">500+</div>
+                      <div className="text-sm text-gray-400">Verified Businesses</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-cyan-400 mb-2">40+</div>
+                      <div className="text-sm text-gray-400">Industries Served</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-blue-400 mb-2">50+</div>
+                      <div className="text-sm text-gray-400">Countries</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-cyan-400 mb-2">1,000+</div>
+                      <div className="text-sm text-gray-400">Successful Connections</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Vision Section */}
+      <section className="relative py-32 z-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="order-2 lg:order-1"
+            >
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="inline-block mb-8"
+              >
+                <div className="px-4 py-2 bg-gradient-to-r from-cyan-600/20 to-blue-600/20 backdrop-blur-xl border border-cyan-500/30 rounded-full">
+                  <span className="text-cyan-400 font-semibold text-sm">Our Vision</span>
+                </div>
+              </motion.div>
+
+              <h2 className="text-4xl lg:text-6xl font-bold mb-8">
+                Democratize{' '}
+                <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                  Enterprise AI
+                </span>
+              </h2>
+
+              <p className="text-xl text-gray-300 leading-relaxed mb-8">
+                Sales Centri's vision is to make enterprise-grade AI sales automation accessible
+                to every business, regardless of size or technical expertise.
+              </p>
+
+              <p className="text-lg text-gray-400 leading-relaxed mb-8">
+                Our comprehensive AI sales suite will transform how businesses sell, from startups
+                to enterprises. We envision a future where AI doesn't just automate tasks—it
+                amplifies human potential, drives meaningful connections, and creates unprecedented
+                growth opportunities.
+              </p>
+
+              <div className="space-y-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                    <Rocket className="w-5 h-5 text-cyan-400" />
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold mb-1">AI-powered personalization at scale</h4>
+                    <p className="text-gray-400 text-sm">Transform every interaction with intelligent automation</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                    <TrendingUp className="w-5 h-5 text-blue-400" />
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold mb-1">Instant ROI and measurable results</h4>
+                    <p className="text-gray-400 text-sm">Data-driven insights that drive revenue growth</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                    <Globe className="w-5 h-5 text-cyan-400" />
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold mb-1">Global accessibility and reach</h4>
+                    <p className="text-gray-400 text-sm">Enterprise-grade solutions for teams worldwide</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="order-1 lg:order-2"
+            >
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-600/20 to-blue-600/20 rounded-3xl blur-3xl" />
+                <div className="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl p-8 h-96 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-24 h-24 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                      <Globe className="w-12 h-12 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-white mb-4">Global AI Sales Platform</h3>
+                    <p className="text-gray-400">Connecting businesses worldwide with intelligent automation</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Milestones Section */}
+      <section className="relative py-32 z-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-20"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="inline-block mb-6"
+            >
+              <div className="px-4 py-2 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 backdrop-blur-xl border border-blue-500/30 rounded-full">
+                <span className="text-blue-400 font-semibold text-sm">Our Journey</span>
+              </div>
+            </motion.div>
+
+            <h2 className="text-5xl lg:text-6xl font-bold mb-6">
+              Key{' '}
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                Milestones
+              </span>
+            </h2>
+
+            {/* Timeline Navigation */}
+            <div className="flex flex-wrap justify-center gap-4 mb-12">
+              {[2019, 2020, 2021, 2022, 2023, 2024, 2025].map((year) => (
+                <motion.button
+                  key={year}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.4, delay: year * 0.02 }}
+                  viewport={{ once: true }}
+                  onClick={() => setHoveredYear(hoveredYear === year.toString() ? null : year.toString())}
+                  className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
+                    hoveredYear === year.toString()
+                      ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-lg'
+                      : 'bg-white/10 text-gray-300 hover:bg-white/20'
+                  }`}
+                >
+                  {year}
+                </motion.button>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Vertical Timeline with Glassmorphism Cards */}
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-blue-600 via-cyan-600 to-blue-600 hidden lg:block" />
+
+            <div className="space-y-24">
+              {milestones.map((milestone, index) => {
+                const IconComponent = milestone.icon;
+                const isEven = index % 2 === 0;
+
+                return (
+                  <motion.div
+                    key={milestone.year}
+                    initial={{ opacity: 0, x: isEven ? -100 : 100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    onMouseEnter={() => setHoveredYear(milestone.year)}
+                    onMouseLeave={() => setHoveredYear(null)}
+                    className={`relative flex items-center ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}
+                  >
+                    {/* Content Card */}
+                    <div className={`w-full lg:w-5/12 ${isEven ? 'lg:pr-16' : 'lg:pl-16'}`}>
+                      <motion.div
+                        whileHover={{ scale: 1.02, y: -5 }}
+                        className="group relative"
+                      >
+                        {/* Glow effect on hover */}
+                        <motion.div
+                          className={`absolute -inset-2 bg-gradient-to-r ${milestone.color} rounded-3xl blur-2xl opacity-0 group-hover:opacity-30 transition-opacity duration-500`}
+                          animate={hoveredYear === milestone.year ? { opacity: 0.3 } : { opacity: 0 }}
+                        />
+
+                        {/* Glassmorphism Card */}
+                        <div className="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl p-8 group-hover:border-blue-500/50 transition-all duration-300">
+                          {/* Year Badge */}
+                          <div className="absolute -top-4 left-8">
+                            <div className={`px-6 py-2 bg-gradient-to-r ${milestone.color} rounded-full text-white font-bold text-lg shadow-lg`}>
+                              {milestone.year.split('-')[0]}
+                            </div>
+                          </div>
+
+                          {/* Date */}
+                          <div className="mt-4 mb-6">
+                            <span className="text-blue-400 font-semibold text-sm">{milestone.date}</span>
+                          </div>
+
+                          {/* Title */}
+                          <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4 flex items-center gap-3">
+                            <IconComponent className="w-8 h-8 text-cyan-400" />
+                            {milestone.title}
+                          </h3>
+
+                          {/* Description */}
+                          <p className="text-gray-400 leading-relaxed mb-6">
+                            {milestone.description}
+                          </p>
+
+                          {/* Highlights */}
+                          <div className="space-y-3">
+                            {milestone.highlights.map((highlight, idx) => (
+                              <motion.div
+                                key={idx}
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                                viewport={{ once: true }}
+                                className="flex items-center gap-3"
+                              >
+                                <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                                <span className="text-gray-300">{highlight}</span>
+                              </motion.div>
+                            ))}
+                          </div>
+
+                          {/* Decorative corner */}
+                          <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${milestone.color} opacity-10 rounded-bl-full`} />
+                        </div>
+                      </motion.div>
+                    </div>
+
+                    {/* Timeline Node */}
+                    <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 z-10">
+                      <motion.div
+                        whileHover={{ scale: 1.3 }}
+                        className="relative"
+                      >
+                        <motion.div
+                          className={`w-6 h-6 rounded-full bg-gradient-to-r ${milestone.color} border-4 border-black`}
+                          animate={hoveredYear === milestone.year ? {
+                            scale: [1, 1.5, 1],
+                            boxShadow: [
+                              "0 0 0 0 rgba(59, 130, 246, 0)",
+                              "0 0 0 20px rgba(59, 130, 246, 0)",
+                              "0 0 0 0 rgba(59, 130, 246, 0)"
+                            ]
+                          } : {}}
+                          transition={{ duration: 2, repeat: Infinity }}
+                        />
+                      </motion.div>
+                    </div>
+
+                    {/* Empty space on the other side */}
+                    <div className="hidden lg:block w-5/12" />
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Investors Section */}
+      <section className="relative py-32 z-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-20"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="inline-block mb-6"
+            >
+              <div className="px-4 py-2 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 backdrop-blur-xl border border-blue-500/30 rounded-full">
+                <span className="text-blue-400 font-semibold text-sm">Investors</span>
+              </div>
+            </motion.div>
+
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+              Backed by{' '}
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                Industry Leaders
+              </span>
+            </h2>
+
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+              We're proud to be supported by visionary investors who share our mission to democratize AI sales automation.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
+            {[1, 2, 3, 4, 5, 6].map((investor, index) => (
+              <motion.div
+                key={investor}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -5 }}
+                className="group"
+              >
+                <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 group-hover:border-blue-500/50 transition-all duration-300 h-32 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-xl flex items-center justify-center mb-3 mx-auto">
+                      <Building2 className="w-8 h-8 text-blue-400" />
+                    </div>
+                    <div className="text-sm font-semibold text-gray-300">Investor {investor}</div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Recognition Section */}
+      <section className="relative py-32 z-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-20"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="inline-block mb-6"
+            >
+              <div className="px-4 py-2 bg-gradient-to-r from-cyan-600/20 to-blue-600/20 backdrop-blur-xl border border-cyan-500/30 rounded-full">
+                <span className="text-cyan-400 font-semibold text-sm">Recognition</span>
+              </div>
+            </motion.div>
+
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+              Industry{' '}
+              <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                Recognition
+              </span>
+            </h2>
+
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+              Our innovation in AI sales automation has earned recognition from leading industry organizations.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -5 }}
+              className="group"
+            >
+              <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 group-hover:border-blue-500/50 transition-all duration-300">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center">
+                    <Award className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-white">DPIIT Startup Recognition</h3>
+                    <p className="text-sm text-gray-400">Government certified startup</p>
+                  </div>
+                </div>
+                <p className="text-gray-300 text-sm">Recognized by the Department for Promotion of Industry and Internal Trade for innovation in AI and Machine Learning sectors.</p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 0.6, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -5 }}
+              className="group"
+            >
+              <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 group-hover:border-cyan-500/50 transition-all duration-300">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center">
+                    <Sparkles className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-white">Bengaluru Tech Summit 2025</h3>
+                    <p className="text-sm text-gray-400">Top 50 Innovative Products</p>
+                  </div>
+                </div>
+                <p className="text-gray-300 text-sm">Honored among the Top 50 groundbreaking products at Product Launch 4.0 for next-gen innovation in AI and Sales Technology.</p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -5 }}
+              className="group"
+            >
+              <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 group-hover:border-blue-500/50 transition-all duration-300">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center">
+                    <Globe className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-white">MSME/UDYAM Certified</h3>
+                    <p className="text-sm text-gray-400">Government Recognition</p>
+                  </div>
+                </div>
+                <p className="text-gray-300 text-sm">Officially recognized as a registered micro-enterprise in India, validating our business model and growth potential.</p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Careers CTA Section */}
+      <section className="relative py-32 z-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="inline-block mb-8"
+            >
+              <div className="px-4 py-2 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 backdrop-blur-xl border border-blue-500/30 rounded-full">
+                <span className="text-blue-400 font-semibold text-sm">Join Us</span>
+              </div>
+            </motion.div>
+
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              Shape the Future of{' '}
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                Sales AI
+              </span>
+            </h2>
+
+            <p className="text-xl text-gray-400 mb-12 max-w-3xl mx-auto">
+              Join us to build what's next in AI sales automation and help solve some of sales teams' biggest challenges!
+            </p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.05 }}
+              className="inline-block"
+            >
+              <Link href="/careers">
+                <div className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl">
+                  Explore Careers
+                </div>
+              </Link>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Knowledge Hub Preview */}
+      <section className="relative py-32 z-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-20"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="inline-block mb-6"
+            >
+              <div className="px-4 py-2 bg-gradient-to-r from-cyan-600/20 to-blue-600/20 backdrop-blur-xl border border-cyan-500/30 rounded-full">
+                <span className="text-cyan-400 font-semibold text-sm">Knowledge Hub</span>
+              </div>
+            </motion.div>
+
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+              Insights &{' '}
+              <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                Innovation
+              </span>
+            </h2>
+
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12">
+              Discover how Sales Centri's AI solutions drive real-world sales transformation.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -5 }}
+              className="group"
+            >
+              <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 group-hover:border-blue-500/50 transition-all duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                    <Brain className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <div className="text-xs text-blue-400 font-medium">November 25, 2025</div>
+                    <div className="text-xs text-gray-400">Blog</div>
+                  </div>
+                </div>
+                <h3 className="text-lg font-semibold text-white mb-3">AI Sales Automation Trends 2026</h3>
+                <p className="text-gray-400 text-sm mb-4">Explore the latest trends shaping the future of AI-powered sales automation and what they mean for your business.</p>
+                <Link href="/blog/ai-sales-trends-2026" className="text-blue-400 hover:text-cyan-400 text-sm font-medium transition-colors">
+                  Read more →
+                </Link>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -5 }}
+              className="group"
+            >
+              <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 group-hover:border-cyan-500/50 transition-all duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+                    <Target className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <div className="text-xs text-cyan-400 font-medium">November 20, 2025</div>
+                    <div className="text-xs text-gray-400">Case Study</div>
+                  </div>
+                </div>
+                <h3 className="text-lg font-semibold text-white mb-3">How TechCorp Increased Pipeline by 300%</h3>
+                <p className="text-gray-400 text-sm mb-4">Learn how a leading technology company transformed their sales process with Sales Centri's AI automation suite.</p>
+                <Link href="/case-studies/techcorp-pipeline-growth" className="text-cyan-400 hover:text-blue-400 text-sm font-medium transition-colors">
+                  Read more →
+                </Link>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -5 }}
+              className="group"
+            >
+              <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 group-hover:border-blue-500/50 transition-all duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
+                    <TrendingUp className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <div className="text-xs text-blue-400 font-medium">November 15, 2025</div>
+                    <div className="text-xs text-purple-400 font-medium">Whitepaper</div>
+                  </div>
+                </div>
+                <h3 className="text-lg font-semibold text-white mb-3">The ROI of AI Sales Automation</h3>
+                <p className="text-gray-400 text-sm mb-4">A comprehensive analysis of the financial impact of implementing AI-powered sales automation solutions.</p>
+                <Link href="/whitepapers/ai-sales-automation-roi" className="text-blue-400 hover:text-cyan-400 text-sm font-medium transition-colors">
+                  Download →
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="text-center mt-12"
+          >
+            <Link href="/blog">
+              <div className="inline-block bg-white/10 hover:bg-white/20 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300">
+                View All Insights
+              </div>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="relative py-32 z-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              See what others miss.{' '}
+              <span className="text-blue-400">Act when it matters.</span>
+            </h2>
+
+            <p className="text-xl text-gray-400 mb-12 max-w-3xl mx-auto">
+              Join thousands of sales teams worldwide who are transforming their results with Sales Centri's AI automation.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05 }}
+                className="inline-block"
+              >
+                <Link href="/get-started">
+                  <div className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl">
+                    Get Started Free
+                  </div>
+                </Link>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05 }}
+                className="inline-block"
+              >
+                <Link href="/contact">
+                  <div className="bg-white/10 hover:bg-white/20 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 border border-white/20">
+                    Contact Sales
+                  </div>
+                </Link>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      </main>
+    </div>
+  );
+}
+  const [hoveredYear, setHoveredYear] = useState<string | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end start"]
+  });
+
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
+
+  const milestones = [
+    {
+      year: '2021',
+      title: 'Sales Centri Established',
+      date: '24 December 2021',
+      description: 'Sales Centri is officially established and begins its foundational operations, setting the stage for revolutionizing AI-powered sales automation.',
+      icon: Rocket,
+      color: 'from-blue-600 to-cyan-600',
+      highlights: [
+        'Company officially established',
+        'Foundational operations begin',
+        'Vision for AI sales automation set'
+      ]
+    },
+    {
+      year: '2024',
+      title: 'DESIDECK LLC Incorporated',
+      date: '21 May 2024',
+      description: 'DESIDECK LLC is officially incorporated as a registered business entity in the USA, marking our first step toward global expansion.',
+      icon: Globe,
+      color: 'from-cyan-600 to-blue-600',
+      highlights: [
+        'USA entity incorporation',
+        'Legal foundation established',
+        'Global expansion initiated'
+      ]
+    },
+    {
+      year: '2025-q2',
+      title: 'DESIDECK LLC Acquisition',
+      date: '09 June 2025',
+      description: 'Sales Centri acquires DESIDECK LLC and rebrands it as Sales Centri AI LLC, enabling expansion into global AI and Agentic AI technologies.',
+      icon: TrendingUp,
+      color: 'from-blue-600 to-indigo-600',
+      highlights: [
+        'Strategic acquisition completed',
+        'Rebranded as Sales Centri AI LLC',
+        'Agentic AI capabilities added',
+        'Global reach expanded'
+      ]
+    },
+    {
+      year: '2025-q3',
+      title: 'MSME/UDYAM Registration',
+      date: '24 September 2025',
+      description: 'Sales Centri secures MSME/UDYAM certification, officially recognizing it as a registered micro-enterprise in India.',
+      icon: Award,
+      color: 'from-indigo-600 to-blue-600',
+      highlights: [
+        'MSME/UDYAM certification obtained',
+        'Recognized micro-enterprise in India',
+        'Government recognition achieved'
+      ]
+    },
+    {
+      year: '2025-q4-oct',
+      title: 'DPIIT Startup Recognition',
+      date: '28 October 2025',
+      description: 'The Department for Promotion of Industry and Internal Trade officially recognizes Sales Centri as a startup in the AI and Machine Learning sectors.',
+      icon: Brain,
+      color: 'from-blue-600 to-cyan-600',
+      highlights: [
+        'DPIIT Startup certification',
+        'AI & ML sector recognition',
+        'Official government backing',
+        'Innovation ecosystem access'
+      ]
+    },
+    {
+      year: '2025-q4-nov',
+      title: 'Bengaluru Tech Summit Recognition',
+      date: '19 November 2025',
+      description: 'At Bengaluru Tech Summit 2025 – Product Launch 4.0, Sales Centri is honored among the Top 50 groundbreaking products for next-gen innovation in AI, Agentic AI, and Sales Technology.',
+      icon: Sparkles,
+      color: 'from-cyan-600 to-blue-600',
+      highlights: [
+        'Top 50 groundbreaking products',
+        'Product Launch 4.0 recognition',
+        'Next-gen innovation award',
+        'Industry leadership validated'
+      ]
+    }
+  ];
+
+  const values = [
+    {
+      icon: Brain,
+      title: "AI-Powered Innovation",
+      description: "We leverage cutting-edge artificial intelligence to transform sales automation, making it smarter, more personalized, and incredibly effective.",
+      gradient: "from-blue-500 to-cyan-500"
+    },
+    {
+      icon: Heart,
+      title: "Human-Centric Automation",
+      description: "Our AI doesn't replace sales reps — it augments them. We help teams scale personalized outreach while keeping the essential human touch.",
+      gradient: "from-cyan-500 to-blue-500"
+    },
+    {
+      icon: Zap,
+      title: "Speed & Efficiency",
+      description: "Get your first outreach campaign live in hours, not weeks. We believe in rapid deployment and instant ROI for our customers.",
+      gradient: "from-blue-500 to-indigo-500"
+    },
+    {
+      icon: Globe,
+      title: "Global Scale",
+      description: "Built to perform whether you're sending 100 or 100,000 messages. Our platform delivers enterprise-level uptime and reliability.",
+      gradient: "from-indigo-500 to-blue-500"
+    }
+  ];
+
+  const metrics = [
+    { label: "Startup Recognition", value: "DPIIT", description: "Govt certified startup", icon: Award },
+    { label: "Top 50", value: "BTS 2025", description: "Bengaluru Tech Summit", icon: Sparkles },
+    { label: "Global Presence", value: "USA + India", description: "Dual entity operations", icon: Globe },
+    { label: "AI Innovation", value: "Agentic AI", description: "Next-gen technology", icon: Brain }
+  ];
+
+  return (
+    <div ref={containerRef} className="relative">
+      <main className="min-h-screen bg-black text-white overflow-hidden">
+      
+      {/* Animated Background */}
+      <div className="fixed inset-0 z-0">
+        <motion.div 
+          style={{ y: backgroundY }}
+          className="absolute inset-0"
+        >
+          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-[120px] animate-pulse" />
+          <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-cyan-600/20 rounded-full blur-[120px] [animation-delay:2s] animate-pulse" />
+          <div className="absolute bottom-1/4 left-1/3 w-[400px] h-[400px] bg-blue-500/20 rounded-full blur-[100px] [animation-delay:4s] animate-pulse" />
+        </motion.div>
+      </div>
+
+      {/* Hero Section with Glassmorphism */}
+      <section className="relative pt-32 pb-24 z-10">
+        <motion.div
+          className="max-w-7xl mx-auto px-6"
+        >
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="text-center mb-20"
+          >
+            {/* Glassmorphism badge */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="inline-block mb-8"
+            >
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full blur-xl opacity-70 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="relative px-6 py-3 bg-black/40 backdrop-blur-xl border border-blue-500/30 rounded-full">
+                  <span className="text-blue-400 font-semibold flex items-center gap-2">
+                    <Sparkles className="w-4 h-4" />
+                    AI-Powered Sales Revolution
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="text-6xl lg:text-8xl font-bold mb-8"
+            >
+              About{' '}
+              <span className="relative inline-block">
+                <span className="relative z-10 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent animate-gradient">
+                  Sales Centri
+                </span>
+                <motion.div
+                  className="absolute -inset-2 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 blur-2xl"
+                  animate={{
+                    scale: [1, 1.2, 1],
+                    opacity: [0.5, 0.8, 0.5]
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+              </span>
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+              className="text-xl lg:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed"
+            >
+              Empowering sales teams worldwide with AI-powered automation and intelligent engagement
+            </motion.p>
+          </motion.div>
+
+          {/* Stats Bar with Glassmorphism */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+            className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto"
+          >
+            {metrics.map((metric, index) => {
+              const IconComponent = metric.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
+                  whileHover={{ scale: 1.05, y: -5 }}
+                  className="group relative"
+                >
+                  {/* Glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 via-blue-600/50 to-blue-600/0 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  
+                  {/* Glassmorphism card */}
+                  <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl p-4 text-center hover:border-blue-500/50 transition-all duration-300">
+                    <IconComponent className="w-6 h-6 text-blue-400 mx-auto mb-2" />
+                    <div className="text-2xl font-bold text-blue-400 mb-1">
+                      {metric.value}
+                    </div>
+                    <div className="text-xs font-semibold text-white mb-0.5">{metric.label}</div>
+                    <div className="text-[10px] text-gray-500">{metric.description}</div>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </motion.div>
+        </motion.div>
+      </section>
+
+      {/* Company Story Section with Glassmorphism */}
+      <section className="relative py-32 z-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-20"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="inline-block mb-6"
+            >
+              <div className="px-4 py-2 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 backdrop-blur-xl border border-blue-500/30 rounded-full">
+                <span className="text-blue-400 font-semibold text-sm">Our Story</span>
+              </div>
+            </motion.div>
+
+            <h2 className="text-5xl lg:text-6xl font-bold mb-6">
+              How We{' '}
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                Started
+              </span>
+            </h2>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            whileHover={{ y: -5 }}
+            className="group relative max-w-5xl mx-auto"
+          >
+            {/* Glow effect */}
+            <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-3xl blur-3xl opacity-0 group-hover:opacity-20 transition-opacity duration-500" />
+            
+            {/* Glassmorphism Card */}
+            <div className="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl p-10 group-hover:border-blue-500/50 transition-all duration-300">
+              <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
+                <p>
+                  Sales Centri was born from a simple but powerful observation: <strong className="text-blue-400">sales teams were drowning in manual tasks</strong> while missing opportunities to connect with their ideal customers.
+                </p>
+                <p>
+                  Our founders—who came from deep enterprise sales backgrounds and spent years doing <strong className="text-cyan-400">AI research at top universities</strong>—saw a gap in the market. Existing tools either required coding skills or were too generic to deliver real ROI. They built Sales Centri to solve that.
+                </p>
+                <p>
+                  Today, Sales Centri serves <strong className="text-blue-400">thousands of sales professionals globally</strong>, helping them discover leads, personalize outreach, automate workflows, and close more deals—without needing to hire a data scientist or write a single line of code.
+                </p>
+                <p className="text-white font-semibold pt-4">
+                  We&apos;re not just building software. We&apos;re building the future of intelligent selling.
+                </p>
+              </div>
+
+              {/* Decorative elements */}
+              <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-blue-600/20 to-transparent rounded-bl-full" />
+              <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-cyan-600/20 to-transparent rounded-tr-full" />
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Key Milestones Section - Custom Timeline Design */}
+      <section className="relative py-32 z-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-20"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="inline-block mb-6"
+            >
+              <div className="px-4 py-2 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 backdrop-blur-xl border border-blue-500/30 rounded-full">
+                <span className="text-blue-400 font-semibold text-sm">Our Journey</span>
+              </div>
+            </motion.div>
+
+            <h2 className="text-5xl lg:text-6xl font-bold mb-6">
+              Key{' '}
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                Milestones
+              </span>
+            </h2>
+            <p className="text-gray-400 text-xl max-w-3xl mx-auto">
+              From startup to industry leader - Our journey of innovation and growth
+            </p>
+          </motion.div>
+
+          {/* Vertical Timeline with Glassmorphism Cards */}
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-blue-600 via-cyan-600 to-blue-600 hidden lg:block" />
+
+            <div className="space-y-24">
+              {milestones.map((milestone, index) => {
+                const IconComponent = milestone.icon;
+                const isEven = index % 2 === 0;
+
+                return (
+                  <motion.div
+                    key={milestone.year}
+                    initial={{ opacity: 0, x: isEven ? -100 : 100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    onMouseEnter={() => setHoveredYear(milestone.year)}
+                    onMouseLeave={() => setHoveredYear(null)}
+                    className={`relative flex items-center ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}
+                  >
+                    {/* Content Card */}
+                    <div className={`w-full lg:w-5/12 ${isEven ? 'lg:pr-16' : 'lg:pl-16'}`}>
+                      <motion.div
+                        whileHover={{ scale: 1.02, y: -5 }}
+                        className="group relative"
+                      >
+                        {/* Glow effect on hover */}
+                        <motion.div
+                          className={`absolute -inset-2 bg-gradient-to-r ${milestone.color} rounded-3xl blur-2xl opacity-0 group-hover:opacity-30 transition-opacity duration-500`}
+                          animate={hoveredYear === milestone.year ? { opacity: 0.3 } : { opacity: 0 }}
+                        />
+
+                        {/* Glassmorphism Card */}
+                        <div className="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl p-8 group-hover:border-blue-500/50 transition-all duration-300">
+                          {/* Year Badge */}
+                          <div className="absolute -top-4 left-8">
+                            <div className={`px-6 py-2 bg-gradient-to-r ${milestone.color} rounded-full text-white font-bold text-lg shadow-lg`}>
+                              {milestone.year}
+                            </div>
+                          </div>
+
+                          {/* Date */}
+                          <div className="mt-4 mb-6">
+                            <span className="text-blue-400 font-semibold text-sm">{milestone.date}</span>
+                          </div>
+
+                          {/* Title */}
+                          <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4 flex items-center gap-3">
+                            <IconComponent className="w-8 h-8 text-cyan-400" />
+                            {milestone.title}
+                          </h3>
+
+                          {/* Description */}
+                          <p className="text-gray-400 leading-relaxed mb-6">
+                            {milestone.description}
+                          </p>
+
+                          {/* Highlights */}
+                          <div className="space-y-3">
+                            {milestone.highlights.map((highlight, idx) => (
+                              <motion.div
+                                key={idx}
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                                viewport={{ once: true }}
+                                className="flex items-center gap-3"
+                              >
+                                <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                                <span className="text-gray-300">{highlight}</span>
+                              </motion.div>
+                            ))}
+                          </div>
+
+                          {/* Decorative corner */}
+                          <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${milestone.color} opacity-10 rounded-bl-full`} />
+                        </div>
+                      </motion.div>
+                    </div>
+
+                    {/* Timeline Node */}
+                    <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 z-10">
+                      <motion.div
+                        whileHover={{ scale: 1.3 }}
+                        className="relative"
+                      >
+                        <motion.div
+                          className={`w-6 h-6 rounded-full bg-gradient-to-r ${milestone.color} border-4 border-black`}
+                          animate={hoveredYear === milestone.year ? {
+                            scale: [1, 1.5, 1],
+                            boxShadow: [
+                              "0 0 0 0 rgba(59, 130, 246, 0)",
+                              "0 0 0 20px rgba(59, 130, 246, 0)",
+                              "0 0 0 0 rgba(59, 130, 246, 0)"
+                            ]
+                          } : {}}
+                          transition={{ duration: 2, repeat: Infinity }}
+                        />
+                      </motion.div>
+                    </div>
+
+                    {/* Empty space on the other side */}
+                    <div className="hidden lg:block w-5/12" />
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Vision Section with Glassmorphism */}
+      <section className="relative py-32 z-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Mission Card */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -10 }}
+              className="group relative"
+            >
+              {/* Glow effect */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-3xl blur-3xl opacity-0 group-hover:opacity-20 transition-opacity duration-500" />
+              
+              {/* Glassmorphism Card */}
+              <div className="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl p-10 group-hover:border-blue-500/50 transition-all duration-300 h-full">
+                <Target className="w-16 h-16 text-blue-400 mb-6" />
+                <h2 className="text-4xl font-bold text-white mb-6">Our Mission</h2>
+                <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                  To <strong className="text-blue-400">empower modern sales teams</strong> with{' '}
+                  <strong className="text-cyan-400">AI-powered automation</strong>,{' '}
+                  <strong className="text-blue-400">personalized communication</strong>, and{' '}
+                  <strong className="text-cyan-400">scalable workflows</strong> that close more deals, 
+                  foster stronger relationships, and drive revenue — without increasing operational complexity.
+                </p>
+                <p className="text-gray-400 leading-relaxed">
+                  We&apos;re not just building a product. We&apos;re building{' '}
+                  <strong className="text-white">the future of selling</strong>.
+                </p>
+
+                {/* Decorative elements */}
+                <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-blue-600/20 to-transparent rounded-bl-full" />
+                <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-cyan-600/20 to-transparent rounded-tr-full" />
+              </div>
+            </motion.div>
+
+            {/* Vision Card */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -10 }}
+              className="group relative"
+            >
+              {/* Glow effect */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-3xl blur-3xl opacity-0 group-hover:opacity-20 transition-opacity duration-500" />
+              
+              {/* Glassmorphism Card */}
+              <div className="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl p-10 group-hover:border-cyan-500/50 transition-all duration-300 h-full">
+                <Eye className="w-16 h-16 text-cyan-400 mb-6" />
+                <h2 className="text-4xl font-bold text-white mb-6">Our Vision</h2>
+                <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                  We envision a world where every sales team has access to enterprise-grade AI automation, 
+                  regardless of company size or technical expertise.
+                </p>
+                
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                      <Rocket className="w-5 h-5 text-blue-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">AI-powered personalization at scale</h4>
+                      <p className="text-gray-400 text-sm">Transform every interaction with intelligent automation</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                      <TrendingUp className="w-5 h-5 text-cyan-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Instant ROI and measurable results</h4>
+                      <p className="text-gray-400 text-sm">Data-driven insights that drive revenue growth</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                      <Globe className="w-5 h-5 text-blue-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Global accessibility and reach</h4>
+                      <p className="text-gray-400 text-sm">Enterprise-grade solutions for teams worldwide</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Decorative elements */}
+                <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-cyan-600/20 to-transparent rounded-bl-full" />
+                <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-blue-600/20 to-transparent rounded-tr-full" />
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values with Glassmorphism */}
+      <section className="relative py-32 z-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-20"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="inline-block mb-6"
+            >
+              <div className="px-4 py-2 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 backdrop-blur-xl border border-blue-500/30 rounded-full">
+                <span className="text-blue-400 font-semibold text-sm">What Drives Us</span>
+              </div>
+            </motion.div>
+
+            <h2 className="text-5xl lg:text-6xl font-bold mb-6">
+              Our Core{' '}
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                Values
+              </span>
+            </h2>
+            <p className="text-gray-400 text-xl max-w-3xl mx-auto">
+              The principles that drive our innovation and guide our decisions
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {values.map((value, index) => {
+              const IconComponent = value.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  whileHover={{ y: -10, scale: 1.02 }}
+                  className="group relative"
+                >
+                  {/* Glow effect */}
+                  <div className={`absolute -inset-2 bg-gradient-to-r ${value.gradient} rounded-3xl blur-2xl opacity-0 group-hover:opacity-30 transition-opacity duration-500`} />
+                  
+                  {/* Glassmorphism Card */}
+                  <div className="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl p-8 group-hover:border-blue-500/50 transition-all duration-300 h-full">
+                    <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${value.gradient} p-0.5 mb-6`}>
+                      <div className="w-full h-full bg-black rounded-2xl flex items-center justify-center">
+                        <IconComponent className="w-8 h-8 text-blue-400" />
+                      </div>
+                    </div>
+                    <h3 className="text-xl font-bold text-white mb-4">{value.title}</h3>
+                    <p className="text-gray-400 leading-relaxed text-sm">{value.description}</p>
+                    
+                    {/* Decorative corner */}
+                    <div className={`absolute top-0 right-0 w-20 h-20 bg-gradient-to-br ${value.gradient} opacity-10 rounded-bl-full`} />
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+      {/* What Makes Us Unique Section */}
+      <section className="relative py-32 z-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-20"
+          >
+            <h2 className="text-5xl lg:text-6xl font-bold mb-6">
+              What Makes{' '}
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                Sales Centri Unique?
+              </span>
+            </h2>
+            <p className="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
+              In a world full of bloated CRMs and disconnected tools, Sales Centri redefines the sales stack with 
+              AI-powered automation that actually works.
+            </p>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            {[
+              {
+                icon: Brain,
+                title: "Complete AI Sales Suite",
+                description: "More than just software — a comprehensive AI-powered ecosystem covering every stage of the sales funnel, from contact discovery to deal closure.",
+                gradient: "from-blue-600 to-cyan-600"
+              },
+              {
+                icon: Zap,
+                title: "First Outreach in Hours",
+                description: "Use AI Hunter, Contact Validator, and iGCT to source and validate high-intent leads. Get your first campaign live the same day with our LaunchKit.",
+                gradient: "from-cyan-600 to-blue-600"
+              },
+              {
+                icon: Heart,
+                title: "Human + AI = Powerful Results",
+                description: "Our AI augments your sales team without replacing the human touch. Scale personalized outreach while maintaining authentic relationships.",
+                gradient: "from-blue-600 to-indigo-600"
+              }
+            ].map((feature, index) => {
+              const IconComponent = feature.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.15 }}
+                  viewport={{ once: true }}
+                  whileHover={{ y: -10 }}
+                  className="group relative"
+                >
+                  <div className={`absolute -inset-3 bg-gradient-to-r ${feature.gradient} rounded-3xl blur-2xl opacity-0 group-hover:opacity-25 transition-opacity duration-500`} />
+                  <div className="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl p-10 group-hover:border-blue-500/50 transition-all duration-300 h-full">
+                    <div className={`w-20 h-20 rounded-3xl bg-gradient-to-r ${feature.gradient} p-0.5 mb-6`}>
+                      <div className="w-full h-full bg-black rounded-3xl flex items-center justify-center">
+                        <IconComponent className="w-10 h-10 text-blue-400" />
+                      </div>
+                    </div>
+                    <h3 className="text-2xl font-bold text-white mb-4">{feature.title}</h3>
+                    <p className="text-gray-400 leading-relaxed">{feature.description}</p>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action with Glassmorphism */}
+      <section className="relative py-32 z-10">
+        <div className="max-w-5xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="relative group"
+          >
+            {/* Mega glow effect */}
+            <div className="absolute -inset-8 bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-600 rounded-[3rem] blur-3xl opacity-20 group-hover:opacity-30 transition-opacity duration-500" />
+            
+            {/* Glassmorphism CTA Card */}
+            <div className="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[2.5rem] p-12 lg:p-16 text-center">
+              <motion.div
+                animate={{
+                  rotate: [0, 360],
+                }}
+                transition={{
+                  duration: 20,
+                  repeat: Infinity,
+                  ease: "linear"
+                }}
+                className="absolute top-8 right-8 w-16 h-16 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full blur-2xl opacity-50"
+              />
+              
+              <Rocket className="w-20 h-20 text-blue-400 mx-auto mb-8" />
+              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+                Ready to Transform Your Sales Process?
+              </h2>
+              <p className="text-xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
+                Join thousands of sales teams already using Sales Centri to close more deals with AI-powered automation.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <Link href="/get-started/free-trial">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="group relative px-8 py-4 rounded-2xl overflow-hidden"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-600" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <span className="relative text-white font-semibold text-lg flex items-center gap-2">
+                      Start Free Trial - Meet Our AI
+                      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                    </span>
+                  </motion.button>
+                </Link>
+                
+                <Link href="/solutions/psa-suite-one-stop-solution">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="relative px-8 py-4 bg-white/5 backdrop-blur-xl border border-white/20 rounded-2xl text-white font-semibold text-lg hover:border-blue-500/50 transition-all duration-300"
+                  >
+                    Request Board-Level Demo
+                  </motion.button>
+                </Link>
+              </div>
+
+              <motion.div
+                animate={{
+                  rotate: [0, -360],
+                }}
+                transition={{
+                  duration: 25,
+                  repeat: Infinity,
+                  ease: "linear"
+                }}
+                className="absolute bottom-8 left-8 w-20 h-20 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-full blur-2xl opacity-50"
+              />
+            </div>
+          </motion.div>
+        </div>
+      </section>
+    </main>
+    </div>
+  );
+}

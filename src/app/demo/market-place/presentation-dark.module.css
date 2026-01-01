@@ -1,0 +1,30 @@
+/* Force dark mode on presentation pages */
+
+.darkModeForce {
+    color-scheme: dark;
+    background-color: #0f172a !important;
+}
+
+.darkModeForce * {
+    color-scheme: dark;
+}
+
+
+/* Ensure all text stays white */
+
+.darkModeForce h1,
+.darkModeForce h2,
+.darkModeForce h3,
+.darkModeForce h4,
+.darkModeForce p,
+.darkModeForce span,
+.darkModeForce li {
+    color: white !important;
+}
+
+
+/* Force dark backgrounds */
+
+.darkModeForce>div {
+    background: linear-gradient(to bottom right, #0f172a, #581c87, #0f172a) !important;
+}
