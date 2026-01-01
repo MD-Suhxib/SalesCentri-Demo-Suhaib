@@ -19,7 +19,7 @@ export default function LandingPagesIndex() {
         {
             id: 2,
             title: 'Landing Page 02',
-            subtitle: 'Coming Soon',
+            subtitle: 'Simple Strategy Questionnaire',
             description: 'New landing page experience currently under development',
             icon: TrendingUp,
             href: '/resources/landingpage-02',
