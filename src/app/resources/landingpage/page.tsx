@@ -43,28 +43,28 @@ export default function LandingPage() {
             title: 'Revenue Optimization',
             description: 'Grow revenue from existing customers using current offerings',
             icon: RefreshCw,
-            color: 'from-green-500 to-emerald-600'
+            color: 'from-blue-500 to-cyan-600'
         },
         {
             id: 'Q1',
             title: 'New Customer Acquisition',
             description: 'Acquire new customers using current offerings',
             icon: Users,
-            color: 'from-blue-500 to-cyan-600'
+            color: 'from-blue-600 to-indigo-600'
         },
         {
             id: 'Q3',
             title: 'Upsell / Expansion',
             description: 'Sell new products or upgrades to existing customers',
             icon: ArrowUpCircle,
-            color: 'from-purple-500 to-pink-600'
+            color: 'from-cyan-500 to-blue-600'
         },
         {
             id: 'Q4',
             title: 'New Market Entry',
             description: 'Enter new markets with new products',
             icon: Globe,
-            color: 'from-orange-500 to-red-600'
+            color: 'from-indigo-500 to-purple-600'
         }
     ];
 
@@ -103,32 +103,32 @@ export default function LandingPage() {
     // Visualization data for each strategy and question
     const strategyVisualizations: Record<GrowthStrategy, Visualization[]> = {
         Q1: [
-            { title: 'Revenue', subtitle: 'Target', color: 'from-blue-500 to-cyan-600', icon: Rocket },
-            { title: 'Lead', subtitle: 'Generation', color: 'from-blue-500 to-cyan-600', icon: Users },
-            { title: 'Budget', subtitle: 'Planning', color: 'from-blue-500 to-cyan-600', icon: Database },
-            { title: 'Deal', subtitle: 'Closing', color: 'from-blue-500 to-cyan-600', icon: Zap },
-            { title: 'Industry', subtitle: 'Focus', color: 'from-blue-500 to-cyan-600', icon: Sparkles },
+            { title: 'Revenue', subtitle: 'Target', color: 'from-blue-600 to-indigo-600', icon: Rocket },
+            { title: 'Lead', subtitle: 'Generation', color: 'from-blue-600 to-indigo-600', icon: Users },
+            { title: 'Budget', subtitle: 'Planning', color: 'from-blue-600 to-indigo-600', icon: Database },
+            { title: 'Deal', subtitle: 'Closing', color: 'from-blue-600 to-indigo-600', icon: Zap },
+            { title: 'Industry', subtitle: 'Focus', color: 'from-blue-600 to-indigo-600', icon: Sparkles },
         ],
         Q2: [
-            { title: 'Customer', subtitle: 'Base', color: 'from-green-500 to-emerald-600', icon: Users },
-            { title: 'Order', subtitle: 'Value', color: 'from-green-500 to-emerald-600', icon: Database },
-            { title: 'Purchase', subtitle: 'Frequency', color: 'from-green-500 to-emerald-600', icon: RefreshCw },
-            { title: 'Retention', subtitle: 'Rate', color: 'from-green-500 to-emerald-600', icon: TrendingUp },
-            { title: 'Revenue', subtitle: 'Growth', color: 'from-green-500 to-emerald-600', icon: Rocket },
+            { title: 'Customer', subtitle: 'Base', color: 'from-blue-500 to-cyan-600', icon: Users },
+            { title: 'Order', subtitle: 'Value', color: 'from-blue-500 to-cyan-600', icon: Database },
+            { title: 'Purchase', subtitle: 'Frequency', color: 'from-blue-500 to-cyan-600', icon: RefreshCw },
+            { title: 'Retention', subtitle: 'Rate', color: 'from-blue-500 to-cyan-600', icon: TrendingUp },
+            { title: 'Revenue', subtitle: 'Growth', color: 'from-blue-500 to-cyan-600', icon: Rocket },
         ],
         Q3: [
-            { title: 'Customer', subtitle: 'Base', color: 'from-purple-500 to-pink-600', icon: Users },
-            { title: 'Upsell', subtitle: 'Price', color: 'from-purple-500 to-pink-600', icon: ArrowUpCircle },
-            { title: 'Adoption', subtitle: 'Rate', color: 'from-purple-500 to-pink-600', icon: TrendingUp },
-            { title: 'Sales', subtitle: 'Cycle', color: 'from-purple-500 to-pink-600', icon: Zap },
-            { title: 'Expansion', subtitle: 'Revenue', color: 'from-purple-500 to-pink-600', icon: Rocket },
+            { title: 'Customer', subtitle: 'Base', color: 'from-cyan-500 to-blue-600', icon: Users },
+            { title: 'Upsell', subtitle: 'Price', color: 'from-cyan-500 to-blue-600', icon: ArrowUpCircle },
+            { title: 'Adoption', subtitle: 'Rate', color: 'from-cyan-500 to-blue-600', icon: TrendingUp },
+            { title: 'Sales', subtitle: 'Cycle', color: 'from-cyan-500 to-blue-600', icon: Zap },
+            { title: 'Expansion', subtitle: 'Revenue', color: 'from-cyan-500 to-blue-600', icon: Rocket },
         ],
         Q4: [
-            { title: 'Target', subtitle: 'Market', color: 'from-orange-500 to-red-600', icon: Globe },
-            { title: 'Industry', subtitle: 'Focus', color: 'from-orange-500 to-red-600', icon: Sparkles },
-            { title: 'Sales', subtitle: 'Motion', color: 'from-orange-500 to-red-600', icon: Zap },
-            { title: 'Budget', subtitle: 'Allocation', color: 'from-orange-500 to-red-600', icon: Database },
-            { title: 'Timeline', subtitle: 'to Revenue', color: 'from-orange-500 to-red-600', icon: Rocket },
+            { title: 'Target', subtitle: 'Market', color: 'from-indigo-500 to-purple-600', icon: Globe },
+            { title: 'Industry', subtitle: 'Focus', color: 'from-indigo-500 to-purple-600', icon: Sparkles },
+            { title: 'Sales', subtitle: 'Motion', color: 'from-indigo-500 to-purple-600', icon: Zap },
+            { title: 'Budget', subtitle: 'Allocation', color: 'from-indigo-500 to-purple-600', icon: Database },
+            { title: 'Timeline', subtitle: 'to Revenue', color: 'from-indigo-500 to-purple-600', icon: Rocket },
         ]
     };
 
@@ -242,13 +242,13 @@ export default function LandingPage() {
                 <section className="pt-32 pb-16 px-4">
                     <div className="max-w-7xl mx-auto">
                         {!isComplete ? (
-                            <div className="grid lg:grid-cols-2 gap-8 items-center">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                                 {/* Left Side - Animated Visualization */}
                                 <motion.div
                                     initial={{ opacity: 0, x: -50 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.8 }}
-                                    className="hidden lg:flex items-center justify-center relative h-[600px]">
+                                    className="flex items-center justify-center relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] order-2 lg:order-1">
                                     {currentQuestionIndex === -1 ? (
                                         // Strategy Selection Visualization
                                         <motion.div
@@ -292,19 +292,19 @@ export default function LandingPage() {
                                                 <motion.div 
                                                     animate={{ scale: [1, 1.02, 1] }}
                                                     transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                                                    className="relative w-96 h-96 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex flex-col items-center justify-center shadow-2xl shadow-purple-500/30"
+                                                    className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex flex-col items-center justify-center shadow-2xl shadow-purple-500/30"
                                                 >
                                                     {/* Inner glow */}
-                                                    <div className="absolute inset-4 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full" />
+                                                    <div className="absolute inset-2 sm:inset-4 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full" />
                                                     
                                                     <motion.div
                                                         animate={{ y: [0, -8, 0], rotate: [0, 5, 0] }}
                                                         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                                                     >
-                                                        <Rocket className="w-24 h-24 text-white mb-4 drop-shadow-lg" />
+                                                        <Rocket className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 text-white mb-2 sm:mb-4 drop-shadow-lg" />
                                                     </motion.div>
-                                                    <h3 className="text-5xl font-bold text-white drop-shadow-lg">Growth</h3>
-                                                    <p className="text-2xl text-white/80 mt-2">Strategy</p>
+                                                    <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white drop-shadow-lg">Growth</h3>
+                                                    <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/80 mt-1 sm:mt-2">Strategy</p>
                                                 </motion.div>
                                                 
                                                 {/* Floating particles */}
@@ -379,11 +379,11 @@ export default function LandingPage() {
                                                         <motion.div 
                                                             animate={{ scale: [1, 1.03, 1] }}
                                                             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                                                            className={`relative w-96 h-96 bg-gradient-to-br ${getCurrentVisualization()!.color} rounded-full flex flex-col items-center justify-center shadow-2xl`}
+                                                            className={`relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-gradient-to-br ${getCurrentVisualization()!.color} rounded-full flex flex-col items-center justify-center shadow-2xl`}
                                                         >
                                                             {/* Inner glow ring */}
-                                                            <div className="absolute inset-4 border border-white/20 rounded-full" />
-                                                            <div className="absolute inset-8 border border-white/10 rounded-full" />
+                                                            <div className="absolute inset-2 sm:inset-4 border border-white/20 rounded-full" />
+                                                            <div className="absolute inset-4 sm:inset-8 border border-white/10 rounded-full" />
                                                             
                                                             <motion.div
                                                                 initial={{ scale: 0, rotate: -180 }}
@@ -394,14 +394,14 @@ export default function LandingPage() {
                                                                 }}
                                                             >
                                                                 {React.createElement(getCurrentVisualization()!.icon, {
-                                                                    className: "w-20 h-20 text-white mb-4 drop-shadow-lg"
+                                                                    className: "w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 text-white mb-2 sm:mb-4 drop-shadow-lg"
                                                                 })}
                                                             </motion.div>
                                                             <motion.h3 
                                                                 initial={{ opacity: 0, y: 20 }}
                                                                 animate={{ opacity: 1, y: 0 }}
                                                                 transition={{ delay: 0.3 }}
-                                                                className="text-5xl font-bold text-white drop-shadow-lg"
+                                                                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white drop-shadow-lg"
                                                             >
                                                                 {getCurrentVisualization()!.title}
                                                             </motion.h3>
@@ -409,7 +409,7 @@ export default function LandingPage() {
                                                                 initial={{ opacity: 0 }}
                                                                 animate={{ opacity: 1 }}
                                                                 transition={{ delay: 0.4 }}
-                                                                className="text-2xl text-white/80 mt-2"
+                                                                className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/80 mt-1 sm:mt-2"
                                                             >
                                                                 {getCurrentVisualization()!.subtitle}
                                                             </motion.p>
@@ -472,8 +472,8 @@ export default function LandingPage() {
                                                     </div>
 
                                                     {/* Strategy Label */}
-                                                    <div className="absolute -left-20 top-1/4 -rotate-90">
-                                                        <span className="text-gray-500 text-sm tracking-widest uppercase">
+                                                    <div className="absolute -left-40 sm:-left-48 lg:-left-56 top-1/3 -rotate-90">
+                                                        <span className="text-gray-500 text-xs sm:text-sm tracking-widest uppercase whitespace-nowrap">
                                                             {growthStrategy && getStrategyName(growthStrategy)}
                                                         </span>
                                                     </div>
@@ -488,7 +488,7 @@ export default function LandingPage() {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8 }}
-                                    className="bg-gray-900/70 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 md:p-12"
+                                    className="bg-gray-900/70 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-6 sm:p-8 md:p-12 order-1 lg:order-2"
                                 >
                                     {currentQuestionIndex === -1 ? (
                                         // Strategy Selection Screen

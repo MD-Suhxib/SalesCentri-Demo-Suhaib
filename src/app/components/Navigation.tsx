@@ -8,6 +8,7 @@ import {
   Menu,
   X,
   ChevronDown,
+  ChevronRight,
   Search,
   Shield,
   Database,
@@ -278,6 +279,7 @@ export const Navigation = () => {
   ];
 
   const resourcesData = [
+    { name: "Landing Pages", href: "/resources/landing-pages" },
     { name: "About Us", href: "/company/about-us" },
     { name: "Blog", href: "/blog" },
     { name: "Performance Benchmarks", href: "/resources/performance-benchmarks" },
@@ -473,6 +475,16 @@ export const Navigation = () => {
       dropdown: {
         title: "Our Resources",
         items: [
+          {
+            name: "Landing Pages",
+            href: "#",
+            icon: Target,
+            description: "Interactive landing pages for growth strategies",
+            subItems: [
+              { name: "Landing Page 01", href: "/resources/landingpage" },
+              { name: "Landing Page 02", href: "/resources/landingpage-02" },
+            ]
+          },
           {
             name: "Blog",
             href: "/blog",
@@ -778,15 +790,40 @@ export const Navigation = () => {
                             {item.dropdown === "resources" && (
                               <div className="grid grid-cols-2 gap-x-0 gap-y-0">
                                 {resourcesData.map((resource) => (
-                                  <Link
-                                    key={resource.name}
-                                    href={resource.href}
-                                    className="p-1.5 md:p-2 rounded-lg hover:bg-gray-800/70 transition-colors group"
-                                  >
-                                    <span className="text-gray-300 group-hover:text-white text-sm">
-                                      {resource.name}
-                                    </span>
-                                  </Link>
+                                  <div key={resource.name} className="relative group/sub">
+                                    {resource.subItems ? (
+                                      <>
+                                        <div className="p-1.5 md:p-2 rounded-lg hover:bg-gray-800/70 transition-colors cursor-pointer flex items-center justify-between">
+                                          <span className="text-gray-300 group-hover/sub:text-white text-sm">
+                                            {resource.name}
+                                          </span>
+                                          <ChevronRight className="w-3 h-3 text-gray-500" />
+                                        </div>
+                                        <div className="absolute left-full top-0 ml-1 bg-gray-900/95 backdrop-blur-md border border-gray-700/50 rounded-lg p-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200 min-w-[160px] z-50">
+                                          {resource.subItems.map((subItem) => (
+                                            <Link
+                                              key={subItem.name}
+                                              href={subItem.href}
+                                              className="block p-2 rounded-lg hover:bg-gray-800/70 transition-colors"
+                                            >
+                                              <span className="text-gray-300 hover:text-white text-sm">
+                                                {subItem.name}
+                                              </span>
+                                            </Link>
+                                          ))}
+                                        </div>
+                                      </>
+                                    ) : (
+                                      <Link
+                                        href={resource.href}
+                                        className="block p-1.5 md:p-2 rounded-lg hover:bg-gray-800/70 transition-colors"
+                                      >
+                                        <span className="text-gray-300 hover:text-white text-sm">
+                                          {resource.name}
+                                        </span>
+                                      </Link>
+                                    )}
+                                  </div>
                                 ))}
                               </div>
                             )}
@@ -1029,14 +1066,35 @@ export const Navigation = () => {
 
                                       {item.dropdown === "resources" &&
                                         resourcesData.map((resource) => (
-                                          <Link
-                                            key={resource.name}
-                                            href={resource.href}
-                                            className="block text-gray-400 hover:text-white hover:bg-gray-800 py-2 px-2 text-sm rounded-lg transition-colors duration-200"
-                                            onClick={() => setIsOpen(false)}
-                                          >
-                                            {resource.name}
-                                          </Link>
+                                          <div key={resource.name}>
+                                            {resource.subItems ? (
+                                              <div className="py-1">
+                                                <div className="text-gray-300 font-medium py-2 px-2 text-sm">
+                                                  {resource.name}
+                                                </div>
+                                                <div className="pl-4">
+                                                  {resource.subItems.map((subItem) => (
+                                                    <Link
+                                                      key={subItem.name}
+                                                      href={subItem.href}
+                                                      className="block text-gray-400 hover:text-white hover:bg-gray-800 py-2 px-2 text-sm rounded-lg transition-colors duration-200"
+                                                      onClick={() => setIsOpen(false)}
+                                                    >
+                                                      {subItem.name}
+                                                    </Link>
+                                                  ))}
+                                                </div>
+                                              </div>
+                                            ) : (
+                                              <Link
+                                                href={resource.href}
+                                                className="block text-gray-400 hover:text-white hover:bg-gray-800 py-2 px-2 text-sm rounded-lg transition-colors duration-200"
+                                                onClick={() => setIsOpen(false)}
+                                              >
+                                                {resource.name}
+                                              </Link>
+                                            )}
+                                          </div>
                                         ))}
                                     </motion.div>
                                   )}
