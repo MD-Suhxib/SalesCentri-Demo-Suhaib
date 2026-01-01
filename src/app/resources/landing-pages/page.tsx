@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Rocket, TrendingUp, ArrowRight } from 'lucide-react';
+import { Rocket, TrendingUp, ArrowRight, Share2 } from 'lucide-react';
 import Link from 'next/link';
 
 export default function LandingPagesIndex() {
@@ -20,10 +20,19 @@ export default function LandingPagesIndex() {
             id: 2,
             title: 'Landing Page 02',
             subtitle: 'Simple Strategy Questionnaire',
-            description: 'New landing page experience currently under development',
+            description: 'Quick 4-question strategy builder with instant recommendations',
             icon: TrendingUp,
             href: '/resources/landingpage-02',
             gradient: 'from-indigo-500 to-purple-600',
+        },
+        {
+            id: 3,
+            title: 'Social Media',
+            subtitle: 'AI-Powered Social Strategy',
+            description: 'Discover how SalesCentri transforms your social media presence with AI automation',
+            icon: Share2,
+            href: '/social-media',
+            gradient: 'from-pink-500 to-rose-600',
         },
     ];
 
@@ -53,7 +62,7 @@ export default function LandingPagesIndex() {
                     </motion.div>
 
                     {/* Cards Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                         {landingPages.map((page, index) => (
                             <motion.div
                                 key={page.id}

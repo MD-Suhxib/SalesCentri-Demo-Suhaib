@@ -280,7 +280,6 @@ export const Navigation = () => {
 
   const resourcesData = [
     { name: "Landing Pages", href: "/resources/landing-pages" },
-    { name: "Social Media", href: "/social-media" },
     { name: "About Us", href: "/company/about-us" },
     { name: "Blog", href: "/blog" },
     { name: "Performance Benchmarks", href: "/resources/performance-benchmarks" },
