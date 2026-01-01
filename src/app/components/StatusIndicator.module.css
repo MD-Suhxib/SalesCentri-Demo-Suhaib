@@ -1,0 +1,175 @@
+/* Status Indicator Styles */
+
+.statusContainer {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    max-width: 400px;
+    min-width: 300px;
+    background: var(--research-surface, #ffffff);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    border-left: 4px solid;
+    z-index: 9999;
+    animation: slideInRight 0.3s ease-out;
+    overflow: hidden;
+}
+
+.statusContent {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.25rem;
+    gap: 0.75rem;
+}
+
+.statusIcon {
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+}
+
+.statusText {
+    flex: 1;
+    min-width: 0;
+}
+
+.statusTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+    color: var(--research-text, #1A202C);
+}
+
+.statusMessage {
+    font-size: 0.875rem;
+    margin: 0;
+    color: var(--research-text-muted, #4A5568);
+    line-height: 1.4;
+}
+
+.closeButton {
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    padding: 0.25rem;
+    cursor: pointer;
+    border-radius: 4px;
+    color: var(--research-text-muted, #4A5568);
+    transition: all 0.2s ease;
+}
+
+.closeButton:hover {
+    background: var(--research-muted, #F7FAFC);
+    color: var(--research-text, #1A202C);
+}
+
+
+/* Status type variations */
+
+.success {
+    border-left-color: var(--research-success, #48BB78);
+}
+
+.success .statusIcon {
+    color: var(--research-success, #48BB78);
+}
+
+.warning {
+    border-left-color: var(--research-warning, #ED8936);
+}
+
+.warning .statusIcon {
+    color: var(--research-warning, #ED8936);
+}
+
+.error {
+    border-left-color: var(--research-danger, #F56565);
+}
+
+.error .statusIcon {
+    color: var(--research-danger, #F56565);
+}
+
+.info {
+    border-left-color: var(--research-info, #4299E1);
+}
+
+.info .statusIcon {
+    color: var(--research-info, #4299E1);
+}
+
+
+/* Dark mode support */
+
+@media (prefers-color-scheme: dark) {
+    .statusContainer {
+        background: var(--research-surface, #161B22);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+    .statusTitle {
+        color: var(--research-text, #F0F6FC);
+    }
+    .statusMessage {
+        color: var(--research-text-muted, #8B949E);
+    }
+    .closeButton {
+        color: var(--research-text-muted, #8B949E);
+    }
+    .closeButton:hover {
+        background: var(--research-muted, #21262D);
+        color: var(--research-text, #F0F6FC);
+    }
+    .success {
+        border-left-color: var(--research-success, #56D364);
+    }
+    .success .statusIcon {
+        color: var(--research-success, #56D364);
+    }
+    .warning {
+        border-left-color: var(--research-warning, #E3B341);
+    }
+    .warning .statusIcon {
+        color: var(--research-warning, #E3B341);
+    }
+    .error {
+        border-left-color: var(--research-danger, #F85149);
+    }
+    .error .statusIcon {
+        color: var(--research-danger, #F85149);
+    }
+    .info {
+        border-left-color: var(--research-info, #58A6FF);
+    }
+    .info .statusIcon {
+        color: var(--research-info, #58A6FF);
+    }
+}
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .statusContainer {
+        top: 1rem;
+        right: 1rem;
+        left: 1rem;
+        max-width: none;
+        min-width: 0;
+    }
+    .statusContent {
+        padding: 1rem;
+    }
+}
+
+
+/* Animation */
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

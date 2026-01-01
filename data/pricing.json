@@ -1,0 +1,280 @@
+{
+  "updatedAt": "2025-10-25T19:49:07.974Z",
+  "data": [
+    {
+      "segment": "Personal",
+      "billingCycle": "Monthly",
+      "planName": "Free",
+      "tagline": "Perfect for small businesses getting started",
+      "price": 0,
+      "credits": 500,
+      "aiHunterSearches": 500,
+      "contactValidations": 1000,
+      "features": [
+        "Basic SalesGPT conversations",
+        "Community support",
+        "Standard integrations",
+        "Up to 3 team members"
+      ]
+    },
+    {
+      "segment": "Personal",
+      "billingCycle": "Monthly",
+      "planName": "Starter",
+      "tagline": "Ideal for growing teams exploring automation",
+      "price": 49,
+      "credits": 2500,
+      "aiHunterSearches": 2500,
+      "contactValidations": 5000,
+      "features": [
+        "Access to SalesGPT",
+        "Email finder",
+        "Standard integrations",
+        "Basic analytics",
+        "Up to 5 team members"
+      ]
+    },
+    {
+      "segment": "Personal",
+      "billingCycle": "Monthly",
+      "planName": "Professional",
+      "tagline": "Advanced tools for professionals scaling outreach",
+      "price": 149,
+      "credits": 10000,
+      "aiHunterSearches": 10000,
+      "contactValidations": 20000,
+      "features": [
+        "Advanced SalesGPT with prompt customization",
+        "Analytics dashboard",
+        "API access",
+        "Up to 10 team members"
+      ]
+    },
+    {
+      "segment": "Personal",
+      "billingCycle": "Monthly",
+      "planName": "Pay-As-You-Go",
+      "tagline": "Only pay for what you use. No monthly commitment.",
+      "price": "Flexible",
+      "credits": "Flexible",
+      "aiHunterSearches": "Access-based",
+      "contactValidations": "First 500 free",
+      "features": [
+        "Contact Validator: $0.00494 per validation",
+        "Access to all integrations",
+        "Basic analytics",
+        "Up to 10 team members",
+        "Community support"
+      ]
+    },
+    {
+      "segment": "Personal",
+      "billingCycle": "Yearly",
+      "planName": "Free",
+      "tagline": "Perfect for small businesses getting started (Yearly)",
+      "price": 0,
+      "credits": 6000,
+      "aiHunterSearches": 6000,
+      "contactValidations": 12000,
+      "features": [
+        "Basic SalesGPT conversations",
+        "Community support",
+        "Standard integrations",
+        "Up to 3 team members"
+      ]
+    },
+    {
+      "segment": "Personal",
+      "billingCycle": "Yearly",
+      "planName": "Starter",
+      "tagline": "Ideal for growing teams exploring automation (Yearly)",
+      "price": 490,
+      "credits": 30000,
+      "aiHunterSearches": 30000,
+      "contactValidations": 60000,
+      "features": [
+        "Access to SalesGPT",
+        "Email finder",
+        "Standard integrations",
+        "Basic analytics",
+        "Up to 5 team members",
+        "Annual discount"
+      ]
+    },
+    {
+      "segment": "Personal",
+      "billingCycle": "Yearly",
+      "planName": "Professional",
+      "tagline": "Advanced tools for professionals scaling outreach (Yearly)",
+      "price": 1490,
+      "credits": 120000,
+      "aiHunterSearches": 120000,
+      "contactValidations": 240000,
+      "features": [
+        "Advanced SalesGPT with prompt customization",
+        "Analytics dashboard",
+        "API access",
+        "Up to 10 team members",
+        "Annual discount"
+      ]
+    },
+    {
+      "segment": "Personal",
+      "billingCycle": "Yearly",
+      "planName": "Pay-As-You-Go",
+      "tagline": "Only pay for what you use. Annual flexibility included.",
+      "price": "Flexible",
+      "credits": "Flexible",
+      "aiHunterSearches": "Access-based",
+      "contactValidations": "First 500 free",
+      "features": [
+        "Contact Validator: $0.00494 per validation",
+        "Annual credit rollover",
+        "Access to all integrations",
+        "Basic analytics",
+        "Up to 10 team members",
+        "Community support"
+      ]
+    },
+    {
+      "segment": "Business",
+      "billingCycle": "Monthly",
+      "planName": "Free",
+      "tagline": "Designed for small teams to test automation",
+      "price": 0,
+      "credits": 1000,
+      "aiHunterSearches": 1000,
+      "contactValidations": 2000,
+      "features": [
+        "Basic SalesGPT conversations",
+        "Community support",
+        "Standard integrations",
+        "Up to 5 team members"
+      ]
+    },
+    {
+      "segment": "Business",
+      "billingCycle": "Monthly",
+      "planName": "Pay-As-You-Go",
+      "tagline": "Only pay for what you use. Scalable for any team size.",
+      "price": "Flexible",
+      "credits": "Flexible",
+      "aiHunterSearches": "Access-based",
+      "contactValidations": "First 1,000 free",
+      "features": [
+        "Contact Validator: $0.00494 per validation",
+        "No monthly minimums",
+        "All integrations",
+        "Basic analytics",
+        "Up to 15 team members"
+      ]
+    },
+    {
+      "segment": "Business",
+      "billingCycle": "Monthly",
+      "planName": "Premium",
+      "tagline": "Advanced features for established businesses",
+      "price": 299,
+      "credits": 25000,
+      "aiHunterSearches": 25000,
+      "contactValidations": 100000,
+      "features": [
+        "Advanced SalesGPT with custom prompts",
+        "Priority support",
+        "Custom workflows",
+        "Advanced analytics",
+        "Up to 25 team members",
+        "API access"
+      ]
+    },
+    {
+      "segment": "Business",
+      "billingCycle": "Monthly",
+      "planName": "Enterprise",
+      "tagline": "Unlimited power for large organizations",
+      "price": "Custom",
+      "credits": "Unlimited",
+      "aiHunterSearches": "Unlimited",
+      "contactValidations": "Unlimited",
+      "features": [
+        "Enterprise SalesGPT with custom training",
+        "Dedicated account manager",
+        "Custom integrations & API access",
+        "Advanced analytics & white-label",
+        "SLA guarantee",
+        "Unlimited team members"
+      ]
+    },
+    {
+      "segment": "Business",
+      "billingCycle": "Yearly",
+      "planName": "Free",
+      "tagline": "Designed for small teams to test automation (Yearly)",
+      "price": 0,
+      "credits": 12000,
+      "aiHunterSearches": 12000,
+      "contactValidations": 24000,
+      "features": [
+        "Basic SalesGPT conversations",
+        "Community support",
+        "Standard integrations",
+        "Up to 5 team members"
+      ]
+    },
+    {
+      "segment": "Business",
+      "billingCycle": "Yearly",
+      "planName": "Pay-As-You-Go",
+      "tagline": "Only pay for what you use. Annual flexibility included.",
+      "price": "Flexible",
+      "credits": "Flexible",
+      "aiHunterSearches": "Access-based",
+      "contactValidations": "First 1,000 free",
+      "features": [
+        "Contact Validator: $0.00494 per validation",
+        "Annual credit rollover",
+        "All integrations",
+        "Basic analytics",
+        "Up to 15 team members"
+      ]
+    },
+    {
+      "segment": "Business",
+      "billingCycle": "Yearly",
+      "planName": "Premium",
+      "tagline": "Advanced features for established businesses (Yearly)",
+      "price": 3000,
+      "credits": 300000,
+      "aiHunterSearches": 300000,
+      "contactValidations": 1200000,
+      "features": [
+        "Advanced SalesGPT with custom prompts",
+        "Priority support",
+        "Custom workflows",
+        "Advanced analytics",
+        "Up to 25 team members",
+        "API access",
+        "Annual discount"
+      ]
+    },
+    {
+      "segment": "Business",
+      "billingCycle": "Yearly",
+      "planName": "Enterprise",
+      "tagline": "Unlimited power for large organizations (Yearly)",
+      "price": "Custom",
+      "credits": "Unlimited",
+      "aiHunterSearches": "Unlimited",
+      "contactValidations": "Unlimited",
+      "features": [
+        "Enterprise SalesGPT with custom training",
+        "Dedicated account manager",
+        "Custom integrations & API access",
+        "Advanced analytics & white-label",
+        "SLA guarantee",
+        "Unlimited team members",
+        "Annual SLA upgrade"
+      ]
+    }
+  ]
+}

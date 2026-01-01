@@ -1,0 +1,49 @@
+# SalesCentri
+
+> SalesCentri is an AI-powered B2B sales automation platform that specializes in lead generation, contact intelligence, and sales workflow automation. The company helps businesses streamline prospecting, lead management, and customer relationship management through advanced AI technologies and automated outreach capabilities.
+
+SalesCentri offers comprehensive solutions for sales teams, including AI Hunter for prospect identification, contact data aggregation platforms, and automated multi-channel outreach campaigns. The platform is designed to help businesses increase productivity, improve lead quality, and scale their sales operations effectively.
+
+## Core Platforms & Solutions
+
+- [Home](https://salescentri.com): Overview of AI-powered sales automation platform and core capabilities
+- [Lead Management & Generation](https://salescentri.com/platforms/lead-management): AI-powered lead identification, qualification, and nurturing systems
+- [Contact Intelligence](https://salescentri.com/platforms/contact-intelligence): AI Aggregator and AI Hunter platforms for contact data collection and enrichment
+- [AI Hunter](https://salescentri.com/platforms/contact-intelligence/ai-hunter): Machine learning algorithms for identifying high-quality prospects across multiple data sources
+- [Solutions by Use Case](https://salescentri.com/solutions/by-use-case): Specialized solutions for different sales team types and business scenarios
+- [Lead Generation Teams](https://salescentri.com/solutions/by-use-case/lead-generation-teams): Specialized tools for lead generation teams with productivity and quality improvements
+- [PSA Suite](https://salescentri.com/solutions/psa-suite): Professional Services Automation suite for end-to-end project management
+- [ROI Calculator](https://salescentri.com/roi-calculator): Interactive tool to calculate potential ROI from SalesCentri implementation
+
+## Services & Solutions
+
+- [AI Digital Marketing](https://salescentri.com/services/ai-digital-marketing): AI-powered marketing automation and campaign optimization
+- [AI Website Design](https://salescentri.com/services/ai-website-designing): Automated website design and optimization services
+- [Custom Workflow Automation](https://salescentri.com/services/custom-workflow-automation): Tailored automation solutions for specific business processes
+- [Data Enrichment](https://salescentri.com/services/data-enrichment): Contact and company data enhancement services
+- [Email Campaign Management](https://salescentri.com/services/email-campaign-management): Automated email marketing and outreach campaigns
+- [Lead Research](https://salescentri.com/services/lead-research): Comprehensive lead research and qualification services
+- [LinkedIn Outreach](https://salescentri.com/services/linkedin-outreach): Automated LinkedIn prospecting and engagement
+- [SDR as a Service](https://salescentri.com/services/sdr-as-a-service): Sales Development Representative outsourcing
+- [Voice Chat AI](https://salescentri.com/services/voice-chat-ai-custom-deployment): Custom voice AI solutions for sales and support
+
+## Company Information
+
+- [About Us](https://salescentri.com/company/about-us): Mission, vision, and company overview of SalesCentri's AI-powered sales automation focus
+- [Leadership Team](https://salescentri.com/company/about-us/leadership-team): Executive team and company leadership information
+- [Pricing](https://salescentri.com/pricing): Transparent pricing plans for sales automation platform with free trial options
+- [Contact](https://salescentri.com/contact): Demo scheduling and customer support contact information
+
+## Resources & Support
+
+- [Get Started](https://salescentri.com/get-started): Free trial signup and demo booking for AI-powered sales automation platform
+- [Blog](https://salescentri.com/blog): Industry insights, tips, and thought leadership content
+- [Case Studies](https://salescentri.com/resources/case-studies): Success stories and implementation examples
+- [FAQ](https://salescentri.com/resources/faq): Frequently asked questions and troubleshooting guides
+- [API Documentation](https://salescentri.com/docs/api-reference): Technical documentation for integrations
+- [Trust & Compliance](https://salescentri.com/trust-compliance): Security, privacy, and compliance information
+
+## Additional Platforms
+
+- [Cloud Telephony Infrastructure](https://salescentri.com/platforms/cloud-telephony-infrastructure): IGCT platform for international gateway call termination services
+- [Text to Speech Features](https://salescentri.com/platforms/chat-text-ai-automation/text-to-speech/features): Voice generation capabilities for sales and marketing applications

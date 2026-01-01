@@ -1,0 +1,612 @@
+    
+Master – Unified Template (Improved)
+
+Use these inputs every time you brief a list build.
+•	(*) = Mandatory
+•	(conditional) = Only if applicable
+
+________________________________________
+
+Input Columns (recommended)	
+
+Scope & Targeting
+•	Industries / Sectors (*) – e.g., Banking, Credit Unions, Mortgage Lending, Consumer Finance, Community Banks; Steel/Metal Processing Plants; Manufacturing (plants only); Technology/IT; Distribution/Logistics; etc.
+•	Geography (*) – Country/State/Metro; ZIP + radius (e.g., within 30 miles of 46410); specific states (e.g., California).
+•	Company Type / Site Type (*) – Plants vs HQ; exclusions (e.g., “manufacturing plants — NOT corporate offices”).
+•	Company Size Filters (conditional) – Revenue threshold (e.g., ≥ $75M), Employee size (e.g., ≥ 100).
+•	Technology / Installed Base (conditional) – e.g., Mitel Users dataset, CRM system, ERP stack, cloud platform.
+•	Named Companies (conditional) – Must include or expand from specified examples (e.g., NLMK, Feralloy, Ratner Steel).
+
+People Targeting
+•	Primary Titles / Personas (*) – e.g., C-level/VP/Directors/Heads/Managers; IT Manager; Plant Manager; Data Scientist; Creative/Media; Engineers; Product Designers.
+•	Alternate Titles (allowed) – e.g., President, Owner, GM, VP Ops, Procurement Manager, 3PL Specialist, Distribution Manager, Ops Director.
+•	Per-Company Caps (conditional) – e.g., max 3 contacts per company across personas; 2 per company for specific datasets.
+
+Volumes & Distribution
+•	Contact/Record Counts (*) – e.g., 10,000 contacts; 3,000 total (600/persona); 5,000.
+•	Account Uniqueness (*) – e.g., 500 unique accounts, 2 contacts/account.
+•	Expansion Rule (conditional) – Add similar companies to reach target (e.g., from attached list to 22,000).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________________________________
+Output Columns (recommended)
+
+•	Company Name (*)
+•	Website (*)
+•	Industry (*)
+•	Site Type (*) (Plant/HQ)
+•	Location (*) (City/State/ZIP/Region)
+•	Contact Name (*)
+•	Title (*)
+•	Title Category/Persona (*)
+•	Email (if public) (*)
+•	Phone (if public) (conditional)
+•	LinkedIn (*)
+•	Employee Size (conditional)
+•	Revenue (conditional)
+•	Technology/Installed Base (conditional) – CRM, ERP, Phone System, Cloud Provider, etc.
+•	Regulatory/Compliance Status (conditional) – Licenses, recent penalties, compliance gaps.
+•	Procurement/Partnership Signals (conditional) – Vendors, alliances, outsourcing notes.
+•	Source URL(s) (*)
+•	Notes/Reason (conditional)
+•	Account ID (for uniqueness) (*)
+
+Quality & Rules
+
+•	Enforce all geo, size, and site filters strictly.
+•	Respect per-company caps and persona distribution.
+•	Deduplicate by company + email + LinkedIn.
+•	For named companies (e.g., NLMK Portage IN), must include specified titles (Plant Manager, Engineering Manager).
+•	Validate mandatory fields before delivering...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________________________________
+Master Prompt (Copy-Paste)
+
+Role: You are a B2B data research analyst. Build a contact dataset that exactly matches the request below.  
+
+Inputs (fill each):  
+• Industries/Sectors (*) : [e.g., Banking, Credit Unions, Steel, Manufacturing, IT, Logistics]  
+• Geography (*) : [Country/State/Metro + ZIP + radius if any]  
+• Company Type/Site (*) : [Plant vs HQ; any exclusions]  
+• Company Size Filters (conditional): [Revenue threshold; Employee threshold]  
+• Technology/User Filter (conditional): [e.g., Mitel Users dataset, CRM, ERP]  
+• Named Companies (conditional): [List that must be included and “similar companies” rule if any]  
+
+People Targeting:  
+• Primary Titles/Personas (*) : [List required roles/personas]  
+• Alternate Titles (allowed): [List alternates]  
+• Per-Company Caps (conditional): [Max contacts per company]  
+
+Volumes & Distribution:  
+• Contact/Record Counts (*) : [Total number required]  
+• Account Uniqueness (*) : [e.g., 500 unique accounts, 2 contacts/account]  
+• Expansion Rule (conditional): [Add similar companies to reach target if needed]  
+
+Output:  
+Provide a table with the following columns:  
+Company Name (*), Website (*), Industry (*), Site Type (*), Location (*),  
+Contact Name (*), Title (*), Title Category/Persona (*), Email (if public) (*), Phone (if public) (conditional),  
+LinkedIn (*), Employee Size (conditional), Revenue (conditional), Technology/Installed Base (conditional),  
+Regulatory/Compliance Status (conditional), Procurement/Partnership Signals (conditional),  
+Source URL(s) (*), Notes/Reason (conditional), Account ID (*).  
+
+Rules:  
+1. Apply all geo/size/site filters strictly.  
+2. Respect per-company caps and unique account targets.  
+3. Distribute contacts per persona quotas where specified.  
+4. For named companies, include the specified titles.  
+5. Deduplicate by company + email + LinkedIn.  
+6. Use only verifiable, public, and up-to-date information.  
+7. If constraints cannot be met, explain gaps clearly.  
+
+Deliverable:  
+Return the dataset table. Highlight unmet constraints if applicable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Master Sample List (25 Entries)
+
+Note: All entries below are fictional placeholders for sample/formatting only. Do not treat emails/phones/LinkedIn as real. Use this to validate structure before live data collection.
+
+Criteria 1 Banking/Credit Unions (USA) Titles: C-level/VP/Directors/Heads/Managers
+
+1. AmeriFirst Community Bank (Banking/Credit Unions) USA
+   Title: Chief Risk Officer; Contact: Taylor Khan; Email: taylor.khan@example.com; Phone: +1-536-736-6764
+   LinkedIn: https://www.linkedin.com/in/taylorkhan-sample; Employee Size: 500â€“2,000; Revenue: $100Mâ€“$1B
+   Notes: C-level/VP/Director scope
+
+2. Heritage Credit Union (Banking/Credit Unions) USA
+   Title: Chief Risk Officer; Contact: Taylor Miller; Email: taylor.miller@example.com; Phone: +1-885-489-5383
+   LinkedIn: https://www.linkedin.com/in/taylormiller-sample; Employee Size: 500â€“2,000; Revenue: $100Mâ€“$1B
+   Notes: C-level/VP/Director scope
+
+3. Pioneer Mortgage Group (Banking/Credit Unions) USA
+   Title: VP Mortgage Lending; Contact: Alex Hayes; Email: alex.hayes@example.com; Phone: +1-818-540-3794
+   LinkedIn: https://www.linkedin.com/in/alexhayes-sample; Employee Size: 500â€“2,000; Revenue: $100Mâ€“$1B
+   Notes: C-level/VP/Director scope
+
+4. Summit Consumer Finance (Banking/Credit Unions) USA
+   Title: Director, Consumer Banking; Contact: Morgan Brooks; Email: morgan.brooks@example.com; Phone: +1-565-605-5027
+   LinkedIn: https://www.linkedin.com/in/morganbrooks-sample; Employee Size: 500â€“2,000; Revenue: $100Mâ€“$1B
+   Notes: C-level/VP/Director scope
+
+5. BlueRiver Community Bank (Banking/Credit Unions) USA
+   Title: Branch Manager; Contact: Jordan Singh; Email: jordan.singh@example.com; Phone: +1-430-906-3554
+   LinkedIn: https://www.linkedin.com/in/jordansingh-sample; Employee Size: 500â€“2,000; Revenue: $100Mâ€“$1B
+   Notes: C-level/VP/Director scope
+
+Criteria 2 Steel/Metal Processing Plants (within 30 miles of 46410) Title: Plant Manager Rev â‰¥ $75M Employees â‰¥ 100
+
+6. Portage Metal Works Plant (Steel/Metal Processing Plant) Within 30 miles of 46410 (IN, USA)
+   Title: Plant Manager; Contact: Casey Singh; Email: casey.singh@example.com; Phone: +1-922-873-5929
+   LinkedIn: https://www.linkedin.com/in/caseysingh-sample; Employee Size: 100â€“500; Revenue: $75Mâ€“$500M
+   Notes: Plant site (not HQ)
+
+7. Lakeview Steel Processing (Steel/Metal Processing Plant) Within 30 miles of 46410 (IN, USA)
+   Title: Plant Manager; Contact: Jordan Miller; Email: jordan.miller@example.com; Phone: +1-828-362-3313
+   LinkedIn: https://www.linkedin.com/in/jordanmiller-sample; Employee Size: 100â€“500; Revenue: $75Mâ€“$500M
+   Notes: Plant site (not HQ)
+
+8. Merrillville Metals Plant (Steel/Metal Processing Plant) Within 30 miles of 46410 (IN, USA)
+   Title: Plant Manager; Contact: Quinn Nguyen; Email: quinn.nguyen@example.com; Phone: +1-951-643-6537
+   LinkedIn: https://www.linkedin.com/in/quinnnguyen-sample; Employee Size: 100â€“500; Revenue: $75Mâ€“$500M
+   Notes: Plant site (not HQ)
+
+9. Tri-County Coil & Slit Center (Steel/Metal Processing Plant) Within 30 miles of 46410 (IN, USA)
+   Title: Plant Manager; Contact: Casey Miller; Email: casey.miller@example.com; Phone: +1-279-719-8697
+   LinkedIn: https://www.linkedin.com/in/caseymiller-sample; Employee Size: 100â€“500; Revenue: $75Mâ€“$500M
+   Notes: Plant site (not HQ)
+
+10. NLMK Portage Plant (Steel/Metal Processing Plant) Within 30 miles of 46410 (IN, USA)
+   Title: Plant Manager; Contact: Casey Singh; Email: casey.singh@example.com; Phone: +1-326-385-6823
+   LinkedIn: https://www.linkedin.com/in/caseysingh-sample; Employee Size: 100â€“500; Revenue: $75Mâ€“$500M
+   Notes: Plant site (not HQ)
+
+Criteria 3 5 Personas (600/Persona cap; Max 3 contacts per company across personas)
+
+11. InsightGrid Analytics (Varies by persona) USA
+   Title: Data Scientist; Contact: Quinn Patel; Email: quinn.patel@example.com; Phone: +1-541-694-5303
+   LinkedIn: https://www.linkedin.com/in/quinnpatel-sample; Employee Size: 50â€“1,000; Revenue: $10Mâ€“$500M
+   Notes: Max 3 contacts per company across personas
+
+12. NorthStar Media Labs (Varies by persona) USA
+   Title: Creative Producer; Contact: Jordan Lopez; Email: jordan.lopez@example.com; Phone: +1-631-884-5194
+   LinkedIn: https://www.linkedin.com/in/jordanlopez-sample; Employee Size: 50â€“1,000; Revenue: $10Mâ€“$500M
+   Notes: Max 3 contacts per company across personas
+
+13. UrbanAxis Engineering (Varies by persona) USA
+   Title: Civil Engineer; Contact: Taylor Singh; Email: taylor.singh@example.com; Phone: +1-714-774-1635
+   LinkedIn: https://www.linkedin.com/in/taylorsingh-sample; Employee Size: 50â€“1,000; Revenue: $10Mâ€“$500M
+   Notes: Max 3 contacts per company across personas
+
+14. VectorForge Design (Varies by persona) USA
+   Title: Product Designer; Contact: Sam Miller; Email: sam.miller@example.com; Phone: +1-534-748-3592
+   LinkedIn: https://www.linkedin.com/in/sammiller-sample; Employee Size: 50â€“1,000; Revenue: $10Mâ€“$500M
+   Notes: Max 3 contacts per company across personas
+
+15. CloudSpan IT (Varies by persona) USA
+   Title: IT Systems Engineer; Contact: Casey Patel; Email: casey.patel@example.com; Phone: +1-800-396-7352
+   LinkedIn: https://www.linkedin.com/in/caseypatel-sample; Employee Size: 50â€“1,000; Revenue: $10Mâ€“$500M
+   Notes: Max 3 contacts per company across personas
+
+Criteria 4 Mitel Users Dataset California Titles: IT/Office/CTO/Telecoms Manager 500 unique accounts (2 contacts/company)
+
+16. Westshore Dental Group (Various (Mitel Users)) California, USA
+   Title: Telecommunications Manager; Contact: Quinn Parker; Email: quinn.parker@example.com; Phone: +1-355-551-1262
+   LinkedIn: https://www.linkedin.com/in/quinnparker-sample; Employee Size: 50â€“1,000; Revenue: $10Mâ€“$500M
+   Notes: Assumed Mitel user for sample; 500 unique accounts; 2 contacts/company
+
+17. Pacific Vista Healthcare (Various (Mitel Users)) California, USA
+   Title: Office Manager; Contact: Casey Nguyen; Email: casey.nguyen@example.com; Phone: +1-735-811-4715
+   LinkedIn: https://www.linkedin.com/in/caseynguyen-sample; Employee Size: 50â€“1,000; Revenue: $10Mâ€“$500M
+   Notes: Assumed Mitel user for sample; 500 unique accounts; 2 contacts/company
+
+18. Bayline Logistics (Various (Mitel Users)) California, USA
+   Title: CTO; Contact: Taylor Patel; Email: taylor.patel@example.com; Phone: +1-574-982-2599
+   LinkedIn: https://www.linkedin.com/in/taylorpatel-sample; Employee Size: 50â€“1,000; Revenue: $10Mâ€“$500M
+   Notes: Assumed Mitel user for sample; 500 unique accounts; 2 contacts/company
+
+19. Golden State Legal Associates (Various (Mitel Users)) California, USA
+   Title: Telecommunications Manager; Contact: Quinn Lopez; Email: quinn.lopez@example.com; Phone: +1-900-668-3746
+   LinkedIn: https://www.linkedin.com/in/quinnlopez-sample; Employee Size: 50â€“1,000; Revenue: $10Mâ€“$500M
+   Notes: Assumed Mitel user for sample; 500 unique accounts; 2 contacts/company
+
+20. Sierra Valley Manufacturing (Various (Mitel Users)) California, USA
+   Title: Telecommunications Manager; Contact: Quinn Garcia; Email: quinn.garcia@example.com; Phone: +1-351-450-8335
+   LinkedIn: https://www.linkedin.com/in/quinngarcia-sample; Employee Size: 50â€“1,000; Revenue: $10Mâ€“$500M
+   Notes: Assumed Mitel user for sample; 500 unique accounts; 2 contacts/company
+
+Criteria 5 Manufacturing/Distribution/Logistics/Supply Chain Alternate Titles allowed (C-level, President, VP Ops, GM, etc.)
+
+21. PrimePath Distribution (Manufacturing/Distribution/Logistics) USA
+   Title: VP Operations; Contact: Morgan Khan; Email: morgan.khan@example.com; Phone: +1-931-469-5415
+   LinkedIn: https://www.linkedin.com/in/morgankhan-sample; Employee Size: 200â€“5,000; Revenue: $50Mâ€“$1B
+   Notes: Alternate titles allowed; 2 contacts/company when scaling
+
+22. RapidFlow Warehousing (Manufacturing/Distribution/Logistics) USA
+   Title: General Manager; Contact: Drew Hayes; Email: drew.hayes@example.com; Phone: +1-208-224-3122
+   LinkedIn: https://www.linkedin.com/in/drewhayes-sample; Employee Size: 200â€“5,000; Revenue: $50Mâ€“$1B
+   Notes: Alternate titles allowed; 2 contacts/company when scaling
+
+23. MetroFreight Logistics (Manufacturing/Distribution/Logistics) USA
+   Title: Director of Procurement; Contact: Riley Garcia; Email: riley.garcia@example.com; Phone: +1-769-440-3856
+   LinkedIn: https://www.linkedin.com/in/rileygarcia-sample; Employee Size: 200â€“5,000; Revenue: $50Mâ€“$1B
+   Notes: Alternate titles allowed; 2 contacts/company when scaling
+
+24. Evergreen Manufacturing (Manufacturing/Distribution/Logistics) USA
+   Title: Warehouse Manager; Contact: Quinn Patel; Email: quinn.patel@example.com; Phone: +1-884-303-2539
+   LinkedIn: https://www.linkedin.com/in/quinnpatel-sample; Employee Size: 200â€“5,000; Revenue: $50Mâ€“$1B
+   Notes: Alternate titles allowed; 2 contacts/company when scaling
+
+25. Orbit Supply Chain Solutions (Manufacturing/Distribution/Logistics) USA
+   Title: President; Contact: Alex Khan; Email: alex.khan@example.com; Phone: +1-840-455-3023
+   LinkedIn: https://www.linkedin.com/in/alexkhan-sample; Employee Size: 200â€“5,000; Revenue: $50Mâ€“$1B
+   Notes: Alternate titles allowed; 2 contacts/company when scaling
+
+ 
+2.Master – Unified Template (Events Research & Intelligence)
+
+Use this every time you brief an event-based list build.
+•	(*) = Mandatory fields
+•	(conditional) = Only if applicable
+________________________________________
+Input Columns (recommended)
+
+Scope & Targeting
+•	Event Name & Website (*)
+•	Event Location (City/State/Country + Venue) (*)
+•	Event Dates & Editions (*) (current + last 3 years)
+•	Industry Focus (*) (Tech, Healthcare, Retail, etc.)
+•	Event Type (conditional): Conference, Expo, Summit, Trade Fair
+•	Organizing Body (conditional): Organizer name + website
+Company Targeting
+•	Exhibitors (*) (company list with URLs)
+•	Sponsors / Partners (conditional)
+•	Speakers / Panelists (conditional)
+•	Attendees / Delegates (conditional)
+•	Repeat Participation (conditional) (last 3 years)
+•	Company Filters (conditional): Size, region, ICP match
+People Targeting
+•	Decision-Makers / Participants (Name + Title) (*)
+•	Contact Information (*) (Email/Phone if publicly available)
+•	LinkedIn / Social Handles (*) (at least LinkedIn profile link)
+•	Designation / Role Buckets (*) (CEO, CMO, CTO, VP Sales, Procurement, etc.)
+•	Speaker/Moderator Profiles (conditional) (session topic, company)
+•	Influencers / Media (conditional)
+Digital & Public Sources
+•	Official Event Website (*)
+•	Exhibitor/Sponsor Listings (conditional)
+•	Press Releases & News Coverage (conditional)
+•	LinkedIn Events & Hashtags (*)
+•	Ticketing Platforms (conditional) (Eventbrite, Cvent, etc.)
+•	YouTube / Webinar Archives (conditional)
+Volumes & Distribution
+•	Contact/Record Counts (*) (e.g., 500 exhibitors, 1,000 attendees)
+•	Per-Company Caps (conditional) (Max 2–3 decision-makers per company)
+•	Historical Distribution (conditional) (track presence last 3 years)
+
+
+
+
+
+
+
+
+________________________________________
+Output Columns (recommended)
+
+•	Event Name (*)
+•	Event Website (*)
+•	Organizer Name (conditional)
+•	Event Year / Edition (*)
+•	Location (City/State/Country + Venue) (*)
+•	Event Dates (*)
+•	Event Type (conditional)
+•	Company Name (*) (Exhibitor/Attendee/Sponsor)
+•	Website (*)
+•	Industry / Sector (conditional)
+•	Participant Name (*)
+•	Title / Designation (*)
+•	Email (if public) (*)
+•	Phone (if public) (conditional)
+•	LinkedIn / Social Handle (*)
+•	Session Info / Booth No. (conditional)
+•	Company Size / Revenue (conditional)
+•	Repeat Participation (last 3 years) (conditional)
+•	Influencer/Media Flag (conditional)
+•	Source URL(s) (*)
+•	Notes (conditional)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________________________________
+Master Prompt (Copy-Paste) 
+Unified Template (Events Research & Intelligence)
+
+Role: You are a B2B event research analyst. Build an event dataset that exactly matches the request below.  
+
+Inputs (fill each):  
+• Event Name & Website (*)  
+• Event Location (City/State/Country + Venue) (*)  
+• Event Year(s) (*) [Current + last 3 editions]  
+• Industry Focus (*)  
+• Event Type (Conference/Expo/etc.) (conditional)  
+• Organizer (Name + Website) (conditional)  
+
+Company Targeting:  
+• Exhibitors (*)  
+• Sponsors/Partners (conditional)  
+• Speakers/Panelists (conditional)  
+• Attendees/Delegates (conditional)  
+• Repeat Participation (last 3 years) (conditional)  
+• Company Filters (conditional)  
+
+People Targeting:  
+• Decision-Makers / Participants (Name + Title) (*)  
+• Contact Information (*) (Email/Phone if public)  
+• LinkedIn / Social Handles (*)  
+• Designation/Role Buckets (*)  
+• Speaker/Moderator Profiles (conditional)  
+• Influencers/Media (conditional)  
+• Per-Company Caps (conditional)  
+
+Volume & Distribution:  
+• Contact/Record Counts (*)  
+
+Output:  
+Provide a table with the Output Columns (recommended).  
+
+Rules:  
+1. Use only verifiable, public, SEO-indexed sources.  
+2. Deduplicate by company + email + LinkedIn.  
+3. Separate Exhibitors, Attendees, Sponsors, Speakers, Influencers.  
+4. Track repeat participation (last 3 years).  
+5. Respect per-company caps.  
+6. Mark unavailable data as “Not Publicly Available.”  
+
+Deliverable:  
+Return the table. Highlight gaps if constraints cannot be met.  
+
+3.Consolidated Variable Criteria Prompt (Improved)
+
+ROLE:
+You are an expert market research and solutions analyst with deep knowledge of [DOMAIN / SUBJECT AREA].
+
+TASK:
+Conduct end-to-end market research on [Problem / Opportunity Focus] across all relevant entities in [Geography / Region].
+
+CONTEXT:
+•	Client (*): [Client / Brand Name], a provider of [Product/Service Type].
+•	Geography (*): [Region, State, Country, Global].
+•	Target Entities (*): [Entity categories relevant to client’s focus, e.g., municipal bodies, industries, healthcare, utilities, commercial, residential, regulatory].
+________________________________________
+OBJECTIVES
+1.	Identify every type of [Problem / Challenge] faced by each entity category.
+2.	Map [Sources / Drivers], key compounds/factors, and triggers.
+3.	Build a detailed entity database for B2B/B2G marketing outreach.
+________________________________________
+
+REQUIREMENTS
+
+1.	Entity Categories (*)
+o	Public bodies (municipal corporations, regulatory boards).
+o	Utilities (water boards, treatment plants, energy facilities).
+o	Industrial (chemicals, F&B, pharma, agro, IT, etc.).
+o	Healthcare (hospitals, labs, waste handlers).
+o	Residential & Commercial (apartments, malls, hotels).
+2.	Problem/Challenge Profiling (*)
+o	Source classification (point, area, fugitive, indoor).
+o	Key compounds/factors (H₂S, NH₃, VOCs, CO₂, NOx, SO₂, PM2.5/PM10, etc.).
+o	Complaint triggers (community nuisance, worker exposure, compliance gaps).
+o	Measurement / detection methods (olfactometry, sensors, monitoring networks).
+3.	Data Fields & Output Format (*)
+o	Company/Entity identification, location, decision-maker data.
+o	Compliance & regulatory context.
+o	Existing technology stack & gaps.
+4.	Research Focus Areas (Variable)
+o	Current infrastructure projects/expansions.
+o	Regulatory drivers & penalties.
+o	Community complaint hotspots.
+o	Tech adoption levels.
+o	Procurement cycles & budget insights.
+5.	Strategic Insights (Variable)
+o	High-priority targets.
+o	Partnership opportunities.
+o	Pilot/demo site recommendations.
+________________________________________
+
+CONSTRAINTS
+
+•	Limit scope to [Defined Region].
+•	Use only verifiable, up-to-date public information.
+•	Focus on entities with active or planned operations.
+•	Avoid generic listings; prioritize documented issues.
+
+________________________________________
+✅ DESIRED OUTCOME
+
+A ready-to-use, detailed market intelligence report + entity database enabling [Client]’s sales/BD team to precisely engage with decision makers on [Solution/Opportunity].
+
+
+
+________________________________________
+
+Input Columns (recommended)
+
+Scope & Targeting
+•	Industries / Sectors (*)
+•	Geography (*) (Country/State/Metro + ZIP + radius)
+•	Company Type / Site Type (*) (Plant vs HQ; exclusions)
+•	Company Size Filters (conditional): Revenue threshold, Employee threshold
+•	Technology / Installed Base (conditional): [e.g., ERP, CRM, Mitel Users dataset]
+•	Named Companies (conditional): Specific firms that must be included
+
+People Targeting
+•	Primary Titles / Personas (*) (CEO, CTO, VP Ops, Procurement Head, etc.)
+•	Alternate Titles (allowed) (President, GM, Director Ops, Plant Manager, etc.)
+•	Per-Company Caps (conditional) (Max 2–3 contacts per company)
+
+Volumes & Distribution
+
+•	Contact/Record Counts (*)
+•	Account Uniqueness (*) (e.g., 500 unique accounts, 2 contacts/account)
+•	Expansion Rule (conditional): Add similar companies if needed
+
+
+
+
+
+
+
+
+
+________________________________________
+Output Columns (recommended)
+
+•	Company/Entity Name (*)
+•	Website (*)
+•	Industry (*)
+•	Site Type (*) (Plant/HQ)
+•	Location (*) (City/State/ZIP/Region)
+•	Decision Maker Name (*)
+•	Title (*)
+•	Title Category/Persona (*)
+•	Email (if public) (*)
+•	Phone (if public) (conditional)
+•	LinkedIn (*)
+•	Employee Size (conditional)
+•	Revenue (conditional)
+•	Technology/Installed Base (conditional) (e.g., Mitel, SAP, Salesforce)
+•	Regulatory/Compliance Status (conditional)
+•	Existing Solutions & Gaps (conditional)
+•	Source URL(s) (*)
+•	Notes/Reason (conditional)
+•	Account ID (for uniqueness) (*)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Master Prompt (Copy-Paste) 
+Consolidated Variable Criteria Prompt (Improved)
+
+Role: You are a B2B data research analyst. Build a contact dataset that exactly matches the request below.
+
+Inputs (fill each):
+• Industries/Sectors: [List industries]
+• Geography: [Country/State/Metro + ZIP + radius if any]
+• Company Type/Site: [Plant vs HQ; exclusions]
+• Company Size Filters: [Revenue threshold; Employee threshold]
+• Technology/User Filter (conditional): [Dataset/Tech stack if any]
+• Primary Titles/Personas: [List required roles/personas]
+• Alternate Titles (allowed): [List alternates]
+• Named Companies (conditional): [Specific firms]
+• Volume/Distribution: [Counts, quotas, uniqueness rules]
+• Expansion Rule (conditional): [If similar companies allowed]
+
+Output:
+Provide a table with the Output Columns (recommended).
+
+Rules:
+1. Apply all geo/size/site filters strictly.
+2. Respect per-company caps and uniqueness targets.
+3. Distribute contacts per persona quotas where specified.
+4. Include specified titles for named companies and tech filters.
+5. Dedupe by company+email+LinkedIn.
+6. If constraints cannot be met, explain why.
+
+Deliverable:
+Return the table. State unmet constraints if applicable.

@@ -1,0 +1,210 @@
+Questionnaire Changes Specification (Based on Growth Strategy Matrix)
+1. Objective
+
+Refactor the existing questionnaire to be strategy-driven, based on the 4-quadrant growth framework shown in the first screenshot (Customers × Products matrix).
+
+The questionnaire must:
+
+Identify the user’s growth strategy first
+
+Adapt questions dynamically based on that strategy
+
+Align UI labels, logic, and outputs with the selected quadrant
+
+2. Growth Strategy Framework (Source of Truth)
+
+The questionnaire must be based on the following 4 Growth Strategies:
+
+Quadrant	Customers	Products	Strategy Name
+Q1	New	Existing	New Customer Acquisition
+Q2	Existing	Existing	Revenue Optimization (Order More)
+Q3	Existing	New	Upsell / Expansion
+Q4	New	New	New Market Entry
+
+This framework must drive question flow, copy, and results.
+
+3. New Section: Strategy Selection (Mandatory First Step)
+Section Name
+
+Growth Strategy Identification
+
+Purpose
+
+Determine which quadrant the user belongs to before any numeric inputs.
+
+Question
+
+“What best describes your current growth goal?”
+
+Options (Must map 1-to-1 to quadrants)
+
+A. Grow revenue from existing customers using current offerings → Q2
+
+B. Acquire new customers using current offerings → Q1
+
+C. Sell new products / upgrades to existing customers → Q3
+
+D. Enter new markets with new products → Q4
+
+Output
+
+Store selected value as:
+
+growth_strategy = Q1 | Q2 | Q3 | Q4
+
+4. Questionnaire Flow Changes (Dynamic Branching)
+
+After strategy selection, only relevant questions should be shown.
+
+Q1 – New Customer Acquisition (New Customers + Existing Product)
+
+Goal: Predict lead generation and sales performance.
+
+Required Questions
+
+Revenue target (monthly or annual)
+
+Number of leads needed per month
+
+Monthly acquisition budget
+
+Number of deals to be closed per month
+
+Primary industry
+
+Notes
+
+Current questionnaire mostly fits Q1
+
+Keep all numeric performance questions
+
+Q2 – Revenue Optimization (Existing Customers + Existing Product)
+
+Goal: Increase revenue from current customer base.
+
+Replace / Add Questions
+
+Number of active customers
+
+Average order value (AOV)
+
+Purchase frequency per customer
+
+Retention or churn rate
+
+Revenue growth target
+
+Remove
+
+Lead generation questions
+
+New customer acquisition metrics
+
+Q3 – Upsell / Expansion (Existing Customers + New Product)
+
+Goal: Expand revenue via add-ons, upgrades, or cross-sell.
+
+Questions
+
+Existing customer base size
+
+Upsell / upgrade price
+
+Estimated attach or adoption rate
+
+Sales cycle length
+
+Revenue target from expansion
+
+Notes
+
+Focus on expansion efficiency, not lead volume
+
+Q4 – New Market Entry (New Customers + New Product)
+
+Goal: Assess readiness and risk for new market entry.
+
+Questions
+
+Target market or segment
+
+Primary industry
+
+Sales motion (Outbound / Inbound / PLG / Partners)
+
+Monthly budget allocation
+
+Timeframe to revenue expectations
+
+Notes
+
+More qualitative inputs allowed
+
+Fewer performance assumptions
+
+5. UI / Copy Alignment Changes
+Left-Side Visual (Circle Section)
+
+Must dynamically update based on:
+
+Selected growth strategy
+
+Current step in that strategy
+
+Examples:
+
+“Revenue Growth – New Customer Acquisition”
+
+“Expansion Revenue – Upsell Strategy”
+
+Progress Indicator
+
+Replace generic progress with:
+
+Step X of Y – [Strategy Name]
+
+
+Example:
+
+Step 2 of 5 – New Customer Acquisition
+
+6. Final Results Screen (Required Change)
+Must Display
+
+Detected Growth Strategy
+
+Primary Business Objective
+
+Key Bottleneck
+
+Recommended Focus Area
+
+Example Output
+Growth Strategy: New Customer Acquisition
+Primary Bottleneck: Lead Volume
+Recommended Focus: Paid Acquisition + Sales Automation
+
+
+The final output must explicitly reference the strategy quadrant.
+
+7. Technical Rules
+
+Strategy selection is mandatory
+
+All subsequent questions must be conditional
+
+No single static questionnaire for all users
+
+Strategy logic must be reusable and extensible
+
+8. Definition of Done
+
+The questionnaire is complete when:
+
+Strategy is identified in Step 1
+
+Question flow changes per strategy
+
+UI language matches the growth framework
+
+Final output clearly maps back to the quadrant

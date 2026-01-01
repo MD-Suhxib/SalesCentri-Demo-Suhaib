@@ -1,0 +1,23 @@
+openapi: 3.0.3
+info:
+  title: Credits API
+  description: Endpoints for credit topup operations
+  version: 1.0.0
+servers:
+  - url: /api
+    description: API Server
+security:
+  - bearerAuth: []
+paths:
+  /credits.php/plans:
+    get:
+      $ref: "./list-plans.yaml"
+  /credits.php/topup:
+    post:
+      $ref: "./topup.yaml"
+  /credits.php/deduct:
+    post:
+      $ref: "./deduct.yaml"
+components:
+  $ref: "./schemas.yaml"
+

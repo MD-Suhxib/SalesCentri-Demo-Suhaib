@@ -1,0 +1,1004 @@
+SalesCentri Knowledge Base (Answers Only)
+Version: 2.0
+Format: Flat answers optimized for RAG retrieval. Each block uses `A:` followed by one concise sentence. Optional `Tags:` aid retrieval.
+
+A: SalesCentri is an AI-powered Presales Sales Automation (PSA) platform that automates prospecting, enrichment, validation, sequencing, and outreach to deliver qualified pipelines at scale.
+Tags: overview, psa, platform, definition
+
+A: SalesCentri is designed for SMBs, agencies, and B2B sales/marketing teams including founders and SDR/BDR teams.
+Tags: audience, sdr, bdr, agencies
+
+A: Core modules include SalesGPT (AI agent), AI Hunter, Contact Validator, Lead Intelligence, multi‑channel sequencer (email/voice/WhatsApp), CRM dashboards, and enrichment tools.
+Tags: modules, features, products
+
+A: Typical results: 150–300% more qualified leads, 50–80% higher response rates, and shorter sales cycles in the first month.
+Tags: results, outcomes, performance
+
+A: Supported industries: 40+ B2B verticals (SaaS, IT, marketing, healthcare, finance, manufacturing, logistics, energy, education/smart campus, and more).
+Tags: industries, verticals
+
+A: ICP is defined during onboarding using industries, roles, size, and geography; AI refines via 500+ sources and your historical patterns.
+Tags: icp, targeting, onboarding
+
+A: The platform supports hyper‑targeted lead generation with geography/language filters and buyer‑intent/technographic enrichment.
+Tags: targeting, filters, intent, technographics
+
+A: ABM is supported—target named accounts, map buying committees, and personalize at account and contact levels; engagement rolls up by account.
+Tags: abm, buying committee, account targeting
+
+A: AI scans 500+ sources to find ICP‑matched contacts, validates them, enriches records, and launches sequenced outreach.
+Tags: lead generation, automation
+
+A: You can import your own leads (CSV/CRM); the system validates, enriches, scores, and sequences them.
+Tags: import, csv, crm
+
+A: Smart sequences send follow‑ups and pause automatically on replies; no‑reply branches continue.
+Tags: follow-ups, replies, sequencing
+
+A: Onboarding typically completes in 24–48 hours; most campaigns launch within 3–4 business days and first responses arrive within 3–5 days.
+Tags: onboarding, timeline, go-live
+
+A: SalesCentri uses warmed, verified outreach domains (SPF/DKIM/DMARC), rotates inboxes, throttles sends, and monitors sender reputation; you may connect your own domain.
+Tags: domains, deliverability, spf, dkim, dmarc
+
+A: Personalized sender names and relevant content maintain trust even on non‑brand outreach domains.
+Tags: trust, non-brand domains
+
+A: Email accuracy 95%+ and phone 90%+ using DNS/MX/SMTP checks, blacklist screening, and AI scoring.
+Tags: data accuracy, validation
+
+A: Enrichment includes name, email, role, phone (if public), company, industry, size, LinkedIn URL, tech stack, funding, and intent signals.
+Tags: enrichment, fields, technographics
+
+A: Leads refresh weekly or on‑demand; real‑time enrichment is available via API.
+Tags: refresh, updates, api
+
+A: Duplicates are merged automatically; unsubscribe handling and custom suppression lists are supported.
+Tags: duplicates, suppression, compliance
+
+A: SalesCentri complies with GDPR/CCPA; supports DSRs (export/delete); data is encrypted in transit and at rest.
+Tags: gdpr, ccpa, privacy, security
+
+A: Data export/deletion and optional EU/US data residency are supported.
+Tags: data export, deletion, residency
+
+A: Integrations include Salesforce, HubSpot, Pipedrive, Zoho, Google Sheets, Zapier, Slack, Webhooks, and custom APIs.
+Tags: integrations, crms, zapier, slack, webhooks
+
+A: Analytics cover contact-, campaign-, and rep-level metrics including opens, clicks, replies, bounces, and conversions.
+Tags: analytics, dashboards, reporting
+
+A: Managed service is available—SalesCentri can run targeting, messaging, and optimization end‑to‑end.
+Tags: managed service, done-for-you
+
+A: Pricing starts at $49/month; pricing varies by lead volume/features; usage‑based credit and performance models are available.
+Tags: pricing, plans, usage-based, performance
+
+A: Free trial is available (7–14 days depending on offering) with dashboard access and real qualified leads.
+Tags: trial, free trial
+
+A: No setup fees and no long‑term contracts; month‑to‑month available.
+Tags: setup fees, contracts, commitments
+
+A: Accepted payments include major credit cards, ACH, and wire; monthly or annual billing.
+Tags: payment, billing
+
+A: You can upgrade, downgrade, or cancel anytime; cancellations take effect at the end of the billing period.
+Tags: cancellation, change plan
+
+A: Refund policy: 30‑day notice with pro‑rated refunds; unused credits may roll over on select plans.
+Tags: refunds, policy
+
+A: Discounts: 30–50% for eligible startups and nonprofits; volume discounts available.
+Tags: discounts, pricing
+
+A: Compared to hiring SDRs, SalesCentri typically costs 70–90% less and generates 2–5× more qualified leads at scale.
+Tags: roi, comparison, sdr
+
+A: Global outreach is supported with language customization and time‑zone scheduling.
+Tags: global, timezone, languages
+
+A: Hybrid model—AI handles most tasks; you or our team oversee strategy, messaging, and optimization.
+Tags: automation, hybrid, human-in-the-loop
+
+A: Support includes chat/email/phone; Pro/Enterprise plans get a dedicated success manager; onboarding, tutorials, and strategy sessions included.
+Tags: support, success, onboarding
+
+A: Deliverability is maintained via warm‑up, rotation, throttling, monitoring, and automatic domain/inbox switching if sender score drops.
+Tags: deliverability, rotation, reputation
+
+A: Each record shows source tags, enrichment score, and validation status in the dashboard.
+Tags: validation, enrichment, transparency
+
+A: Supported channels beyond email include WhatsApp, voice/auto‑dialer, LinkedIn, and chatbots.
+Tags: channels, whatsapp, voice, linkedin, chatbot
+
+A: SalesCentri verifies phone numbers when public and includes LinkedIn URLs in enrichment.
+Tags: phone, linkedin, verification
+
+A: Upload named accounts to enrich and auto‑map decision makers within buying committees; engagement signals roll up by account.
+Tags: named accounts, decision makers, engagement
+
+A: Time‑to‑value: validated leads and campaign activity in 24–48 hours; meetings commonly booked within the first week.
+Tags: time-to-value, speed
+
+A: API access supports lead generation, validation, enrichment, and sequence management; webhooks and real‑time triggers are supported.
+Tags: api, developers, webhooks
+
+SalesCentri PSA: FAQs – Version 1.0
+________________________________________
+🧐 GENERAL FAQs ABOUT PSA (PRESALES SALES AUTOMATION) AT SALESCENTRI
+1. What is PSA (Presales Automation) offered by SalesCentri?
+SalesCentri PSA is an all-in-one AI-driven platform that automates lead discovery, enrichment, validation, sequencing, and outreach—helping businesses scale their sales pipeline efficiently and affordably.
+2. Who is PSA designed for?
+PSA is designed for sales teams, founders, SDRs/BDRs, agencies, and marketers who want to streamline their outbound prospecting and pipeline generation.
+3. What industries benefit most from PSA?
+B2B SaaS, IT services, digital marketing, healthcare, financial services, manufacturing, and export-driven businesses.
+4. What makes SalesCentri PSA different from CRMs or outreach tools?
+It goes beyond CRM and email tools by handling the full top-of-funnel automation, including lead discovery, scoring, enrichment, validation, campaign execution, and insights—all in one place.
+5. Can PSA replace my SDR team or does it work alongside them?
+PSA enables your team to do more with less. It automates repetitive work, allowing SDRs to focus on high-value interactions.
+6. How is PSA different from a traditional lead generation tool?
+Traditional tools provide data; PSA executes the entire process—data + outreach + tracking + optimization.
+7. Is this suitable for startups or only for large teams?
+Both. PSA is modular and scalable, with pricing tiers that fit startups, SMBs, and large sales organizations.
+8. Does SalesCentri support global outreach or only U.S. markets?
+Global. PSA includes international lead sourcing, language customization, and time zone-based scheduling.
+9. How long does it take to see results from PSA?
+Most customers begin seeing qualified leads and booked meetings within 7–14 days.
+10. Can SalesCentri manage the entire presales workflow for me?
+Yes. You can opt for a managed service where we handle setup, targeting, campaigns, and optimization end-to-end.
+________________________________________
+🔒 PRIVACY & COMPLIANCE QUESTIONS
+1. Is SalesCentri GDPR and CCPA compliant?
+Yes. All data processing follows GDPR and CCPA guidelines, and we support DSRs (data subject requests).
+2. How does SalesCentri handle data privacy?
+We use encrypted servers, role-based access, and don’t store unnecessary personal data.
+3. Can users request data export or deletion?
+Yes. You can request full data export or deletion in accordance with compliance policies.
+4. Where is the data stored?
+In secure cloud infrastructure with optional data localization for EU/US clients.
+5. Is consent-based outreach supported?
+Yes. We support custom suppression lists, unsubscribe handling, and campaign-level consent flags.
+6. Do you support opt-out management and suppression lists?
+Yes. You can upload suppression lists and all unsubscribe requests are automatically handled.
+7. Are my campaigns compliant with email marketing regulations?
+Yes. We include opt-out links, identity disclosures, and throttling mechanisms.
+8. Does SalesCentri handle unsubscribe requests?
+Yes. These are automatically detected and processed to avoid future sends.
+9. How is personal data protected and encrypted?
+256-bit encryption at rest and SSL/TLS encryption in transit.
+10. Does SalesCentri share or sell customer data?
+No. Your data is never sold or shared with third parties.
+________________________________________
+📈 DATA QUALITY, ACQUISITION & ENRICHMENT
+1. What kind of data enrichment does PSA perform?
+We enrich contact/company data with job titles, tech stack, size, location, decision-maker insights, and more.
+2. How accurate is the contact and company data?
+Accuracy is 90–95%+ using multi-layered verification (DNS, MX, SMTP, activity scoring).
+3. Does SalesCentri scrape or license public data sources?
+We combine web crawls, open data sets, and licensed feeds.
+4. Can I import and enrich my own contact or lead list?
+Yes. Upload your CSV and we’ll validate, enrich, and score every row.
+5. What kind of data fields are included in enrichment?
+Name, email, role, phone (if public), company, industry, employee size, LinkedIn URL, tech stack, etc.
+6. How are email addresses validated?
+Via multi-step SMTP testing, domain validation, blacklist screening, and AI scoring.
+7. What sources does SalesCentri use for building and validating data?
+Open web, social graphs, WHOIS, DNS records, company registries, and proprietary crawlers.
+8. Does PSA detect and remove duplicate entries?
+Yes. Duplicates are automatically flagged and merged.
+9. Can I see the validation and enrichment status of each record?
+Yes. Our dashboard shows real-time health, enrichment score, and source transparency.
+10. How often is the database refreshed or updated?
+Leads are refreshed weekly or on-demand via your campaigns.
+11. Can I append missing fields (like phone numbers or LinkedIn) to my list?
+Yes. Upload partial records and we’ll fill in the blanks.
+12. Is real-time enrichment supported?
+Yes, for API users and in-workflow triggers.
+________________________________________
+🧲 ACCOUNT-BASED MARKETING (ABM)
+1. Does SalesCentri support Account-Based Marketing strategies?
+Yes. You can target companies first, then contacts within.
+2. How does PSA help target multiple stakeholders within one company?
+It auto-maps decision-makers in buying committees.
+3. Can I personalize messages at both account and contact level?
+Yes. Variables can be set for account-level messaging and individual contact relevance.
+4. How are buying committees identified and mapped?
+We use org graphing from social and registry data.
+5. Can I build sequences tailored to different personas?
+Yes. Separate templates and flows can be set per title/persona.
+6. Does PSA track engagement across multiple decision-makers in one account?
+Yes. It rolls up insights by account and flags opportunities.
+7. Can I prioritize strategic accounts over generic leads?
+Yes. Use manual tagging or intent-based scoring.
+8. How does PSA align with sales teams using ABM frameworks?
+Through collaborative campaign design, territory mapping, and funnel analytics.
+9. Are intent signals used for account prioritization?
+Yes. Based on web activity, response rates, and email intelligence.
+10. Can SalesCentri integrate with existing ABM tools or CRMs?
+Yes. We support integrations via Zapier, APIs, and native connectors.
+________________________________________
+⚒️ PROCESS, SETUP & WORKFLOW
+1. What does a typical PSA workflow look like?
+Define ICP → Data Build → Validation → Email Flow → Response → CRM Sync
+2. How do I set up a campaign?
+Use our campaign builder to set target audience, messaging, schedule, and triggers.
+3. Can I customize email templates and sequences?
+Yes, using our drag-and-drop sequence editor.
+4. How are leads prioritized?
+By scoring against your ICP, email interaction, and domain engagement.
+5. Is lead scoring included?
+Yes. It’s dynamic and based on over 15 signals.
+6. Can I schedule multi-step campaigns?
+Yes. Sequences can include delays, branching logic, and fallbacks.
+7. How does SalesCentri handle follow-ups and reply detection?
+Automatically. Replies pause sequences, no-reply leads continue.
+8. Can I pause or edit live campaigns?
+Yes, at any stage without data loss.
+9. Can my sales team take over mid-campaign?
+Yes. Leads can be reassigned or flagged for human intervention.
+10. Is there a dashboard to monitor performance?
+Yes, with campaign-level, rep-level, and contact-level insights.
+________________________________________
+📊 VALUE, ADVANTAGES, ROI
+1. How does PSA help generate more leads?
+By automating data + outreach + follow-up without needing manual sourcing.
+2. Will it reduce my sales cycle or outreach time?
+Yes, by over 60% in most use cases.
+3. What’s the ROI of using PSA vs a manual sales team?
+10x return via lower CPL, faster conversion, and higher volume.
+4. Can PSA help improve demo bookings?
+Yes, by engaging the right leads at the right time.
+5. How does PSA increase conversion rates?
+Through validated emails, relevance scoring, and fast response tracking.
+6. Can I use PSA for hyper-personalized outreach?
+Yes. It supports merge tags, dynamic content, and persona logic.
+7. How is engagement tracked?
+Opens, clicks, replies, interest score, CTA follow-through.
+8. Is SalesCentri suitable for outbound, inbound, or hybrid models?
+All three. It excels in outbound, supports inbound routing, and enables hybrid flows.
+9. Can I get analytics on lead source performance?
+Yes. Source tagging and UTM-level insights included.
+10. Does PSA help improve domain reputation and email deliverability?
+Yes. It includes sender health scoring, bounce suppression, and domain warm-up support.
+________________________________________
+🌟 PSA VS HUMAN TEAM – COST-BENEFIT ANALYSIS
+Cost Comparison:
+5 SDRs monthly cost = $8,000 - $12,000
+SalesCentri PSA = $299 - $999/month
+Benefits of PSA:
+- Scales instantly - Always-on execution - Predictable output
+Benefits of Humans:
+- Personalized selling - Relationship building
+Best Practice:
+Use PSA to automate repetitive prospecting and let humans focus on selling.
+________________________________________
+🤝 PSA + HUMAN ENABLEMENT
+1. Can PSA work with our internal SDR/BDR team?
+Yes. It enhances their performance with pre-validated leads and sequences.
+2. Will it replace our existing tools or integrate with them?
+It can either replace or plug in, depending on your stack.
+3. Can we still manually intervene in campaigns?
+Yes. At every stage.
+4. How does PSA improve my team’s productivity?
+By eliminating research, cleaning, and formatting time.
+5. Can reps edit AI-generated content?
+Yes. You can lock or allow editing per user or team.
+6. Does PSA support account-based selling (ABS)?
+Yes, with buyer group mapping.
+7. Can my team collaborate on the same campaigns?
+Yes. Multiple users can work on flows with role-based permissions.
+8. Is there a training or onboarding layer for humans?
+Yes. We include onboarding sessions, playbooks, and SOPs.
+9. Does PSA come with reporting for team performance?
+Yes. Rep-level analytics, goal tracking, and conversion funnels.
+10. How do I measure PSA’s impact on rep output?
+Through campaign success, lead volume, and meetings booked per rep.
+________________________________________
+💬 CUSTOMER SUPPORT & ONBOARDING
+1. How long is the onboarding process?
+Typically 2–4 days for setup, 1 week to live campaigns.
+2. Is training included?
+Yes. We provide live onboarding, tutorials, and strategy sessions.
+3. Do I get a dedicated account manager?
+Yes, on most plans.
+4. What support channels are available (chat, email, call)?
+All three + Slack option for premium users.
+5. Is there a knowledge base or help center?
+Yes. With video walkthroughs, SOPs, and guides.
+6. How do I get help with strategy or content?
+Book strategy sessions or use our AI-powered copy generator.
+7. Do you offer managed services?
+Yes. Full-service options are available.
+8. How often do you release updates?
+Bi-weekly updates and feature drops.
+9. Can you help with email domain warming?
+Yes. We include warm-up systems and best practices.
+10. Is setup done-for-you or DIY?
+Both options are available.
+________________________________________
+💳 PRICING & BILLING
+1. What’s the pricing structure?
+Based on contacts/month, campaign complexity, and support tier.
+2. Are there different tiers for teams or agencies?
+Yes. Custom pricing for agencies and sales teams.
+3. Can I upgrade or downgrade anytime?
+Yes.
+4. Is there a usage-based model?
+Yes. Contact-based pricing available.
+5. Are unused credits rolled over?
+Yes, for select plans.
+6. Are there hidden fees?
+No. Transparent billing.
+7. Do you offer free trials or demos?
+Yes, by request.
+8. Is payment monthly or annually?
+Both options supported.
+9. What’s the refund or cancellation policy?
+30-day notice with pro-rated refunds.
+10. Do you offer startup or nonprofit discounts?
+Yes. 30–50% off for eligible orgs.
+
+Overview & Product
+•	What is SalesCentri? – SalesCentri is an AI powered presales automation (PSA) platform that automates prospecting, outreach and lead management to deliver qualified pipelines at scale.
+•	Who is SalesCentri for? – It’s designed for SMBs, agencies and B2B sales/marketing teams (including founders and SDR/BDR teams) who need efficient outbound lead generation and automation.
+•	How is SalesCentri different from other tools or agencies? – Unlike traditional tools that still require manual work, SalesCentri combines AI, verified data and automation into one platform, giving you the output of a full sales team at a fraction of the costsalescentri.com.
+•	What products or modules does SalesCentri offer? – Core modules include SalesGPT (AI agent), AI Hunter for lead discovery, contact validation, lead intelligence, outreach engines (email/voice/WhatsApp), CRM dashboards and data enrichment tools.
+•	What results can I expect? – Clients typically see a 150–300 % increase in qualified leads, 50–80 % higher response rates and a shorter sales cycle within the first monthsalescentri.com.
+•	What industries benefit from SalesCentri? – SalesCentri supports 40+ B2B verticals including SaaS, IT services, marketing, healthcare, financial services, manufacturing, logistics, energy, and niche segments like solar or diabetic footwear.
+🎯 ICP & Targeting
+•	How do you define my Ideal Customer Profile (ICP)? – During onboarding we capture your target industries, roles, company size and geography, then the AI refines the ICP using data from 500+ sources and your past sales patterns.
+•	Can I target niche or specific industries? – Yes. The platform supports hyper targeted lead generation across industries (e.g., solar, oil & gas, medical devices, diabetic footwear) and can filter by geography or language.
+•	Do you support buyer intent and technographic filters? – Yes. SalesCentri enriches leads with technographics (tools used), hiring and ad spend signals, and keyword intent to help prioritize outreach.
+•	Can I run account based marketing (ABM) campaigns? – Absolutely. You can upload a named account list or generate one, then personalize outreach per company and stakeholder; SalesGPT maps buying committees and supports multi persona sequences.
+🚀 Lead Generation & Automation
+•	How does SalesCentri generate leads? – The AI engine scours 500+ data sources to find contacts matching your ICP, validates their details, then engages them automatically with personalized sequences—freeing your team to focus on closing deals.
+•	What is SalesGPT? – SalesGPT is your AI sales assistant that researches leads, writes personalized emails and follow ups and adjusts campaigns dynamically.
+•	Do you handle follow ups and replies? – Yes. Smart sequences automatically send follow ups based on opens/clicks and detect replies to pause automation and route the lead to your team.
+•	Can I import my own leads? – Yes. You can upload existing contact lists; the platform will validate, enrich and sequence them into your campaigns.
+•	Is it fully automated or human assisted? – It’s hybrid: AI handles most tasks while you or our team oversee strategy, messaging and optimization.
+📬 Domain & Deliverability
+•	Which domains do you send emails from? – We send from warmed, verified domains managed by SalesCentri (e.g., mail.salescentri.ai) to maximize deliverability and protect your brand; you can use your own domain with proper SPF/DKIM/DMARC.
+•	Will prospects trust emails from non brand domains? – Yes. Our domains have high sender reputation and emails are personalized, so recipients still perceive authenticity.
+•	How do you ensure email deliverability? – We warm and rotate multiple domains, validate emails to maintain 95 %+ accuracysalescentri.com, use SPF/DKIM/DMARC, throttle sends and monitor sender scores to avoid spam.
+•	Can I choose or create custom domains? – You can shortlist from our domain inventory or request custom domains (additional fee); we rotate domains and you can exclude any you dislike.
+📊 Data & Database
+•	How accurate is your data? – Contact data has 95 %+ email accuracy and 90 %+ phone accuracy, verified in real timesalescentri.com; duplicates are removed automatically and the database is refreshed weekly.
+•	What enrichment is provided? – We enrich leads with job titles, company info, tech stack, funding status, LinkedIn URLs, phone numbers (when public) and buyer intent signals.
+•	Can I access raw data? – Raw unfiltered data isn’t exposed, but you can request matched records after deduplication or purchase datasets priced per contact.
+•	How often is data updated? – The database is updated weekly or on demand via your campaigns; real time enrichment is available through the API.
+🧪 Campaign Execution & Pilot
+•	What does the pilot include? – We generate 3 free leads upfront; afterwards you pay per lead (₹1,500–5,000 per MQL in India or $100–$200 globally) with a minimum of 10 leads/month. Pilot feedback helps finalize domains, messaging and segmentation.
+•	Can I control messaging and domains? – You can collaborate on templates and exclude domains, but we handle operations to maintain deliverability and performance.
+•	Is outreach branded or white labeled? – Cold outreach uses non branded domains by default; custom branding is available on higher plans.
+•	What lead match rate should I expect? – Typically about 20 % of your target list matches our database; better segmentation improves results.
+•	How is campaign performance tracked? – Dashboards display opens, clicks, replies and lead status; you can integrate with your CRM or Google Sheets for deeper analytics.
+💰 Pricing & Trials
+•	Do you offer a free trial? – Yes. You can try SalesCentri free for 7 days with full dashboard access. The trial now includes 3–10 qualified leads (rather than 50)salescentri.com; additional leads are charged per lead.
+•	What are your pricing plans? – Plans vary by lead volume and features: Starter for small teams, Professional with advanced automation, and Enterprise with unlimited leads and dedicated supportsalescentri.com.
+•	Are there setup fees or long term contracts? – No. There are no setup fees and you can upgrade, downgrade or cancel anytimesalescentri.com.
+•	What payment methods do you accept? – We accept major credit cards, ACH bank transfers and wire transferssalescentri.com; billing can be monthly or annual.
+•	Can I cancel or change plans? – Yes. You can change or cancel from your dashboard; cancellations take effect at the end of the billing periodsalescentri.com.
+•	Do you offer usage based or performance pricing? – You can choose credit based usage or unlimited plans; performance models let you pay only for qualified leads after the pilot.
+•	Are discounts available? – Yes. Volume discounts and 30–50 % discounts are available for eligible startups, agencies and nonprofits.
+🧲 ABM & Account Based Marketing
+•	Does SalesCentri support ABM? – Yes. The platform lets you target named accounts first and then map decision makers within each account; you can prioritize strategic accounts and personalize at both account and contact level.
+•	How are buying committees identified? – SalesCentri uses organizational graphs and social/registry data to map stakeholders across departments.
+•	Can I build different sequences per persona? – Yes. Separate templates and branching logic can be set for different roles and titles.
+•	Does SalesCentri track engagement by account? – Yes. Engagement signals from multiple stakeholders roll up under the account to flag opportunities.
+•	Can I integrate with my ABM tools? – Yes. Integrations via API, native connectors and Zapier allow syncing with existing ABM tools and CRMs.
+📣 CTA & Getting Started
+•	What call to action (CTA) options are on the SalesCentri website? – The site offers CTAs such as “Start Free Trial,” “Start with SalesGPT,” “Book Demo,” “Get Started” and “Free Trial”salescentri.com to help visitors quickly sign up or schedule a demo.
+•	How quickly can I get started? – You can start seeing results within 24–48 hours after onboardingsalescentri.com; most clients launch campaigns and generate leads within the first week.
+•	Do I need technical expertise? – No. The platform is designed for business users; our team handles setup, integration and trainingsalescentri.com.
+•	What support is available? – All plans include email support, knowledge base and video tutorials, while Professional and Enterprise plans get priority support and dedicated success managerssalescentri.com.
+🔐 Privacy & Compliance
+•	Is SalesCentri compliant with GDPR/CCPA? – Yes. The platform is SOC 2 Type II certified and complies with GDPR and CCPA; data is encrypted in transit and at rest, and personal data is never soldsalescentri.com.
+•	How are opt outs handled? – Unsubscribe links and suppression lists are built in; opt outs are processed automatically to maintain compliance.
+•	Can I export or delete my data? – Yes. You can request full data export or deletion and choose localized data storage (EU/US).
+⚙️ Technical & Integrations
+•	What integrations are available? – SalesCentri connects with 50+ CRMs (Salesforce, HubSpot, Pipedrive, Zoho), Zapier, Slack, Webhooks and custom APIssalescentri.com.
+•	Is API access available? – Yes. You can call APIs for lead generation, validation, sequences and enrichment.
+•	Can I customize workflows and templates? – Absolutely. Email templates, triggers, timing and multi step sequences are fully customizablesalescentri.com.
+📈 Value & ROI
+•	How does SalesCentri compare to hiring sales staff? – It typically costs 70–90 % less than hiring full time SDRs and generates 2–5× more qualified leadssalescentri.com.
+•	What ROI can I expect? – Clients often report 10× return through lower cost per lead, faster conversions and scalable outreach.
+•	Can SalesCentri work alongside my sales team? – Yes. PSA automates repetitive tasks so your reps can focus on human interactions and closing deals.
+🧮 Pricing & Billing
+•	Are there setup fees or contracts? – No setup fees or long term commitmentssalescentri.com; you can modify your plan anytime.
+•	What is the refund policy? – Plans can be cancelled with 30 day notice; unused credits roll over on select plans, and pro rated refunds are offered.
+•	What is the cost per verified lead? – Indian campaigns cost ₹1,500–5,000 per marketing qualified lead; US/global campaigns cost $100–$200 per lead, with a minimum of 10 leads/month.
+📤 Email & Marketing Channels
+•	Do you support channels beyond email? – Yes. SalesCentri can integrate with WhatsApp, voice/VOIP dialers, LinkedIn and chat bots to enable multi channel outreach.
+•	Are templates included? – SalesGPT generates personalized email templates; you can import or edit your own.
+•	Can I send bulk emails? – Yes. The outreach engine supports high volume sending with throttling and domain rotation safeguards.
+🔍 Lead Quality & Verification
+•	Do you verify phone numbers and LinkedIn? – Yes. We validate email addresses via multi step SMTP, provide phone numbers when publicly available and include LinkedIn URLs in enrichment.
+•	How large is your database? – SalesCentri searches across 500+ sources and billions of records, refreshing continuously to maintain accuracy.
+•	Do you scrape data? – We combine web crawls, open data sets and licensed feeds while complying with privacy regulations and ethical data collection practices.
+•	Do you support global outreach? – Yes. Campaigns can target any region, and scheduling can be adjusted for time zones and languages.
+Enterprise Partnerships
+1.	What are SalesCentri’s enterprise partnerships?
+Enterprise partnerships are long term collaborations with large organizations that require custom workflows, data integrations, and dedicated support to scale their sales operations.
+2.	What benefits do enterprise partners receive?
+Enterprise partners get custom pricing, white labelling options, private cloud hosting, dedicated success managers, and priority feature requests to align with complex needs.
+3.	Is there a minimum commitment for enterprise partnerships?
+Yes. Enterprise contracts typically run for 12 months or more with quarterly performance reviews and mutually agreed service levels.
+4.	How do I qualify as an enterprise partner?
+You generally need a high monthly lead volume, custom integration requirements, or multiple teams across regions; you’ll work with our partnerships team to define scope.
+5.	Can enterprise partners co brand marketing materials?
+Yes. Co marketing—such as joint webinars, case studies, and events—is available so both organizations can jointly promote successes.
+🎁 Referral Program
+1.	What is the SalesCentri referral program?
+It’s a reward scheme where existing customers or partners earn commission when they refer new paying users.
+2.	Who can participate?
+Any current customer, agency partner, or industry influencer can join after registering with our partner portal.
+3.	What rewards do referrals earn?
+Referrers receive a percentage of the referred user’s subscription revenue for a defined period; larger deals may earn one time bonuses.
+4.	How do I track my referrals?
+You get a unique referral link; all sign ups via that link are tracked in your partner dashboard along with payout status.
+5.	Are there limits to how many referrals I can make?
+No. The program is uncapped—earn as much as you’d like by referring additional qualified customers.
+🌐 Digital Partners
+1.	What are digital partners?
+Digital partners are online agencies and technology platforms that integrate SalesCentri into their service offerings to deliver outbound marketing and sales automation to clients.
+2.	What kinds of companies qualify?
+Marketing agencies, CRM providers, marketing automation platforms, and SaaS consultants are typical examples.
+3.	How do digital partners collaborate with SalesCentri?
+Partners can embed SalesCentri via API, resell it under their own brand, or bundle it with their services to provide more value to clients.
+4.	What benefits do digital partners receive?
+They enjoy co marketing support, revenue sharing on new accounts, dedicated partner training, and early access to beta features.
+5.	Is there a certification process?
+Yes. To ensure quality and compliance, partners complete a short onboarding and certification program before receiving full partner benefits.
+🏢 Offline Partners
+1.	Who qualifies as an offline partner?
+Offline partners are regional consultants, resellers, or field sales distributors who sell SalesCentri solutions through in person channels.
+2.	What is the structure of offline partnerships?
+Partners get rights to represent SalesCentri in a defined territory, with exclusive or non exclusive status depending on performance.
+3.	What support do offline partners receive?
+They receive sales training, printed collateral, lead sharing from Marketing, and co funded events or workshops to drive adoption.
+4.	Do offline partners need to meet sales targets?
+Yes. Partners typically commit to quarterly targets to maintain active status and exclusive territorial rights.
+5.	How do I become an offline partner?
+Submit a partnership application detailing your region, industry focus, and sales capacity; our team will review and schedule a discovery call.
+🔗 Affiliate Program
+1.	What is the SalesCentri affiliate program?
+The affiliate program allows bloggers, influencers, and publishers to promote SalesCentri through tracked links and earn commissions on subscription sales.
+2.	How do I become an affiliate?
+Simply sign up on our affiliate portal, get approved, and receive your unique affiliate link and promotional assets.
+3.	What commission rates are offered?
+Affiliates earn a percentage of the first year’s subscription revenue; higher tiers and recurring payouts may be available for top performers.
+4.	How are referrals tracked and paid out?
+Each link uses cookies to track sign ups; you can monitor clicks, conversions, and commissions in real time and receive monthly payouts.
+5.	Do affiliates get marketing materials?
+Yes. We provide banners, templates, and guidelines to help you market SalesCentri effectively on blogs, webinars, or social media.
+LinkedIn Referral Program
+1.	What is the SalesCentri LinkedIn referral program?
+It’s a social referral initiative where existing customers or advocates can share a unique link on LinkedIn to refer prospects, earning rewards when those referrals become paying users.
+2.	Who can participate?
+Anyone with a LinkedIn account—customers, partners, or industry influencers—can register via the partner portal and receive a personalized referral link to post.
+3.	What incentives are offered?
+Referrers earn commission or credit (e.g., a percentage of the referred subscription or a fixed bonus) whenever a referred prospect signs up and becomes a paying customer.
+4.	How do I track my LinkedIn referrals?
+All activity through your referral link is tracked in a partner dashboard that shows clicks, conversions, and earned rewards in real time.
+5.	Can posts be customized?
+Yes. You can write your own LinkedIn posts or use provided templates; the only requirement is to include your unique referral link so referrals are properly attributed.
+📰 Business Outlook Contributor Program
+1.	What is the Business Outlook contributor program?
+It’s a content partnership where experts can submit articles, insights, or case studies for SalesCentri’s “Business Outlook” newsletter and blog, gaining exposure and thought leadership opportunities.
+2.	Who is eligible to contribute?
+Industry leaders, researchers, partners, and experienced SalesCentri users are welcome; submissions should offer actionable insights on sales automation, lead generation, or B2B marketing.
+3.	What are the benefits of being an Outlook contributor?
+Contributors get their work featured to SalesCentri’s audience, including backlink attribution, social promotion, and potential speaker invitations for webinars and events.
+4.	How do I submit an article?
+Submit a brief outline or finished piece via our contributor form; the editorial team will review it for relevance, originality, and compliance with our guidelines before publication.
+5.	Are contributions paid or voluntary?
+Most contributions are voluntary, although high impact pieces or recurring columnists may receive honoraria; terms are discussed during onboarding.
+🔄 Contacts Exchange Program
+1.	What is the Contacts Exchange Program?
+It’s an opt in initiative where vetted partners can securely exchange anonymized lead lists or prospect data to broaden outreach while adhering to privacy regulations.
+2.	Who can join the program?
+Current customers or certified partners who meet data privacy standards and agree to the exchange terms can apply; all participants must comply with GDPR/CCPA and obtain consent from shared contacts.
+3.	How does the exchange work?
+Participants upload segments of their lists through a secure portal; SalesCentri deduplicates and anonymizes the data, then matches and distributes potential contacts that fit your ICP.
+4.	What safeguards ensure compliance?
+All shared contacts are validated and opt in only; personal identifiers are removed or hashed before exchange, and suppression lists prevent repeat outreach to opt outs or existing clients.
+5.	Is there a cost or revenue model?
+A small service fee may apply to cover validation and enrichment; there is no direct commission, but the program can accelerate lead generation and reduce acquisition costs for all participants.
+Outlook Extension
+1.	What is the SalesCentri Outlook extension?
+It’s an add in for Microsoft Outlook that integrates SalesCentri’s business address book directly into your email client, allowing you to view company and contact details alongside your inbox.
+2.	How do I install the Outlook extension?
+You can download it from the Microsoft AppSource marketplace or from the SalesCentri dashboard; installation requires a few clicks and admin permission for Office 365 tenants.
+3.	What features does the extension provide?
+The add in displays enriched contact profiles—including job title, company info, and recent activity—within Outlook, and lets you save new contacts into SalesCentri with one click.
+4.	Is it secure and compliant?
+Yes. The extension operates with the same SOC 2/GDPR compliance as the rest of the platform; it only accesses email headers and names to pull relevant data and doesn’t scan message content.
+5.	Does it sync contacts back to SalesCentri?
+If enabled, the add in can push new contacts you create or modify in Outlook back to your SalesCentri CRM, keeping both systems in sync.
+🔗 LinkedIn Referral Program (Recap)
+1.	What is the LinkedIn referral program?
+It’s a social referral initiative that lets users share a unique link on LinkedIn and earn commission when their referrals become paying customers.
+2.	Who can participate and what are the rewards?
+Customers, partners, or influencers can join via the partner portal; referrers receive a percentage of the referred subscription revenue or a fixed bonus per successful sign up.
+3.	How are referrals tracked?
+Your unique referral link uses cookies to track clicks and conversions, which are displayed in real time in your partner dashboard.
+📰 Business Outlook Contributor Program (Recap)
+1.	What is it?
+A content partnership where experts contribute articles or case studies to SalesCentri’s Business Outlook newsletter and blog, offering thought leadership opportunities.
+2.	Who is eligible and what are the benefits?
+Industry leaders, partners, and experienced users can apply; contributors gain exposure, backlinks, and may receive honoraria for high impact articles.
+3.	How do I submit?
+Send a brief outline or finished piece through our contributor form; the editorial team reviews submissions for relevance and originality.
+🔄 Contacts Exchange Program (Recap)
+1.	What is the Contacts Exchange Program?
+An opt in program where certified partners securely exchange anonymized lead segments to broaden their outreach while respecting data privacy.
+2.	Who can join and how does it work?
+Customers or partners meeting data compliance requirements can apply; SalesCentri deduplicates and anonymizes the lists, then matches and shares only contacts that fit your ICP.
+3.	What safeguards are in place?
+All contacts are consent based and validated; personal identifiers are hashed, and suppression lists prevent unwanted or duplicate outreach.
+SalesCentri Comprehensive FAQ
+
+1.	Q1. What is SalesCentri?
+Answer: SalesCentri is an AI‑powered presales automation (PSA) platform that automates prospecting, outreach and lead management to deliver qualified pipelines at scale.
+
+2.	Q2. Who is SalesCentri for?
+Answer: It’s designed for SMBs, agencies and B2B sales/marketing teams (including founders and SDR/BDR teams) who need efficient outbound lead generation and automation.
+
+3.	Q3. How is SalesCentri different from other tools or agencies?
+Answer: Unlike traditional tools that still require manual work, SalesCentri combines AI, verified data and automation into one platform, giving you the output of a full sales team at a fraction of the cost.
+
+4.	Q4. What products or modules does SalesCentri offer?
+Answer: Core modules include SalesGPT (AI agent), AI Hunter for lead discovery, contact validation, lead intelligence, outreach engines (email/voice/WhatsApp), CRM dashboards and data enrichment tools.
+
+5.	Q5. What results can I expect?
+Answer: Clients typically see a 150–300 % increase in qualified leads, 50–80 % higher response rates and a shorter sales cycle within the first month.
+
+6.	Q6. What industries benefit from SalesCentri?
+Answer: SalesCentri supports 40+ B2B verticals including SaaS, IT services, marketing, healthcare, financial services, manufacturing, logistics, energy, and niche segments like solar or diabetic footwear.
+
+7.	Q7. How do you define my Ideal Customer Profile (ICP)?
+Answer: During onboarding we capture your target industries, roles, company size and geography, then the AI refines the ICP using data from 500+ sources and your past sales patterns.
+
+8.	Q8. Can I target niche or specific industries?
+Answer: Yes. The platform supports hyper‑targeted lead generation across industries (e.g., solar, oil & gas, medical devices, diabetic footwear) and can filter by geography or language.
+
+9.	Q9. Do you support buyer‑intent and technographic filters?
+Answer: Yes. SalesCentri enriches leads with technographics (tools used), hiring and ad‑spend signals, and keyword intent to help prioritize outreach.
+
+10.	Q10. Can I run account‑based marketing (ABM) campaigns?
+Answer: Absolutely. You can upload a named‑account list or generate one, then personalize outreach per company and stakeholder; SalesGPT maps buying committees and supports multi‑persona sequences.
+
+11.	Q11. How does SalesCentri generate leads?
+Answer: The AI engine scours 500+ data sources to find contacts matching your ICP, validates their details, then engages them automatically with personalized sequences—freeing your team to focus on closing deals.
+
+12.	Q12. What is SalesGPT?
+Answer: SalesGPT is your AI sales assistant that researches leads, writes personalized emails and follow‑ups and adjusts campaigns dynamically.
+
+13.	Q13. Do you handle follow‑ups and replies?
+Answer: Yes. Smart sequences automatically send follow‑ups based on opens/clicks and detect replies to pause automation and route the lead to your team.
+
+14.	Q14. Can I import my own leads?
+Answer: Yes. You can upload existing contact lists; the platform will validate, enrich and sequence them into your campaigns.
+
+15.	Q15. Is it fully automated or human‑assisted?
+Answer: It’s hybrid: AI handles most tasks while you or our team oversee strategy, messaging and optimization.
+
+16.	Q16. Which domains do you send emails from?
+Answer: We send from warmed, verified domains managed by SalesCentri (e.g., mail.salescentri.ai) to maximize deliverability and protect your brand; you can use your own domain with proper SPF/DKIM/DMARC.
+
+17.	Q17. Will prospects trust emails from non‑brand domains?
+Answer: Yes. Our domains have high sender reputation and emails are personalized, so recipients still perceive authenticity.
+
+18.	Q18. How do you ensure email deliverability?
+Answer: We warm and rotate multiple domains, validate emails to maintain 95 %+ accuracy, use SPF/DKIM/DMARC, throttle sends and monitor sender scores to avoid spam.
+
+19.	Q19. Can I choose or create custom domains?
+Answer: You can shortlist from our domain inventory or request custom domains (additional fee); we rotate domains and you can exclude any you dislike.
+
+20.	Q20. How accurate is your data?
+Answer: Contact data has 95 %+ email accuracy and 90 %+ phone accuracy, verified in real‑time; duplicates are removed automatically and the database is refreshed weekly.
+
+21.	Q21. What enrichment is provided?
+Answer: We enrich leads with job titles, company info, tech stack, funding status, LinkedIn URLs, phone numbers (when public) and buyer‑intent signals.
+
+22.	Q22. Can I access raw data?
+Answer: Raw unfiltered data isn’t exposed, but you can request matched records after deduplication or purchase datasets priced per contact.
+
+23.	Q23. How often is data updated?
+Answer: The database is updated weekly or on‑demand via your campaigns; real‑time enrichment is available through the API.
+
+24.	Q24. What does the pilot include?
+Answer: We generate 3 free leads upfront; afterwards you pay per lead (₹1,500–5,000 per MQL in India or $100–$200 globally) with a minimum of 10 leads/month. Pilot feedback helps finalize domains, messaging and segmentation.
+
+25.	Q25. Can I control messaging and domains?
+Answer: You can collaborate on templates and exclude domains, but we handle operations to maintain deliverability and performance.
+
+26.	Q26. Is outreach branded or white‑labeled?
+Answer: Cold outreach uses non‑branded domains by default; custom branding is available on higher plans.
+
+27.	Q27. What lead match rate should I expect?
+Answer: Typically about 20 % of your target list matches our database; better segmentation improves results.
+
+28.	Q28. How is campaign performance tracked?
+Answer: Dashboards display opens, clicks, replies and lead status; you can integrate with your CRM or Google Sheets for deeper analytics.
+
+29.	Q29. Do you offer a free trial?
+Answer: Yes. You can try SalesCentri free for 7 days with full dashboard access. The trial now includes 3–10 qualified leads (rather than 50); additional leads are charged per lead.
+
+30.	Q30. What are your pricing plans?
+Answer: Plans vary by lead volume and features: Starter for small teams, Professional with advanced automation, and Enterprise with unlimited leads and dedicated support.
+
+31.	Q31. Are there setup fees or long‑term contracts?
+Answer: No. There are no setup fees and you can upgrade, downgrade or cancel anytime.
+
+32.	Q32. What payment methods do you accept?
+Answer: We accept major credit cards, ACH bank transfers and wire transfers; billing can be monthly or annual.
+
+33.	Q33. Can I cancel or change plans?
+Answer: Yes. You can change or cancel from your dashboard; cancellations take effect at the end of the billing period.
+
+34.	Q34. Do you offer usage‑based or performance pricing?
+Answer: You can choose credit‑based usage or unlimited plans; performance models let you pay only for qualified leads after the pilot.
+
+35.	Q35. Are discounts available?
+Answer: Yes. Volume discounts and 30–50 % discounts are available for eligible startups, agencies and nonprofits.
+
+36.	Q36. Does SalesCentri support ABM?
+Answer: Yes. The platform lets you target named accounts first and then map decision‑makers within each account; you can prioritize strategic accounts and personalize at both account and contact level.
+
+37.	Q37. How are buying committees identified?
+Answer: SalesCentri uses organizational graphs and social/registry data to map stakeholders across departments.
+
+38.	Q38. Can I build different sequences per persona?
+Answer: Yes. Separate templates and branching logic can be set for different roles and titles.
+
+39.	Q39. Does SalesCentri track engagement by account?
+Answer: Yes. Engagement signals from multiple stakeholders roll up under the account to flag opportunities.
+
+40.	Q40. Can I integrate with my ABM tools?
+Answer: Yes. Integrations via API, native connectors and Zapier allow syncing with existing ABM tools and CRMs.
+
+41.	Q41. What CTA options are on the SalesCentri website?
+Answer: The site offers CTAs such as 'Start Free Trial,' 'Start with SalesGPT,' 'Book Demo,' 'Get Started' and 'Free Trial' to help visitors quickly sign up or schedule a demo.
+
+42.	Q42. How quickly can I get started?
+Answer: You can start seeing results within 24–48 hours after onboarding; most clients launch campaigns and generate leads within the first week.
+
+43.	Q43. Do I need technical expertise?
+Answer: No. The platform is designed for business users; our team handles setup, integration and training.
+
+44.	Q44. What support is available?
+Answer: All plans include email support, knowledge base and video tutorials, while Professional and Enterprise plans get priority support and dedicated success managers.
+
+45.	Q45. Is SalesCentri compliant with GDPR/CCPA?
+Answer: Yes. The platform is SOC 2 Type II certified and complies with GDPR and CCPA; data is encrypted in transit and at rest, and personal data is never sold.
+
+46.	Q46. How are opt‑outs handled?
+Answer: Unsubscribe links and suppression lists are built in; opt‑outs are processed automatically to maintain compliance.
+
+47.	Q47. Can I export or delete my data?
+Answer: Yes. You can request full data export or deletion and choose localized data storage (EU/US).
+
+48.	Q48. What integrations are available?
+Answer: SalesCentri connects with 50+ CRMs (Salesforce, HubSpot, Pipedrive, Zoho), Zapier, Slack, Webhooks and custom APIs.
+
+49.	Q49. Is API access available?
+Answer: Yes. You can call APIs for lead generation, validation, sequences and enrichment.
+
+50.	Q50. Can I customize workflows and templates?
+Answer: Absolutely. Email templates, triggers, timing and multi‑step sequences are fully customizable.
+
+51.	Q51. How does SalesCentri compare to hiring sales staff?
+Answer: It typically costs 70–90 % less than hiring full‑time SDRs and generates 2–5× more qualified leads.
+
+52.	Q52. What ROI can I expect?
+Answer: Clients often report 10× return through lower cost per lead, faster conversions and scalable outreach.
+
+53.	Q53. Can SalesCentri work alongside my sales team?
+Answer: Yes. PSA automates repetitive tasks so your reps can focus on human interactions and closing deals.
+
+54.	Q54. Are there setup fees or contracts?
+Answer: No setup fees or long‑term commitments; you can modify your plan anytime.
+
+55.	Q55. What is the refund policy?
+Answer: Plans can be cancelled with 30‑day notice; unused credits roll over on select plans, and pro‑rated refunds are offered.
+
+56.	Q56. What is the cost per verified lead?
+Answer: Indian campaigns cost ₹1,500–5,000 per MQL; US/global campaigns cost $100–$200 per lead, with a minimum of 10 leads/month.
+
+57.	Q57. Do you support channels beyond email?
+Answer: Yes. SalesCentri can integrate with WhatsApp, voice/VOIP dialers, LinkedIn and chat bots to enable multi‑channel outreach.
+
+58.	Q58. Are templates included?
+Answer: SalesGPT generates personalized email templates; you can import or edit your own.
+
+59.	Q59. Can I send bulk emails?
+Answer: Yes. The outreach engine supports high‑volume sending with throttling and domain rotation safeguards.
+
+60.	Q60. Do you verify phone numbers and LinkedIn?
+Answer: Yes. We validate email addresses via multi‑step SMTP, provide phone numbers when publicly available and include LinkedIn URLs in enrichment.
+
+61.	Q61. How large is your database?
+Answer: SalesCentri searches across 500+ sources and billions of records, refreshing continuously to maintain accuracy.
+
+62.	Q62. Do you scrape data?
+Answer: We combine web crawls, open data sets and licensed feeds while complying with privacy regulations and ethical data‑collection practices.
+
+63.	Q63. Do you support global outreach?
+Answer: Yes. Campaigns can target any region, and scheduling can be adjusted for time zones and languages.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________________________________
+SalesCentri – FAQ (Crisp Version)
+🧠 Overview & Product
+What is SalesCentri?
+SalesCentri is an AI-powered PSA platform that automates prospecting, outreach, and lead management for B2B sales teams.
+Who is it for?
+Ideal for SMBs, agencies, and B2B sales/marketing teams needing smarter lead generation and automation.
+How is it different from other tools or agencies?
+It combines AI, verified data, and automation into one platform, replacing multiple tools and saving 70–90% of typical costs.
+🎯 ICP & Targeting
+How do you define my ICP?
+We work with you to define your ICP, then our AI refines and targets it using data from 500+ sources.
+Can you generate niche leads (e.g. diabetic footwear, solar, oil & gas)?
+Yes, we specialize in hyper-targeted lead gen across industries and niche verticals.
+🚀 Lead Generation & Sales
+How does SalesCentri help generate leads?
+It identifies, validates, and engages prospects automatically through smart email and voice outreach.
+Do you manage the full sales cycle?
+We automate top- and mid-funnel activities; you close the deal with warm leads.
+What is SalesGPT?
+SalesGPT is your AI sales assistant that finds leads, writes emails, and adjusts strategy dynamically.
+📬 Domains & Outreach
+Do you send from our domain or yours?
+We use branded outreach domains to protect your main domain and improve deliverability.
+Will customers recognize the sender?
+Yes, domains closely match your brand, and sender names are personalized to ensure trust.
+How do you ensure email deliverability?
+We use domain warm-up, SPF/DKIM setup, verified contacts, and AI-optimized sending schedules.
+🏭 Industry-Specific
+Can you help with solar panel leads?
+Yes, we target clean energy firms, project managers, and installers with high precision.
+Can you help with medical device leads?
+Absolutely. We target device makers, distributors, and healthcare buyers.
+Do you cover oil and gas riggers?
+Yes, we source roles like HSE heads, rig operators, and service providers.
+What about diabetic footwear companies?
+Yes, we can target retailers, clinics, and DME suppliers in that segment.
+🛠️ Onboarding & Setup
+How long does onboarding take?
+Most clients are live within 48 hours with their first campaign ready.
+Do I need my own data or email templates?
+No. We generate leads and create tailored content for you.
+Do I need tech skills to use it?
+Not at all – it’s no-code and fully managed by our team.
+🔄 Integration & Customization
+Can you integrate with my CRM?
+Yes – we support Salesforce, HubSpot, Pipedrive, Zoho, and more.
+Can I customize messaging and workflows?
+Yes, everything from emails to triggers is customizable.
+Does it replace my sales team?
+No – it augments your team by handling repetitive tasks so they can focus on closing.
+💰 Pricing & ROI
+What does it cost?
+Plans start at $49/month; higher tiers offer more leads, automation, and support.
+Is there a free trial?
+Yes – a 7-day trial with real leads and campaign access.
+Do you offer discounts or custom pricing?
+Yes – volume discounts and tailored plans are available.
+Can I cancel anytime?
+Yes, no long-term contracts or setup fees.
+📈 Performance & Results
+How fast do I see results?
+Most users see leads and replies within the first 3–5 days.
+What ROI can I expect?
+Clients report 2–5× more leads and up to 90% cost savings vs. traditional sales methods.
+How do you track performance?
+We provide dashboards showing lead counts, replies, meetings booked, and conversions.
+✅ Trust & Support
+Is my data safe?
+Yes – we’re GDPR-compliant and use bank-grade encryption and email security best practices.
+What support do you offer?
+24/7 support via chat/email. Pro and Enterprise plans include a dedicated success manager.
+________________________________________
+SalesCentri Unified FAQ v2.0
+Grouped and curated from all uploaded FAQ documents, optimized for B2B buyers, marketing/sales leaders, and prospective clients. Each answer is trimmed to 1-3 lines while retaining clarity.
+________________________________________
+🤖 OVERVIEW & PLATFORM
+What is SalesCentri?
+SalesCentri is an AI-powered PSA (Presales Automation) platform that automates lead generation, validation, outreach, and pipeline tracking for B2B businesses.
+Who is it for?
+Designed for SMBs, agencies, SDR/BDR teams, founders, and marketing leaders seeking qualified leads and automation.
+What problems does it solve?
+It reduces the need for large SDR teams by automating prospecting, outreach, follow-ups, and enrichment, enabling sales at scale.
+How is it different from other tools like Apollo or ZoomInfo?
+SalesCentri combines verified data, AI-driven outreach, CRM syncing, and email/voice automation into one seamless flow.
+Can solo founders or small teams use it?
+Yes, it’s fully usable without a sales team. You can automate everything end-to-end.
+________________________________________
+🔎 ICP TARGETING & INDUSTRY SUPPORT
+How do you define or identify my ICP?
+We co-create your ICP during onboarding, then AI analyzes and targets similar profiles using 500+ data sources.
+Can you target niche verticals (e.g., medical, solar, O&G)?
+Yes. We support 40+ verticals like MedTech, solar installers, oil & gas, SaaS, FinTech, and D2C.
+Can I upload a list of companies and get decision-makers?
+Yes. Upload your list and we enrich + match contacts within.
+Do you support intent or tech-based targeting?
+Yes. You can filter by ad spend, hiring trends, tech stack, and firmographics.
+Can you personalize by industry or persona?
+Yes. We auto-generate icebreakers and intro lines based on job title, sector, and public data.
+________________________________________
+🚀 LEAD GENERATION & OUTREACH
+How does it generate leads?
+AI scans 500+ sources to build a verified contact list matching your ICP, then launches sequenced outreach.
+How accurate is your data?
+90–95%+ accurate using multi-step email validation and enrichment.
+Can I upload my own CSV or CRM list?
+Yes. You can validate, enrich, and sequence any list you provide.
+Do you support follow-ups and replies?
+Yes. Our smart reply detection pauses follow-ups automatically and re-engages no-replies.
+Can I build multistep sequences with logic?
+Yes. Delays, branching, triggers, and fallbacks are all supported.
+________________________________________
+📧 DOMAIN & EMAIL QUESTIONS
+Do you use my domain or yours?
+By default, we use our warmed, branded domains. You can also connect your own with SPF/DKIM setup.
+Are your sending domains safe?
+Yes. Domains have 90+ sender scores, are warmed up, monitored, and rotated automatically.
+Can I control which domains you use?
+Yes. You can approve/reject domains during setup. We can even restrict sends to only selected ones.
+Do prospects trust non-brand domains?
+Yes. Since sender names are personalized and content is relevant, trust is maintained.
+________________________________________
+📈 PERFORMANCE, ROI & RESULTS
+How fast do I see results?
+Leads typically start responding within 3–5 days. Most users see meetings booked within the first week.
+What ROI can I expect?
+2–5x more leads and 60–90% cost savings compared to SDRs or traditional agencies.
+How do you measure campaign performance?
+Via dashboards showing opens, replies, conversions, and meetings booked.
+Can I see the enrichment and validation status?
+Yes. Each record has source tags, enrichment score, and validation status.
+________________________________________
+📅 ONBOARDING & SETUP
+How long is onboarding?
+Most clients go live within 48 hours. First campaigns are launched within 3–4 business days.
+What do I need to provide?
+Your ICP filters, optional sample leads/customers, and any content preferences.
+Do I need tech skills?
+No. SalesCentri is no-code and comes with guided onboarding.
+Do you offer fully-managed options?
+Yes. Our team can handle everything end-to-end if desired.
+________________________________________
+⚙️ FEATURES & TECH
+What are your core tools?
+SalesGPT, Lead Enrichment Engine, Contact Validator, Multi-channel Sequencer (Email/Voice/WhatsApp), CRM Sync, Analytics.
+Is lead scoring available?
+Yes. Leads are scored using over 15 signals (ICP match, engagement, reply, etc).
+Do you support ABM and buying committees?
+Yes. We map key decision-makers and personalize per contact.
+What integrations are supported?
+Salesforce, HubSpot, Zoho, Pipedrive, Google Sheets, Zapier, Slack, and custom APIs.
+Is there a dashboard to track campaigns?
+Yes. You get contact-level, campaign-level, and rep-level insights.
+________________________________________
+💸 PRICING & PAYMENTS
+What are the pricing plans?
+Starts at $49/month. Mid and Enterprise tiers offer higher lead volume, more features, and support.
+Do you offer free trials?
+Yes. 7-day trial with 50+ leads, sequences, and full dashboard access.
+Is payment usage-based or flat-fee?
+Both options are available depending on scale.
+Any long-term contracts or setup fees?
+No setup fees. Month-to-month plans are available.
+Do you offer discounts?
+Yes. Startup, nonprofit, and annual plan discounts (up to 50%).
+________________________________________
+✉️ SUPPORT, SECURITY & COMPLIANCE
+What support options do I get?
+Email, chat, and call support included. Pro/Enterprise plans get Slack access and dedicated CSMs.
+Are you GDPR/CCPA compliant?
+Yes. We support DSR requests, suppression lists, and comply with CAN-SPAM, GDPR, and CCPA.
+Is my data secure?
+Yes. We use 256-bit encryption at rest, SSL in transit, and secure cloud infrastructure.
+Do you sell or share customer data?
+Never. Your campaign and lead data are private to your account.
+SalesCentri.com – FAQ Version 1.0
+________________________________________
+GENERAL QUESTIONS
+Q1. What is SalesCentri?
+SalesCentri is an AI-powered sales enablement and lead generation platform designed to automate outreach, validate leads, identify intent, and deliver qualified sales pipelines at scale.
+Q2. Who is SalesCentri for?
+SalesCentri is ideal for sales teams, marketing professionals, agencies, and founders seeking qualified B2B leads, smart outreach automation, and a unified sales system without expensive human overhead.
+Q3. How is SalesCentri different from other tools like Apollo or ZoomInfo?
+Unlike traditional tools, SalesCentri combines AI prompt agents, multi-domain warm inboxes, and high-conversion outreach flows in one smart system. It’s less about data dumping and more about delivering sales-ready leads.
+Q4. What are the core products offered?
+- SalesGPT (AI agent) - Contact Validator - Lead Intelligence - Email/WhatsApp/Voice outreach engine - AI CRM dashboards - Data appending, enrichment, and ICP targeting tools
+Q5. What does the onboarding process look like?
+You define your Ideal Customer Profile (ICP), select the target market, customize your messaging, and our system takes care of the rest—right from validation to lead delivery.
+Q6. Can I use SalesCentri if I don’t have a sales team?
+Yes. Solo founders, consultants, and small businesses can use our platform to run fully automated outbound campaigns.
+Q7. Is there a learning curve?
+Not at all. Our onboarding GPT walks you through everything with zero-code guidance. Most users are live within 2 hours.
+________________________________________
+DOMAIN & EMAIL QUESTIONS
+Q8. Which domains do you send emails from?
+We use verified, domain-warmed inboxes with SPF, DKIM, and DMARC configurations. Domains like mail.salescentri.ai, mail.leadcentri.com, etc., are part of our ecosystem.
+Q9. Will my prospects trust emails from non-brand domains?
+Yes. Our sending domains are reputation-managed, trusted, and have high deliverability. Each message is tailored with personalized content, building trust regardless of domain.
+Q10. How are your domains rated?
+We ensure a sender score of 90+ using Postmaster, ZeroBounce, and internal IP warm-up protocols. Any drop triggers automatic domain switch and alerts.
+Q11. What’s the benefit of using SalesCentri domains over my brand domain?
+Your brand domain is protected from blacklisting or spam issues. We handle risk, warming, and rotation while ensuring consistent inboxing and campaign success.
+Q12. Can I use my own domain or email ID for outreach?
+Yes, we support custom domain integrations with appropriate SPF/DKIM/DMARC setup, and warm-up is included.
+________________________________________
+INDUSTRY/TARGET LEAD GEN
+Q13. Can you generate leads in the medical device industry?
+Yes, we have healthcare vertical filters and NPI/NHSI/MedTech segmentation for sourcing verified hospital tech leads, buyers, and distributors.
+Q14. I want leads for solar panel installers—can you help?
+Yes. Our database includes EPCs, solar integrators, and B2B solar resellers in the U.S., India, and Europe. We’ll filter by location, decision-maker, and scale.
+Q15. Can you help me reach oil and gas rig managers?
+We can identify upstream/downstream companies, drilling contractors, field ops teams, and supply chain managers in O&G sectors worldwide.
+Q16. I want to target diabetic footwear companies.
+Our platform can isolate orthotics/digital health/footwear companies, sourcing both DTC and medical footwear players. We enrich with distributor and buyer contacts.
+Q17. What other industries do you support?
+We support 40+ industries including SaaS, FinTech, EdTech, Manufacturing, Logistics, Healthcare, Agencies, and D2C brands.
+Q18. Can I target based on geography and language?
+Yes. You can filter by country, state, city, zip code, and preferred business language (e.g., English, Spanish, French).
+Q19. Do you support buyer intent signals or technographic filters?
+Yes. We offer enrichment based on tools used (e.g., Salesforce, HubSpot, Shopify), hiring signals, ad spend estimates, and keyword intent tracking.
+________________________________________
+SALES STRATEGY & AI PROCESS
+Q20. How do you identify my ICP?
+We analyze your existing customer patterns, target industry, sales history, and product focus to suggest an ICP profile. You can adjust parameters manually or via GPT onboarding flow.
+Q21. How do you help with sales?
+We automate 80% of the pipeline creation and lead engagement process. Your team focuses on meetings and closing. Think of it as sales on autopilot.
+Q22. Do you handle follow-ups and replies too?
+Yes. We use smart sequences with reply-handling logic. You can customize how follow-ups are sent based on open rates, link clicks, and AI analysis.
+Q23. Can I import my leads and just use your engine?
+Yes, bring your own CSV or CRM leads—we’ll validate, enrich, and auto-sequence them into a custom campaign.
+Q24. Is SalesCentri fully automated or human-assisted?
+It’s hybrid. The core engine is AI-driven, but our team helps with setup, onboarding, strategy, and ongoing optimization.
+Q25. Can I run Account-Based Marketing (ABM) campaigns?
+Yes. You can upload a named account list or generate one using filters, then personalize outreach per account using SalesGPT.
+Q26. How do you ensure message personalization at scale?
+Our GPT agents use public data (e.g., LinkedIn, websites, case studies) to auto-generate custom lines, icebreakers, and intros per prospect.
+________________________________________
+TECH & SUPPORT
+Q27. What integrations are available?
+We support Zapier, Slack, Webhooks, Google Sheets, HubSpot, Pipedrive, Zoho, Notion, and custom CRM APIs.
+Q28. Can I get analytics and campaign reporting?
+Yes. You get a live dashboard with open rate, reply rate, bounce %, lead journey stages, and performance scoring.
+Q29. Can I white-label or host it on my own server?
+Enterprise plans offer on-premise or private cloud hosting with white-label and subdomain customization.
+Q30. Do you offer usage-based pricing or flat monthly fees?
+Both are supported. Choose from credit-based or unlimited usage plans depending on your scale and team size.
+Q31. What if I run into deliverability issues?
+We auto-rotate domains and inboxes, monitor blacklist status, and proactively switch IPs if we detect drop in inbox rate.
+Q32. Do you offer API access?
+Yes. Our API allows access to lead generation, validation, sequence management, and data enrichment for your internal tools.
+Q33. How do I get started?
+Book a demo or start a free trial at SalesCentri.com. After onboarding, you’ll receive your first set of leads in <72 hours.
+

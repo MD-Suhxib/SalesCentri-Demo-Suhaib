@@ -1,0 +1,282 @@
+'use client';
+
+import React from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { motion } from 'framer-motion';
+import { Volume2, Bot, ArrowRight, CheckCircle, Star, Zap, Shield, Clock, Users, Smartphone, Globe, Settings, BarChart3 } from 'lucide-react';
+
+export default function TextToSpeechFeaturesPage() {
+  const pathname = usePathname();
+  const basePath = '/platforms/lead-management/text-to-speech';
+
+  const subNavItems = [
+    { name: 'Overview', href: basePath, active: pathname === basePath },
+    { name: 'Features', href: `${basePath}/features`, active: pathname === `${basePath}/features` },
+    { name: 'Pricing', href: `${basePath}/pricing`, active: pathname === `${basePath}/pricing` },
+    { name: 'Integrations', href: `${basePath}/integrations`, active: pathname === `${basePath}/integrations` },
+  ];
+
+  const features = [
+    {
+      icon: Bot,
+      title: "Advanced Voice Generation",
+      description: "State-of-the-art neural network voice synthesis technology",
+      capabilities: [
+        "High-quality neural voice models",
+        "Natural speech patterns &amp; intonation",
+        "Emotion &amp; emphasis control",
+        "Speaking rate &amp; pitch adjustment",
+        "Breath sounds &amp; natural pauses",
+        "Custom voice training &amp; cloning"
+      ]
+    },
+    {
+      icon: Globe,
+      title: "Multilingual Support",
+      description: "Comprehensive language and accent coverage worldwide",
+      capabilities: [
+        "40+ languages supported",
+        "Multiple accents per language",
+        "Native speaker quality voices",
+        "Regional dialect variations",
+        "Automatic language detection",
+        "Cross-language voice consistency"
+      ]
+    },
+    {
+      icon: Settings,
+      title: "Content Processing",
+      description: "Advanced text analysis and speech markup capabilities",
+      capabilities: [
+        "SSML (Speech Synthesis Markup Language)",
+        "Pronunciation customization",
+        "Number &amp; date formatting",
+        "Abbreviation expansion",
+        "Pause &amp; timing control",
+        "Audio effect processing"
+      ]
+    },
+    {
+      icon: Smartphone,
+      title: "Output Formats &amp; Quality",
+      description: "Multiple audio formats optimized for different use cases",
+      capabilities: [
+        "MP3, WAV, OGG audio formats",
+        "Variable bitrate encoding",
+        "Sample rate options (8kHz-48kHz)",
+        "Stereo &amp; mono output",
+        "Real-time streaming audio",
+        "Batch processing capabilities"
+      ]
+    },
+    {
+      icon: BarChart3,
+      title: "Analytics &amp; Monitoring",
+      description: "Comprehensive usage tracking and performance insights",
+      capabilities: [
+        "Character usage analytics",
+        "Voice quality metrics",
+        "Performance monitoring",
+        "Cost optimization insights",
+        "Usage forecasting",
+        "Custom reporting dashboards"
+      ]
+    },
+    {
+      icon: Shield,
+      title: "Security &amp; Compliance",
+      description: "Enterprise-grade security and regulatory compliance",
+      capabilities: [
+        "Data encryption in transit &amp; at rest",
+        "GDPR &amp; privacy compliance",
+        "SOC 2 Type II certification",
+        "Role-based access control",
+        "Audit logs &amp; compliance reporting",
+        "Data residency options"
+      ]
+    }
+  ];
+
+  return (
+    <>
+      {/* Sub-navigation */}
+      <div className="bg-gray-900/50 border-b border-gray-800 sticky top-18 z-40">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex justify-end">
+            <nav className="flex space-x-8">
+              {subNavItems.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={`py-4 px-2 text-sm font-medium transition-colors ${
+                    item.active
+                      ? 'text-blue-400 border-b-2 border-blue-400'
+                      : 'text-gray-400 hover:text-white'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <main className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white">
+        {/* Header */}
+        <motion.section 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="pt-20 pb-16 px-6"
+        >
+          <div className="max-w-7xl mx-auto text-center">
+            <div className="flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mr-4">
+                <Volume2 className="w-8 h-8 text-white" />
+              </div>
+              <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 via-white to-indigo-400 bg-clip-text text-transparent">
+                Text to Speech Features
+              </h1>
+            </div>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Advanced voice generation capabilities designed to create professional-quality audio content 
+              for any application, from accessibility to marketing and training materials.
+            </p>
+          </div>
+        </motion.section>
+
+        {/* Features Grid */}
+        <motion.section 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="py-20 px-6"
+        >
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12">
+              {features.map((feature, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1 * index }}
+                  className="bg-gray-800/50 rounded-2xl p-8 border border-gray-700/50"
+                >
+                  <div className="flex items-start mb-6">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                      <feature.icon className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
+                      <p className="text-gray-400 text-sm">{feature.description}</p>
+                    </div>
+                  </div>
+                  
+                  <ul className="space-y-3">
+                    {feature.capabilities.map((capability, capIndex) => (
+                      <li key={capIndex} className="flex items-start">
+                        <CheckCircle className="w-4 h-4 text-blue-400 mr-3 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-300 text-sm" dangerouslySetInnerHTML={{ __html: capability }}></span>
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </motion.section>
+
+        {/* Feature Highlights */}
+        <motion.section 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="py-20 bg-gradient-to-r from-blue-900/10 via-black to-indigo-900/10"
+        >
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose Our Text to Speech?</h2>
+              <p className="text-lg text-gray-300">
+                Industry-leading features that deliver exceptional voice quality and user experience
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-4 gap-8">
+              {[
+                {
+                  icon: Zap,
+                  title: "Lightning Fast",
+                  description: "Generate hours of audio content in seconds with our optimized processing"
+                },
+                {
+                  icon: Users,
+                  title: "Enterprise Ready",
+                  description: "Scalable infrastructure supporting millions of characters per month"
+                },
+                {
+                  icon: Star,
+                  title: "Premium Quality",
+                  description: "Human-like voices indistinguishable from professional voice actors"
+                },
+                {
+                  icon: Clock,
+                  title: "24/7 Availability",
+                  description: "Always-on service with guaranteed uptime and global accessibility"
+                }
+              ].map((highlight, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: 0.1 * index }}
+                  className="text-center"
+                >
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-indigo-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <highlight.icon className="w-8 h-8 text-blue-400" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-white mb-2">{highlight.title}</h3>
+                  <p className="text-gray-400 text-sm">{highlight.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </motion.section>
+
+        {/* CTA Section */}
+        <motion.section 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+          className="py-20"
+        >
+          <div className="max-w-4xl mx-auto text-center px-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Ready to Experience These Features?
+            </h2>
+            <p className="text-lg text-gray-300 mb-8">
+              Transform your text into professional-quality speech with our advanced voice generation technology. 
+              Try all features risk-free with our comprehensive trial.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/get-started/free-trial"
+                className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 group inline-flex items-center justify-center"
+              >
+                <span>Try All Features Free</span>
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <Link
+                href="/get-started/book-demo"
+                className="border border-blue-500 text-blue-400 px-8 py-4 rounded-lg font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300 inline-flex items-center justify-center"
+              >
+                Schedule Feature Demo
+              </Link>
+            </div>
+          </div>
+        </motion.section>
+      </main>
+    </>
+  );
+}

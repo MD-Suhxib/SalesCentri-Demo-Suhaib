@@ -1,0 +1,56 @@
+{
+    "business_yearly_premium": {
+        "segment": "Business",
+        "billingCycle": "Yearly",
+        "planName": "Premium",
+        "price": 299,
+        "tagline": "Best for growing teams",
+        "features": [
+            "Unlimited users",
+            "Advanced analytics",
+            "Priority support",
+            "Custom integrations",
+            "Dedicated account manager"
+        ]
+    },
+    "business_monthly_premium": {
+        "segment": "Business",
+        "billingCycle": "Monthly",
+        "planName": "Premium",
+        "price": 29,
+        "tagline": "Best for growing teams",
+        "features": [
+            "Unlimited users",
+            "Advanced analytics",
+            "Priority support",
+            "Custom integrations"
+        ]
+    },
+    "personal_yearly_basic": {
+        "segment": "Personal",
+        "billingCycle": "Yearly",
+        "planName": "Basic",
+        "price": 99,
+        "tagline": "Perfect for individuals",
+        "features": [
+            "5 users",
+            "Basic analytics",
+            "Email support"
+        ]
+    },
+    "funnel_level_lead_gen": {
+        "segment": "Funnel Level",
+        "billingCycle": "Yearly",
+        "funnelLevel": "Lead Generation",
+        "leadGenName": "Advanced Lead Gen",
+        "type": "Funnel",
+        "minimumPrice": 199,
+        "price": 199,
+        "tagline": "Generate quality leads",
+        "features": [
+            "AI-powered lead scoring",
+            "Automated outreach",
+            "CRM integration"
+        ]
+    }
+}

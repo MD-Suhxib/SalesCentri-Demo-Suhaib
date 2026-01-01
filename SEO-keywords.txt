@@ -1,0 +1,164 @@
+Sales Centri Keywords Research
+
+USA🇺🇸
+
+
+#	Country	Keyword	Volume	CPC
+1	US	sales navigator	25000	1.89
+2	US	lead generation	22000	3.07
+3	US	lead generation software	3100	0.57
+4	US	b2b lead generation	4400	10.74
+5	US	ai lead generation	1800	0.99
+6	US	sales intelligence software	1800	7.42
+7	US	sales lead generation	2800	0.15
+8	US	ai sales tools	2700	0.69
+9	US	sales ai tools	1200	0.69
+10	US	sales intelligence software	1800	7.42
+11	US	customer engagement software	2400	0.29
+12	US	crm software for small business	3600	0.38
+13	US	automated lead generation	1100	0.67
+14	US	sales engagement platforms	1000	0.77
+15	US	cold email	3400	4.07
+16	US	email tracker	3800	1.62
+17	US	email marketing software	2200	14.53
+18	US	email search engine	800	1.29
+19	US	ai writers	400	1.14
+20	US	writing assistant ai	500	1.02
+21	US	data marketplace	1000	3.36
+22	US	email warmup	5300	1.18
+23	US	business leads	800	0.6
+24	US	how to generate b2b leads	1000	0.35
+25	US	crm email integration	350	1
+26	US	email marketing	45000	0.85
+27	US	ai email marketing	1600	3.7
+28	US	email deliverability	2200	6.06
+29	US	automate email	1100	8.55
+30	US	sales prospecting	1300	4.69
+31	US	ai email reply generator	200	2.5
+32	US	email platform	1100	3.16
+
+
+
+
+India🇮🇳
+
+#	Country	Keyword	Volume	CPC
+1	IN	lead generation	9400	0.18
+2	IN	lead generation tools	4200	0.71
+3	IN	ai email	7400	0.02
+4	IN	ai marketing tools	1300	0.02
+5	IN	email marketing platforms	2200	0.01
+6	IN	lead finder	600	0.37
+7	IN	b2b leads	250	0.13
+8	IN	email campaign tools	500	0.68
+9	IN	email automation	700	0.27
+10	IN	sales automation	450	0.03
+11	IN	b2b lead generation services	1100	0.02
+12	IN	b2b sales	3700	0.07
+13	IN	sales cycle	800	0.03
+14	IN	sales ai	350	0.51
+15	IN	sales engagement platform	100	1.9
+16	IN	b2b process	150	0.03
+17	IN	sales positions	100	0.1
+18	IN	mail subject	100	0.05
+19	IN	sales platform	80	0.22
+20	IN	lead management system	1100	0.7
+21	IN	ai in chatbots	50	0.07
+22	IN	ai based chatbot	150	0.1
+23	IN	chat agent	100	0.09
+24	IN	sales performance dashboard	250	0.26
+25	IN	lead generation ai	150	0.3
+26	IN	ai lead generation tools	150	0.3
+27	IN	ai tools for lead generation	100	0.37
+28	IN	ai sales tools	150	0.6
+29	IN	b2b lead generation software	100	0.38
+30	IN	email lead generation	100	0.36
+31	IN	email spam checker	1000	0.29
+32	IN	ai email writer	73000	0.08
+33	IN	cold email marketing	100	0.19
+34	IN	cold email software	150	0.66
+35	IN	lead qualification	300	0.24
+36	IN	lead prospecting	60	0.31
+37	IN	email correction	500	0.01
+38	IN	email verification tools	250	0.2
+39	IN	lead finder	400	0.37
+40	IN	email verification	2400	0.09
+41	IN	email finder	7600	0.6
+42	IN	b2b database	700	0.03
+43	IN	ai for email marketing	400	0.03
+44	IN	ai crm	200	0.03
+45	IN	ai tools for sales	100	0.22
+46	IN	crm software examples	1500	0.17
+47	IN	sales engagement platform	100	1.9
+
+
+
+
+Global🌐
+
+#	Keyword	Volume	Top location code	Top location	Top location's volume
+1	crm software	104290	US	United States	104290
+2	ai powered crm	4500	US	United States	4500
+3	lead finder	1420	US	United States	1420
+4	email verification	18240	US	United States	18240
+5	lead generation tools	8430	US	United States	8430
+6	ai lead generation	2900	US	United States	2900
+7	email lead generation	1120	US	United States	1120
+8	b2b leads	4220	US	United States	4220
+9	ai crm	3280	US	United States	3280
+10	ai email marketing	2230	US	United States	2230
+11	ai for email marketing	2040	US	United States	2040
+12	leads generator	1920	US	United States	1920
+13	lead generation ai	630	US	United States	630
+14	b2b lead generation tools	1230	US	United States	1230
+15	ai sales lead generation	1200	US	United States	1200
+16	find leads	740	US	United States	740
+17	b2b database	1940	US	United States	1940
+18	cold email software	920	US	United States	920
+19	ai email writer	96350	IN	India	96350
+20	follow up email	19220	NZ	New Zealand	19220
+21	best email sequences	150	US	United States	150
+22	lead qualification	3220	AU	Australia	3220
+23	cold emailing	2070	IN	India	2070
+24	email verification tools	1460	US	United States	1460
+25	email sequences	350	US	United States	350
+26	lead prospecting	520	US	United States	520
+27	lead generation for software companies	450	US	United States	450
+28	ai lead generation software	640	US	United States	640
+29	lead generation tools	8800	SE	Sweden	8800
+30	ai prospecting	2710	US	United States	2710
+31	best ai lead generation tools	450	US	United States	450
+32	drift chatbot	1720	US	United States	1720
+33	chatbot	93800	US	United States	93800
+34	lead management	7160	US	United States	7160
+35	sales software	8180	US	United States	8180
+36	lead management system	3860	IN	India	3860
+37	sales automation software	4900	US	United States	4900
+38	sales engagement platform	2370	US	United States	2370
+39	ai chatbots	10500	US	United States	10500
+40	drift software	270	US	United States	270
+41	sales prospecting	2680	US	United States	2680
+42	what is sales forecasting	1370	US	United States	1370
+43	ai powered chatbots	2810	US	United States	2810
+44	ai powered chatbot	1430	IN	India	1430
+45	sales performance automation	100	US	United States	100
+46	sales softwares	700	US	United States	700
+47	lead management tool	510	US	United States	510
+48	sales email template	1530	US	United States	1530
+49	ai prospecting	2710	US	United States	2710
+50	b2b lead generation	6250	US	United States	6250
+51	customer engagement service	720	US	United States	720
+52	customer engagement	15870	RU	Russian Federation	15870
+53	sales email templates	990	US	United States	990
+54	sales automation ai	1100	US	United States	1100
+55	b2b sales means	3750	IN	India	3750
+56	sales and marketing alignment	2520	BR	Brazil	2520
+57	customer engagement services	570	US	United States	570
+58	account management software	1790	US	United States	1790
+59	sales automation platform	770	US	United States	770
+60	ai sales tools	3650	US	United States	3650
+61	leads generator	1480	CA	Canada	1480
+62	b2b database	1970	US	United States	1970
+63	b2b contact database	750	US	United States	750
+64	sales intelligence and engagement platform	150	US	United States	150
+

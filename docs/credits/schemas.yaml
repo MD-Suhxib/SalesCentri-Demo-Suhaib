@@ -1,0 +1,163 @@
+schemas:
+  CreditPlan:
+    type: object
+    properties:
+      id:
+        type: integer
+        description: Credit plan ID
+      plan_category:
+        type: string
+        enum: [personal, business, lead_streams]
+        description: Plan category
+      plan_name:
+        type: string
+        description: Name of the plan
+      plan_cost_usd:
+        type: number
+        format: decimal
+        description: Cost in USD
+      plan_repetition:
+        type: string
+        enum: [once, interval]
+        description: Payment repetition type
+      plan_repetition_interval:
+        type: string
+        enum: [monthly, yearly, both]
+        nullable: true
+        description: Repetition interval (required if plan_repetition is 'interval')
+      plan_credits:
+        type: integer
+        description: Number of credits provided by this plan
+      active:
+        type: boolean
+        description: Whether the plan is active
+      created_at:
+        type: string
+        format: date-time
+        description: Creation timestamp
+      updated_at:
+        type: string
+        format: date-time
+        description: Last update timestamp
+    required:
+      - id
+      - plan_category
+      - plan_name
+      - plan_cost_usd
+      - plan_repetition
+      - plan_credits
+      - active
+
+  Payment:
+    type: object
+    properties:
+      id:
+        type: integer
+        description: Payment record ID
+      user_id:
+        type: integer
+        description: User ID who made the purchase
+      organization_id:
+        type: integer
+        description: Organization ID that received credits
+      plan_id:
+        type: integer
+        nullable: true
+        description: Credit plan ID
+      provider:
+        type: string
+        enum: [payu, paypal, stripe, other]
+        description: Payment provider
+      order_id:
+        type: string
+        description: Transaction ID from payment provider
+      provider_payment_id:
+        type: string
+        nullable: true
+        description: Payment ID from provider
+      amount:
+        type: number
+        format: decimal
+        description: Payment amount
+      currency:
+        type: string
+        description: Currency code
+      status:
+        type: string
+        enum: [created, authorized, captured, failed, refunded]
+        description: Payment status
+      meta:
+        type: object
+        nullable: true
+        description: Additional metadata (JSON)
+      created_at:
+        type: string
+        format: date-time
+        description: Creation timestamp
+      updated_at:
+        type: string
+        format: date-time
+        description: Last update timestamp
+    required:
+      - id
+      - user_id
+      - organization_id
+      - provider
+      - order_id
+      - amount
+      - currency
+      - status
+
+  TopupResponse:
+    type: object
+    properties:
+      success:
+        type: boolean
+        description: Indicates if the request was successful
+      data:
+        type: object
+        properties:
+          message:
+            type: string
+          payment:
+            $ref: "#/components/schemas/Payment"
+          credits_added:
+            type: integer
+            description: Number of credits added to wallet
+        required:
+          - message
+          - payment
+          - credits_added
+      error:
+        type: object
+        nullable: true
+        properties:
+          code:
+            type: integer
+          message:
+            type: string
+
+  ErrorResponse:
+    type: object
+    properties:
+      success:
+        type: boolean
+        example: false
+      data:
+        type: object
+        nullable: true
+      error:
+        type: object
+        properties:
+          code:
+            type: integer
+          message:
+            type: string
+
+securitySchemes:
+  bearerAuth:
+    type: http
+    scheme: bearer
+    bearerFormat: JWT
+    description: User JWT token in Authorization header
+

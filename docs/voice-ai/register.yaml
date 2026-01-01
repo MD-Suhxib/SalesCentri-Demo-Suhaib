@@ -1,0 +1,188 @@
+post:
+  summary: Register AI Call
+  description: Register a new AI call record. Requires x-api-key header for authentication. Email format is validated and returns 422 if invalid.
+  operationId: registerAiCall
+  tags:
+    - AI Call
+  parameters:
+    - name: x-api-key
+      in: header
+      required: true
+      schema:
+        type: string
+      description: API key for authorization (matches SALESCENTRI_CLIENT_API_KEY from .env, case insensitive)
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - email
+            - phone
+          properties:
+            email:
+              type: string
+              format: email
+              description: Email address (required, validated for format)
+              example: "user@example.com"
+            phone:
+              type: string
+              description: Phone number (required, no validation)
+              example: "+1234567890"
+            subject:
+              type: string
+              nullable: true
+              description: Call subject (optional)
+              example: "Product Inquiry"
+            transcript:
+              type: string
+              nullable: true
+              description: Full call transcript (optional, can be very large)
+              example: "Agent: Hello, how can I help you today? Customer: I'm interested in..."
+            summary:
+              type: string
+              nullable: true
+              description: Call summary (optional, can be very large)
+              example: "Customer inquired about product features and pricing..."
+            metadata:
+              type: object
+              nullable: true
+              description: Additional metadata as JSON object (optional)
+              additionalProperties: true
+              example:
+                duration: 300
+                call_type: "inbound"
+                agent_id: "agent_123"
+  responses:
+    "201":
+      description: AI call registered successfully
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+                description: Indicates if the request was successful
+              data:
+                type: object
+                properties:
+                  call:
+                    $ref: "#/components/schemas/AiCall"
+                required:
+                  - call
+              error:
+                type: object
+                nullable: true
+          example:
+            success: true
+            data:
+              call:
+                id: 1
+                email: "user@example.com"
+                phone: "+1234567890"
+                subject: "Product Inquiry"
+                transcript: "Agent: Hello, how can I help you today? Customer: I'm interested in..."
+                summary: "Customer inquired about product features and pricing..."
+                metadata:
+                  duration: 300
+                  call_type: "inbound"
+                  agent_id: "agent_123"
+                created_at: "2024-01-15T10:30:00"
+                updated_at: "2024-01-15T10:30:00"
+    "400":
+      description: Validation error
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              data:
+                type: object
+                nullable: true
+              error:
+                type: object
+                properties:
+                  code:
+                    type: integer
+                    example: 400
+                  message:
+                    type: string
+                    examples:
+                      - "Invalid JSON body"
+                      - "email is required"
+                      - "phone is required"
+                      - "Invalid metadata JSON format"
+    "401":
+      description: Unauthorized - Invalid or missing API key
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              data:
+                type: object
+                nullable: true
+              error:
+                type: object
+                properties:
+                  code:
+                    type: integer
+                    example: 401
+                  message:
+                    type: string
+                    examples:
+                      - "Invalid API key"
+                      - "Server configuration error"
+    "422":
+      description: Unprocessable Entity - Invalid email format
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              data:
+                type: object
+                nullable: true
+              error:
+                type: object
+                properties:
+                  code:
+                    type: integer
+                    example: 422
+                  message:
+                    type: string
+                    example: "Invalid email format"
+    "500":
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              data:
+                type: object
+                nullable: true
+              error:
+                type: object
+                properties:
+                  code:
+                    type: integer
+                    example: 500
+                  message:
+                    type: string
+                    example: "Failed to register AI call"

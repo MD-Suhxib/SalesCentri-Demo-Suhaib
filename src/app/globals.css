@@ -1,0 +1,1503 @@
+@import "tailwindcss";
+
+/* Blog Content Styling - WordPress-like formatting */
+.blog-content {
+    color: #d1d5db;
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+.blog-content h2 {
+    color: #ffffff;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 4px solid #3b82f6;
+}
+
+.blog-content h3 {
+    color: #f3f4f6;
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.blog-content h4 {
+    color: #e5e7eb;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-content p {
+    margin-bottom: 1.25rem;
+    color: #d1d5db;
+}
+
+.blog-content ul,
+.blog-content ol {
+    margin: 1.25rem 0;
+    padding-left: 1.5rem;
+}
+
+.blog-content ul {
+    list-style-type: disc;
+}
+
+.blog-content ol {
+    list-style-type: decimal;
+}
+
+.blog-content li {
+    margin-bottom: 0.5rem;
+    color: #d1d5db;
+    padding-left: 0.5rem;
+}
+
+.blog-content li::marker {
+    color: #3b82f6;
+}
+
+.blog-content strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.blog-content em {
+    color: #e5e7eb;
+    font-style: italic;
+}
+
+.blog-content a {
+    color: #60a5fa;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.blog-content a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+.blog-content blockquote {
+    border-left: 4px solid #3b82f6;
+    background: rgba(59, 130, 246, 0.1);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 0.5rem 0.5rem 0;
+    font-style: italic;
+    color: #e5e7eb;
+}
+
+.blog-content code {
+    background: #1f2937;
+    color: #93c5fd;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-family: 'Fira Code', 'Monaco', monospace;
+}
+
+.blog-content pre {
+    background: #111827;
+    border: 1px solid #374151;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.blog-content pre code {
+    background: transparent;
+    padding: 0;
+}
+
+.blog-content img {
+    border-radius: 0.75rem;
+    border: 1px solid #374151;
+    margin: 1.5rem 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.blog-content figure {
+    margin: 1.5rem 0;
+}
+
+.blog-content figcaption {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.blog-content hr {
+    border: none;
+    border-top: 1px solid #374151;
+    margin: 2rem 0;
+}
+
+.blog-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.blog-content th,
+.blog-content td {
+    border: 1px solid #374151;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.blog-content th {
+    background: #1f2937;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.blog-content td {
+    color: #d1d5db;
+}
+
+/* WordPress specific classes */
+.blog-content .wp-block-heading {
+    color: #ffffff;
+}
+
+.blog-content .wp-block-list {
+    margin: 1.25rem 0;
+    padding-left: 1.5rem;
+}
+
+.blog-content .wp-block-image {
+    margin: 1.5rem 0;
+}
+
+.blog-content .wp-block-image img {
+    border-radius: 0.75rem;
+    border: 1px solid #374151;
+}
+
+.blog-content .wp-block-quote {
+    border-left: 4px solid #3b82f6;
+    background: rgba(59, 130, 246, 0.1);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* Production-Ready CSS Variables */
+
+:root {
+    --background: #FAFBFC;
+    --foreground: #1A202C;
+    --border-color: rgba(0, 0, 0, 0.08);
+    --subtle-background: rgba(0, 0, 0, 0.03);
+    --muted-foreground: #4A5568;
+    --primary: #4299E1;
+    --accent: #805AD5;
+    --success: #48BB78;
+    --warning: #ED8936;
+    --danger: #F56565;
+    --surface: #FFFFFF;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --radius: 12px;
+    --font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    /* UI Component Variables */
+    --card: #FFFFFF;
+    --card-foreground: #1A202C;
+    --popover: #FFFFFF;
+    --popover-foreground: #1A202C;
+    --secondary: #F7FAFC;
+    --secondary-foreground: #2D3748;
+    --muted: #F7FAFC;
+    --muted-foreground: #718096;
+    --accent-foreground: #2D3748;
+    --destructive-foreground: #FFFFFF;
+    --border: rgba(0, 0, 0, 0.08);
+    --input: rgba(0, 0, 0, 0.08);
+    --ring: #4299E1;
+    /* ResearchBot Theme Variables */
+    --research-bg: #000000;
+    --research-surface: rgba(22, 27, 34, 0.8);
+    --research-text: #F0F6FC;
+    --research-text-muted: #8B949E;
+    --research-primary: #00AAFF;
+    --research-primary-hover: #0088CC;
+    --research-accent: #A78BFA;
+    --research-accent-hover: #8B5CF6;
+    --research-border: rgba(48, 54, 61, 0.6);
+    --research-radius: 12px;
+    --research-shadow: 0 8px 32px rgba(0, 170, 255, 0.15);
+    --research-muted: rgba(33, 38, 45, 0.8);
+    --research-glass: rgba(22, 27, 34, 0.75);
+    --research-focus: rgba(0, 170, 255, 0.3);
+    --research-success: #56D364;
+    --research-warning: #E3B341;
+    --research-danger: #F85149;
+    --research-info: #00AAFF;
+    --research-gradient: linear-gradient(135deg, #00AAFF 0%, #A78BFA 100%);
+    --research-text-gradient: linear-gradient(135deg, #00AAFF, #A78BFA);
+}
+
+
+/* Enhanced Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+     :root {
+        --background: #0D1117;
+        --foreground: #F0F6FC;
+        --border-color: rgba(255, 255, 255, 0.1);
+        --subtle-background: rgba(255, 255, 255, 0.05);
+        --muted-foreground: #8B949E;
+        --primary: #58A6FF;
+        --accent: #A5A2FF;
+        --success: #56D364;
+        --warning: #E3B341;
+        --danger: #F85149;
+        --surface: #161B22;
+        --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        /* UI Component Dark Mode Variables */
+        --card: #161B22;
+        --card-foreground: #F0F6FC;
+        --popover: #161B22;
+        --popover-foreground: #F0F6FC;
+        --secondary: #21262D;
+        --secondary-foreground: #F0F6FC;
+        --muted: #21262D;
+        --muted-foreground: #8B949E;
+        --accent-foreground: #F0F6FC;
+        --destructive-foreground: #F0F6FC;
+        --border: rgba(255, 255, 255, 0.1);
+        --input: rgba(255, 255, 255, 0.1);
+        --ring: #58A6FF;
+        /* ResearchBot Dark Mode Theme Variables */
+        --research-bg: #0D1117;
+        --research-surface: #161B22;
+        --research-text: #F0F6FC;
+        --research-text-muted: #8B949E;
+        --research-primary: #58A6FF;
+        --research-primary-hover: #388BFD;
+        --research-accent: #A5A2FF;
+        --research-accent-hover: #8B5CF6;
+        --research-border: #30363D;
+        --research-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        --research-muted: #21262D;
+        --research-glass: rgba(22, 27, 34, 0.9);
+        --research-focus: rgba(88, 166, 255, 0.3);
+        --research-success: #56D364;
+        --research-warning: #E3B341;
+        --research-danger: #F85149;
+        --research-info: #58A6FF;
+        --research-gradient: linear-gradient(135deg, #58A6FF 0%, #A5A2FF 100%);
+        --research-text-gradient: linear-gradient(135deg, #58A6FF, #A5A2FF);
+    }
+}
+
+
+/* Global Base Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: auto;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-family);
+    line-height: 1.6;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Focus Management - Outlines Removed */
+
+:focus {
+    outline: none;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+
+/* Production Utility Classes */
+
+.production-gradient {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+}
+
+.glass-effect {
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* ResearchBot Utility Classes */
+
+
+/* Research Results Grid Horizontal Scroll Styles */
+
+.research-results-container {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 170, 255, 0.3) transparent;
+}
+
+.research-results-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.research-results-container::-webkit-scrollbar-track {
+    background: rgba(33, 38, 45, 0.3);
+    border-radius: 4px;
+}
+
+.research-results-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 170, 255, 0.3);
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.research-results-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 170, 255, 0.5);
+}
+
+
+/* Model Column Word Wrapping */
+
+.model-column-content {
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+
+
+/* Full Width Research Grid */
+
+.research-grid-full-width {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.research-grid-full-width .model-column {
+    width: 100%;
+    min-width: 0;
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .research-grid-full-width {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .research-grid-full-width {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
+@media (min-width: 1280px) {
+    .research-grid-full-width {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+
+/* Configuration Modal Responsive Styles */
+
+.config-modal-responsive {
+    /* Mobile: Vertical stacking */
+    @media (max-width: 767px) {
+        .config-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1rem !important;
+        }
+        .config-section {
+            padding: 0.75rem !important;
+            margin-bottom: 0.5rem !important;
+        }
+        .config-section h4,
+        .config-section-header {
+            font-size: 0.875rem !important;
+            margin-bottom: 0.5rem !important;
+        }
+        .config-form-element {
+            padding: 0.5rem !important;
+            font-size: 0.875rem !important;
+        }
+        .config-ai-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 0.5rem !important;
+        }
+        .config-ai-button {
+            padding: 0.5rem !important;
+            font-size: 0.75rem !important;
+            min-height: 2rem !important;
+        }
+    }
+    /* Tablet: 2 columns */
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .config-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 1.5rem !important;
+        }
+        .config-ai-grid {
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 0.75rem !important;
+        }
+    }
+    /* Desktop: 3 columns horizontal */
+    @media (min-width: 1024px) {
+        .config-grid {
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 2rem !important;
+        }
+        .config-ai-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 1rem !important;
+        }
+    }
+    /* Large Desktop: 3 columns with more space */
+    @media (min-width: 1280px) {
+        .config-grid {
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 2.5rem !important;
+        }
+        .config-ai-grid {
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 1.25rem !important;
+        }
+    }
+}
+
+.research-gradient {
+    background: var(--research-gradient);
+}
+
+.research-text-gradient {
+    background: var(--research-text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.research-glass {
+    background: var(--research-glass);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--research-border);
+}
+
+.research-surface {
+    background: var(--research-surface);
+    border: 1px solid var(--research-border);
+}
+
+.font-poppins {
+    font-family: 'Poppins', 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+/* Enhanced Scrollbar Styling */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--subtle-background);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--muted-foreground);
+}
+
+
+/* Selection Styling */
+
+::selection {
+    background: var(--primary);
+    color: var(--surface);
+}
+
+::-moz-selection {
+    background: var(--primary);
+    color: var(--surface);
+}
+
+
+/* Lead table styles for proper alignment */
+
+.lead-table {
+    border-collapse: collapse;
+    /* Table grows to content width, parent container handles scroll */
+    width: 100%;
+    min-width: 1200px;
+    /* Force scrollbar like Lightning Mode */
+    margin: 0;
+    /* container handles margin */
+    font-size: 12px;
+    /* compact */
+    line-height: 1.2;
+    table-layout: auto;
+}
+
+.lead-table th,
+.lead-table td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3px 8px;
+    /* tighter rows */
+    text-align: left;
+    vertical-align: middle;
+    /* center-align to reduce height */
+    word-break: keep-all !important;
+    white-space: nowrap !important;
+    /* single-line text */
+    overflow-wrap: normal !important;
+    overflow: hidden;
+    /* enable ellipsis */
+    text-overflow: ellipsis;
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+    min-width: 80px;
+    /* Prevent vertical text display - CRITICAL for production */
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+    direction: ltr !important;
+    unicode-bidi: normal !important;
+}
+
+
+/* Header styling inspired by Lightning Mode */
+
+.lead-table thead th {
+    height: 34px;
+    background: linear-gradient(180deg, rgba(59, 130, 246, 0.18) 0%, rgba(30, 58, 138, 0.18) 100%);
+    border-bottom: 2px solid rgba(59, 130, 246, 0.35);
+    color: #93c5fd;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+
+/* Compact row height */
+
+.lead-table tbody tr {
+    height: 32px;
+}
+
+.lead-table tbody tr:hover {
+    background: rgba(59, 130, 246, 0.06);
+}
+
+
+/* Right-align numeric columns */
+
+.lead-table td:nth-child(7),
+
+/* Employees */
+
+.lead-table th:nth-child(7),
+.lead-table td:nth-child(8),
+
+/* Revenue */
+
+.lead-table th:nth-child(8) {
+    text-align: right !important;
+}
+
+
+/* Set proportional widths based on typical content length */
+
+.lead-table th:nth-child(1),
+.lead-table td:nth-child(1) {
+    width: 12% !important;
+    min-width: 120px !important;
+}
+
+
+/* Company Name */
+
+.lead-table th:nth-child(2),
+.lead-table td:nth-child(2) {
+    width: 15% !important;
+    min-width: 150px !important;
+}
+
+
+/* Website */
+
+.lead-table th:nth-child(3),
+.lead-table td:nth-child(3) {
+    width: 8% !important;
+    min-width: 80px !important;
+}
+
+
+/* Industry */
+
+.lead-table th:nth-child(4),
+.lead-table td:nth-child(4) {
+    width: 8% !important;
+    min-width: 80px !important;
+}
+
+
+/* Sub-Industry */
+
+.lead-table th:nth-child(5),
+.lead-table td:nth-child(5) {
+    width: 10% !important;
+    min-width: 100px !important;
+}
+
+
+/* Product Line */
+
+.lead-table th:nth-child(6),
+.lead-table td:nth-child(6) {
+    width: 15% !important;
+    min-width: 200px !important;
+}
+
+
+/* Use Case */
+
+.lead-table th:nth-child(7),
+.lead-table td:nth-child(7) {
+    width: 6% !important;
+    min-width: 60px !important;
+}
+
+
+/* Employees */
+
+.lead-table th:nth-child(8),
+.lead-table td:nth-child(8) {
+    width: 6% !important;
+    min-width: 80px !important;
+}
+
+
+/* Revenue */
+
+.lead-table th:nth-child(9),
+.lead-table td:nth-child(9) {
+    width: 8% !important;
+    min-width: 100px !important;
+}
+
+
+/* Location */
+
+.lead-table th:nth-child(10),
+.lead-table td:nth-child(10) {
+    width: 8% !important;
+    min-width: 120px !important;
+}
+
+
+/* Key Decision Maker */
+
+.lead-table th:nth-child(11),
+.lead-table td:nth-child(11) {
+    width: 8% !important;
+    min-width: 100px !important;
+}
+
+
+/* Designation */
+
+.lead-table th:nth-child(12),
+.lead-table td:nth-child(12) {
+    width: 8% !important;
+    min-width: 120px !important;
+}
+
+
+/* Pain Points */
+
+.lead-table th:nth-child(13),
+.lead-table td:nth-child(13) {
+    width: 8% !important;
+    min-width: 150px !important;
+}
+
+
+/* Approach Strategy */
+
+
+/* Better text wrapping for Use Case column */
+
+.lead-table td:nth-child(6) {
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    white-space: normal !important;
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+}
+
+
+/* Better text wrapping for Website column */
+
+.lead-table td:nth-child(2) {
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    white-space: normal !important;
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+}
+
+
+/* Better text wrapping for Location column */
+
+.lead-table td:nth-child(9) {
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    white-space: normal !important;
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+}
+
+
+/* Better text wrapping for Revenue column */
+
+.lead-table td:nth-child(8) {
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    white-space: normal !important;
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+}
+
+
+/* Better text wrapping for Pain Points column */
+
+.lead-table td:nth-child(12) {
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    white-space: normal !important;
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+}
+
+.lead-table th {
+    background-color: rgba(59, 130, 246, 0.1);
+    font-weight: 600;
+    color: #60a5fa;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.lead-table td {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+
+/* CRITICAL: Prevent any vertical text display in production */
+
+.lead-table * {
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+    direction: ltr !important;
+    unicode-bidi: normal !important;
+}
+
+
+/* Override any potential conflicting styles */
+
+.lead-table td,
+.lead-table th {
+    display: table-cell !important;
+    white-space: normal !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+}
+
+.table-container {
+    overflow-x: auto;
+    /* Ensure tables don't get corrupted in production */
+    max-width: 100%;
+    margin: 1rem 0;
+}
+
+
+/* Lead table specific wrapper - matches Lightning Mode styling */
+
+.lead-table-container {
+    overflow-x: auto;
+    overflow-y: visible;
+    max-width: 100%;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    /* Force horizontal scrollbar to always be visible */
+    scrollbar-width: thin;
+    scrollbar-color: #3b82f6 #1f2937;
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    border-radius: 10px;
+    background: rgba(2, 6, 23, 0.35);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 8px 24px rgba(2, 6, 23, 0.35);
+}
+
+
+/* Add scroll indicator */
+
+.lead-table-container::after {
+    content: "← Scroll for more →";
+    position: absolute;
+    bottom: -25px;
+    right: 10px;
+    font-size: 11px;
+    color: #60a5fa;
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.lead-table-container::-webkit-scrollbar {
+    height: 14px;
+    width: 14px;
+}
+
+.lead-table-container::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.9);
+    border-radius: 8px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.lead-table-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+    border-radius: 8px;
+    border: 2px solid rgba(15, 23, 42, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.lead-table-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90deg, #2563eb, #1e40af);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+}
+
+.lead-table-container::-webkit-scrollbar-corner {
+    background: rgba(15, 23, 42, 0.9);
+}
+
+
+/* Additional production safeguards */
+
+.lead-table {
+    /* Force horizontal text flow */
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+    direction: ltr !important;
+    unicode-bidi: normal !important;
+    /* Prevent any CSS corruption */
+    font-family: inherit !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+
+/* ===========================================
+   LIGHT MODE SUPPORT FOR TABLES
+   =========================================== */
+
+@media (prefers-color-scheme: light) {
+    .lead-table th,
+    .lead-table td {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        color: #171717;
+    }
+    .lead-table th {
+        background-color: rgba(59, 130, 246, 0.1);
+        color: #1d4ed8;
+    }
+    .lead-table td {
+        background-color: rgba(0, 0, 0, 0.02);
+        color: #171717;
+    }
+}
+
+
+/* ===========================================
+   DARK MODE EXPLICIT STYLES FOR TABLES
+   =========================================== */
+
+@media (prefers-color-scheme: dark) {
+    .lead-table th,
+    .lead-table td {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+    }
+    .lead-table th {
+        background-color: rgba(59, 130, 246, 0.1);
+        color: #60a5fa;
+    }
+    .lead-table td {
+        background-color: rgba(255, 255, 255, 0.02);
+        color: #ffffff;
+    }
+}
+
+
+/* ===========================================
+   DELL 14" LAPTOP OPTIMIZATION
+   =========================================== */
+
+
+/* Mobile Responsive Styles */
+
+@media screen and (max-width: 640px) {
+    /* Mobile modal optimizations */
+    .mobile-modal {
+        margin: 4px !important;
+        max-width: calc(100vw - 8px) !important;
+        max-height: calc(100vh - 8px) !important;
+    }
+    /* Mobile form elements */
+    .mobile-form-element {
+        min-height: 44px !important;
+        font-size: 16px !important;
+        /* Prevent zoom on iOS */
+        padding: 12px !important;
+    }
+    /* Mobile touch targets */
+    .mobile-touch-target {
+        min-height: 44px !important;
+        min-width: 44px !important;
+        touch-action: manipulation !important;
+    }
+    /* Mobile grid adjustments */
+    .mobile-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+    /* Mobile spacing */
+    .mobile-spacing {
+        padding: 12px !important;
+        margin: 8px !important;
+    }
+    /* Mobile buttons */
+    .mobile-button {
+        padding: 12px 16px !important;
+        font-size: 14px !important;
+        min-height: 44px !important;
+    }
+    /* Mobile text sizing */
+    .mobile-text {
+        font-size: 14px !important;
+        line-height: 1.4 !important;
+    }
+    /* Mobile icons */
+    .mobile-icon {
+        width: 16px !important;
+        height: 16px !important;
+    }
+    /* Mobile results grid */
+    .mobile-results-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+    /* Mobile model columns */
+    .mobile-model-column {
+        margin-bottom: 16px !important;
+    }
+    /* Mobile table responsiveness */
+    .mobile-table {
+        font-size: 12px !important;
+        overflow-x: auto !important;
+    }
+    /* Mobile input improvements */
+    .mobile-input {
+        font-size: 16px !important;
+        /* Prevent zoom on iOS */
+        padding: 12px !important;
+        min-height: 44px !important;
+    }
+    /* Mobile AI model buttons */
+    .mobile-ai-button {
+        padding: 6px 8px !important;
+        min-height: 32px !important;
+        font-size: 10px !important;
+        gap: 4px !important;
+    }
+    /* Mobile form sections */
+    .mobile-form-section {
+        padding: 8px !important;
+        margin-bottom: 8px !important;
+    }
+    /* Mobile section headers */
+    .mobile-section-header {
+        font-size: 11px !important;
+        margin-bottom: 6px !important;
+        gap: 4px !important;
+    }
+    /* Mobile form elements */
+    .mobile-form-element {
+        padding: 6px 8px !important;
+        min-height: 32px !important;
+        font-size: 11px !important;
+    }
+    /* Mobile hero section */
+    .mobile-hero {
+        margin-bottom: 16px !important;
+        padding: 0 8px !important;
+    }
+    /* Mobile analytics cards */
+    .mobile-analytics-card {
+        padding: 8px !important;
+        font-size: 12px !important;
+    }
+    /* Mobile results grid */
+    .mobile-results-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+        margin-bottom: 16px !important;
+    }
+    /* Mobile input container */
+    .mobile-input-container {
+        padding: 12px !important;
+        margin-bottom: 12px !important;
+    }
+    /* Mobile buttons */
+    .mobile-buttons {
+        margin-top: 12px !important;
+        gap: 8px !important;
+    }
+}
+
+
+/* Tablet Responsive Styles */
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    /* Tablet modal optimizations */
+    .tablet-modal {
+        margin: 16px !important;
+        max-width: calc(100vw - 32px) !important;
+    }
+    /* Tablet grid adjustments */
+    .tablet-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+    }
+    /* Tablet hero section */
+    .tablet-hero {
+        margin-bottom: 24px !important;
+    }
+    /* Tablet analytics */
+    .tablet-analytics {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 16px !important;
+    }
+    /* Tablet results grid */
+    .tablet-results-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+    }
+    /* Tablet input container */
+    .tablet-input-container {
+        padding: 20px !important;
+    }
+}
+
+
+/* Desktop Responsive Styles */
+
+@media screen and (min-width: 1024px) {
+    /* Desktop hero section */
+    .desktop-hero {
+        margin-bottom: 32px !important;
+    }
+    /* Desktop analytics */
+    .desktop-analytics {
+        grid-template-columns: repeat(5, 1fr) !important;
+        gap: 24px !important;
+    }
+    /* Desktop results grid */
+    .desktop-results-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 24px !important;
+    }
+    /* Large desktop results grid */
+    .large-desktop-results-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 24px !important;
+    }
+    /* Extra large desktop results grid */
+    .xl-desktop-results-grid {
+        grid-template-columns: repeat(5, 1fr) !important;
+        gap: 24px !important;
+    }
+}
+
+
+/* Ultra-wide Desktop Styles */
+
+@media screen and (min-width: 1536px) {
+    /* Ultra-wide results grid */
+    .ultra-wide-results-grid {
+        grid-template-columns: repeat(6, 1fr) !important;
+        gap: 32px !important;
+    }
+    /* Ultra-wide container */
+    .ultra-wide-container {
+        max-width: 1600px !important;
+    }
+}
+
+
+/* Dell 14" laptop specific viewport optimizations */
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (min-height: 768px) and (max-height: 1024px) {
+    /* Input section container sizing - less restrictive */
+    .research-input-container {
+        padding: clamp(16px, 3vw, 32px) !important;
+    }
+    /* Input field sizing for Dell 14" - more compact */
+    .research-input-field {
+        height: 36px !important;
+        min-height: 36px !important;
+        font-size: clamp(13px, 2.2vw, 15px) !important;
+        line-height: 1.4 !important;
+    }
+    /* Textarea specific sizing - more compact (now using input) */
+    .research-textarea {
+        height: 36px !important;
+        min-height: 36px !important;
+        font-size: clamp(13px, 2.2vw, 15px) !important;
+        line-height: 1.4 !important;
+    }
+    /* Button sizing for Dell 14" - more compact */
+    .research-button {
+        height: 36px !important;
+        min-height: 36px !important;
+        font-size: clamp(11px, 1.8vw, 13px) !important;
+        padding: 6px 12px !important;
+    }
+    /* Grid layout optimization for Dell 14" - less restrictive */
+    .research-grid {
+        gap: clamp(12px, 2vw, 24px) !important;
+    }
+    /* Label sizing - more compact */
+    .research-label {
+        font-size: clamp(10px, 1.8vw, 12px) !important;
+        line-height: 1.3 !important;
+    }
+    /* Slightly reduce oversized headings for 14" Dell laptops */
+    h1 {
+        font-size: clamp(1.75rem, 2.4vw, 2.5rem) !important;
+        line-height: 1.15 !important;
+    }
+    h2 {
+        font-size: clamp(1.5rem, 2.1vw, 2.1rem) !important;
+        line-height: 1.2 !important;
+    }
+    h3 {
+        font-size: clamp(1.25rem, 1.9vw, 1.6rem) !important;
+        line-height: 1.25 !important;
+    }
+    /* Tailwind utility overrides (large text sizes) */
+    .text-6xl,
+    .md\:text-6xl,
+    .lg\:text-6xl,
+    .xl\:text-6xl {
+        font-size: 3.25rem !important;
+        /* down from 3.75rem */
+        line-height: 1.1 !important;
+    }
+    .text-5xl,
+    .md\:text-5xl,
+    .lg\:text-5xl,
+    .xl\:text-5xl {
+        font-size: 2.75rem !important;
+        /* down from 3rem */
+        line-height: 1.15 !important;
+    }
+    .text-4xl,
+    .md\:text-4xl,
+    .lg\:text-4xl,
+    .xl\:text-4xl {
+        font-size: 2rem !important;
+        /* down from 2.25rem */
+        line-height: 1.2 !important;
+    }
+    .text-3xl,
+    .md\:text-3xl,
+    .lg\:text-3xl,
+    .xl\:text-3xl {
+        font-size: 1.7rem !important;
+        /* down from 1.875rem */
+        line-height: 1.25 !important;
+    }
+    .text-2xl,
+    .md\:text-2xl,
+    .lg\:text-2xl,
+    .xl\:text-2xl {
+        font-size: 1.4rem !important;
+        /* down from 1.5rem */
+        line-height: 1.3 !important;
+    }
+}
+
+
+/* Additional Dell 14" laptop breakpoints */
+
+@media screen and (min-width: 1280px) and (max-width: 1440px) and (min-height: 800px) and (max-height: 900px) {
+    .research-input-field,
+    .research-textarea {
+        height: 40px !important;
+        min-height: 40px !important;
+    }
+    .research-button {
+        height: 40px !important;
+        min-height: 40px !important;
+    }
+    /* Slightly reduce oversized headings for 14" Dell laptops */
+    h1 {
+        font-size: clamp(1.85rem, 2.2vw, 2.6rem) !important;
+        line-height: 1.15 !important;
+    }
+    h2 {
+        font-size: clamp(1.55rem, 2.0vw, 2.2rem) !important;
+        line-height: 1.2 !important;
+    }
+    h3 {
+        font-size: clamp(1.3rem, 1.7vw, 1.65rem) !important;
+        line-height: 1.25 !important;
+    }
+    .text-6xl,
+    .md\:text-6xl,
+    .lg\:text-6xl,
+    .xl\:text-6xl {
+        font-size: 3.3rem !important;
+        line-height: 1.1 !important;
+    }
+    .text-5xl,
+    .md\:text-5xl,
+    .lg\:text-5xl,
+    .xl\:text-5xl {
+        font-size: 2.8rem !important;
+        line-height: 1.15 !important;
+    }
+    .text-4xl,
+    .md\:text-4xl,
+    .lg\:text-4xl,
+    .xl\:text-4xl {
+        font-size: 2.05rem !important;
+        line-height: 1.2 !important;
+    }
+    .text-3xl,
+    .md\:text-3xl,
+    .lg\:text-3xl,
+    .xl\:text-3xl {
+        font-size: 1.75rem !important;
+        line-height: 1.25 !important;
+    }
+    .text-2xl,
+    .md\:text-2xl,
+    .lg\:text-2xl,
+    .xl\:text-2xl {
+        font-size: 1.45rem !important;
+        line-height: 1.3 !important;
+    }
+}
+
+
+/* High DPI Dell 14" laptops */
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (min-height: 768px) and (max-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    .research-input-field,
+    .research-textarea {
+        font-size: clamp(15px, 2.8vw, 17px) !important;
+    }
+    .research-button {
+        font-size: clamp(13px, 2.2vw, 15px) !important;
+    }
+    .research-label {
+        font-size: clamp(12px, 2.2vw, 14px) !important;
+    }
+    /* High-DPI: keep reduced headings as well */
+    h1 {
+        font-size: clamp(1.8rem, 2.5vw, 2.6rem) !important;
+        line-height: 1.15 !important;
+    }
+    h2 {
+        font-size: clamp(1.5rem, 2.2vw, 2.2rem) !important;
+        line-height: 1.2 !important;
+    }
+    h3 {
+        font-size: clamp(1.25rem, 2.0vw, 1.65rem) !important;
+        line-height: 1.25 !important;
+    }
+    .text-6xl,
+    .md\:text-6xl,
+    .lg\:text-6xl,
+    .xl\:text-6xl {
+        font-size: 3.2rem !important;
+        line-height: 1.1 !important;
+    }
+    .text-5xl,
+    .md\:text-5xl,
+    .lg\:text-5xl,
+    .xl\:text-5xl {
+        font-size: 2.7rem !important;
+        line-height: 1.15 !important;
+    }
+    .text-4xl,
+    .md\:text-4xl,
+    .lg\:text-4xl,
+    .xl\:text-4xl {
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
+    }
+    .text-3xl,
+    .md\:text-3xl,
+    .lg\:text-3xl,
+    .xl\:text-3xl {
+        font-size: 1.7rem !important;
+        line-height: 1.25 !important;
+    }
+    .text-2xl,
+    .md\:text-2xl,
+    .lg\:text-2xl,
+    .xl\:text-2xl {
+        font-size: 1.4rem !important;
+        line-height: 1.3 !important;
+    }
+}
+
+
+/* Let's Talk Modal Animations & Styles */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-slow {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slideUp {
+    animation: slideUp 0.4s ease-out;
+}
+
+.animate-bounce-slow {
+    animation: bounce-slow 2s ease-in-out infinite;
+}
+
+
+/* Custom scrollbar for modal */
+
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 170, 255, 0.3) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0, 170, 255, 0.3);
+    border-radius: 3px;
+    transition: background 0.2s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 170, 255, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+    .custom-scrollbar {
+        scrollbar-color: rgba(0, 170, 255, 0.4) transparent;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: rgba(0, 170, 255, 0.4);
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 170, 255, 0.6);
+    }
+}
+/* Hide reCAPTCHA badge */
+.grecaptcha-badge {
+    visibility: hidden !important;
+    opacity: 0 !important;
+}

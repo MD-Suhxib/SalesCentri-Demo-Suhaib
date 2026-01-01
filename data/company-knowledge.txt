@@ -1,0 +1,839 @@
+SalesCentri Knowledge Base (Answers Only)
+Version: 2.0
+Format: Each entry starts with `A:`. No questions. Optional `Tags:` help retrieval.
+
+
+A: SalesCentri is an AI-powered Presales Sales Automation (PSA) platform that automates prospecting, enrichment, validation, sequencing, and outreach to deliver qualified pipelines at scale.
+Tags: overview, psa, platform, definition
+
+
+A: SalesCentri is designed for SMBs, agencies, and B2B sales/marketing teams (founders, SDRs/BDRs) that need efficient outbound lead generation and automation.
+Tags: audience, teams, sdr, bdr, founders
+
+
+A: Core modules include SalesGPT (AI agent), AI Hunter (lead discovery), Contact Validator, Lead Intelligence, Multi-channel Sequencer (email/voice/WhatsApp), CRM dashboards, and data enrichment tools.
+Tags: modules, products, features
+
+
+A: Typical results: 150–300% more qualified leads, 50–80% higher response rates, and shorter sales cycles within the first month.
+Tags: results, outcomes, performance
+
+
+A: Supported industries: 40+ B2B verticals including SaaS, IT services, marketing, healthcare, financial services, manufacturing, logistics, energy, education (smart campus), and niches like solar or medical devices.
+Tags: industries, verticals
+
+
+A: ICP definition happens during onboarding using industries, roles, company size, and geography; AI refines with 500+ sources and your past sales patterns.
+Tags: icp, targeting, onboarding
+
+
+A: The platform supports hyper-targeted lead generation across niche verticals with geography and language filters.
+Tags: targeting, niches, filters
+
+
+A: Enrichment includes technographics, hiring/ad spend signals, and keyword intent to prioritize outreach.
+Tags: intent, technographics, enrichment
+
+
+A: ABM is supported: target named accounts, map buying committees, and personalize at account and contact level. Engagement rolls up by account.
+Tags: abm, buying committee, account targeting
+
+
+A: AI scans 500+ sources to find ICP-matched contacts, validates details, enriches records, and launches sequenced outreach.
+Tags: lead generation, automation
+
+
+A: You can import CSV or connect your CRM; we validate, enrich, score, and sequence your leads.
+Tags: import, csv, crm
+
+
+A: Smart sequences automatically send follow-ups and pause on replies.
+Tags: follow-ups, replies, sequencing
+
+
+A: Onboarding typically takes 24–48 hours; campaigns launch within 3–4 business days and first responses arrive in 3–5 days.
+Tags: onboarding, timeline, go-live
+
+
+A: We use warmed, verified outreach domains with SPF/DKIM/DMARC, rotate inboxes, throttle sends, and monitor sender reputation (90+ scores). You can connect your own domain.
+Tags: domains, deliverability, warm-up, spf, dkim, dmarc
+
+
+A: Personalized sender names and relevant content maintain trust while protecting your main brand domain.
+Tags: trust, non-brand domains
+
+
+A: Email accuracy 95%+ and phone 90%+ via SMTP checks, domain validation, blacklist screening, and AI scoring.
+Tags: data accuracy, validation
+
+
+A: Enrichment fields include name, email, role, phone (if public), company, industry, size, LinkedIn URL, tech stack, funding, and intent.
+Tags: enrichment, fields, technographics
+
+
+A: Leads refresh weekly or on demand; real-time enrichment is available via API.
+Tags: refresh, update cadence, api
+
+
+A: Duplicates are merged automatically; unsubscribe handling and custom suppression lists are supported.
+Tags: duplicates, suppression, compliance
+
+
+A: We comply with GDPR/CCPA, support DSRs, process opt-outs automatically, and encrypt data in transit and at rest.
+Tags: gdpr, ccpa, compliance, security
+
+
+A: Full export/deletion upon request and optional data localization (EU/US).
+Tags: data export, deletion, residency
+
+
+A: Integrations include Salesforce, HubSpot, Pipedrive, Zoho, Google Sheets, Zapier, Slack, Webhooks, and custom APIs.
+Tags: integrations, crms, zapier, slack, webhooks
+
+
+A: Analytics include contact-, campaign-, and rep-level metrics (opens, clicks, replies, bounces, conversions).
+Tags: analytics, dashboards, reporting
+
+
+A: Managed service option: we handle setup, targeting, messaging, and optimization end-to-end.
+Tags: managed service, done-for-you
+
+
+A: Pricing starts at $49/month. Pricing varies by lead volume and features. Usage-based (credit) and performance models are available.
+Tags: pricing, plans, usage-based, performance
+
+
+A: Free trial: 7 days with dashboard access and real qualified leads.
+Tags: trial, free trial
+
+
+A: No setup fees and no long-term contracts; month-to-month available.
+Tags: setup fees, contracts, commitments
+
+
+A: We accept major credit cards, ACH, and wire transfers; monthly or annual billing.
+Tags: payment, billing
+
+
+A: You can upgrade, downgrade, or cancel anytime. Cancellations take effect at the end of the billing period.
+Tags: cancellation, change plan
+
+
+A: Refunds: 30-day notice with pro-rated refunds where applicable.
+Tags: refunds, policy
+
+
+A: Discounts: 30–50% for eligible startups and nonprofits; volume discounts available.
+Tags: discounts, pricing
+
+
+A: Compared to hiring SDRs, SalesCentri typically costs 70–90% less and generates 2–5× more qualified leads with predictable scale.
+Tags: roi, comparison, sdr
+
+
+A: Global outreach supported with language customization and time zone-based scheduling.
+Tags: global, international, timezone, languages
+
+
+A: Hybrid model: AI handles most tasks; you or our team oversee strategy, messaging, and optimization.
+Tags: automation, hybrid, human-in-the-loop
+
+
+A: Support: 24/7 chat/email; Pro/Enterprise plans get a dedicated success manager. Onboarding, tutorials, and strategy sessions included.
+Tags: support, success, onboarding
+
+
+A: Deliverability over time: warm-up, rotation, throttling, monitoring, and automatic inbox/domain switching if sender score drops.
+Tags: deliverability, rotation, reputation
+
+
+A: Each record shows source tags, enrichment score, and validation status in the dashboard.
+Tags: validation, enrichment, transparency
+
+
+A: Supported channels beyond email: WhatsApp, voice/VOIP dialers, LinkedIn, and chatbots.
+Tags: channels, whatsapp, voice, linkedin, chatbot
+
+
+A: We verify phone numbers when public and include LinkedIn URLs as part of enrichment.
+Tags: phone, linkedin, verification
+
+
+A: Upload named accounts to enrich and auto-map decision makers within buying committees.
+Tags: named accounts, enrichment, decision makers
+
+
+A: Engagement signals roll up by account to flag opportunities across buying groups.
+Tags: engagement, account rollup
+
+
+A: Time-to-value: validated leads and activity in 24–48 hours; meetings commonly booked within the first week.
+Tags: time-to-value, speed
+
+
+A: API access supports lead generation, validation, enrichment, and sequence management.
+Tags: api, developers
+
+
+A: Rep-level analytics include goals, conversion funnels, and success tracking.
+Tags: reporting, reps, analytics
+
+
+A: Pilot/managed engagement: initial qualified leads, finalize domains/messaging/segmentation based on early feedback, then scale.
+Tags: pilot, engagement, managed
+
+
+A: Sequences support branching, delays, triggers, and fallbacks.
+Tags: sequences, branching, automation
+
+
+A: We rotate multiple warmed domains/inboxes to protect brand reputation while maintaining high deliverability.
+Tags: domains, rotation, brand safety
+
+
+A: Customer and campaign data are private to your account and never sold or shared.
+Tags: privacy, data usage
+
+
+A: You can pause or edit live campaigns at any time without losing data.
+Tags: campaign control, editing
+
+
+A: Dashboards monitor campaign metrics and sender health with proactive alerts and automatic mitigation.
+Tags: dashboards, sender health
+
+
+# SalesCentri RAG Knowledge Base
+# Complete Company Information for AI-Powered Sales Assistant
+
+## COMPANY OVERVIEW
+
+**Company Name:** SalesCentri
+**Founded:** 2020
+**Mission:** Democratize access to enterprise-grade sales automation, enabling businesses of all sizes to compete effectively and achieve sustainable growth
+**Vision:** Eliminate manual inefficiencies in B2B sales processes and create authentic connections between buyers and sellers
+
+**Company Values:**
+- Customer success is our primary measure of success
+- Transparency in pricing, features, and communication
+- Continuous innovation and improvement
+- Ethical AI and responsible data practices
+
+**Company Statistics:**
+- Served over 5,000 businesses across 50+ countries
+- Processed 100M+ prospect interactions
+- 99.9% platform uptime and reliability
+- Founded by sales automation experts
+
+## CORE PRODUCTS & PLATFORMS
+
+### PSA or PSA SUITE (One-Stop Solution)
+**Description:** Complete sales automation platform that integrates lead discovery, multi-channel outreach, CRM sync, and analytics
+**Benefits:**
+- 60% lower operational costs
+- 3x faster sales cycles
+- Unified data across teams
+- Single source of truth
+
+### CONTACT INTELLIGENCE PLATFORMS
+
+#### AI Aggregator
+**Description:** AI-powered contact data aggregation from multiple sources
+**Features:**
+- Access to 50M+ verified B2B contacts
+- 97% accuracy and real-time enrichment
+- Consolidates data from ZoomInfo, Apollo, LinkedIn Sales Navigator, and 15+ other sources
+- AI-powered prospect discovery and scoring
+
+#### AI Hunter
+**Description:** Advanced prospect discovery and lead generation
+**Features:**
+- Intelligent prospect identification
+- Multi-channel capture capabilities
+- Lead qualification and scoring
+- Intent data and buyer signal detection
+
+#### IntelliBase
+**Description:** Comprehensive B2B intelligence database
+**Features:**
+- Deep company intelligence
+- Technographic data and tech stack information
+- Intent data and signals
+- Market intelligence and competitive analysis
+
+#### Hunter & Validator
+**Description:** Contact verification and validation system
+**Features:**
+- Real-time email verification
+- Phone number validation
+- Contact information enrichment
+- Bounce rate reduction
+
+### LEAD MANAGEMENT PLATFORMS
+
+#### iEMA (Email Marketing Automation)
+**Description:** Intelligent email marketing automation platform
+**Features:**
+- AI-powered personalization at scale
+- Advanced automation workflows
+- Multi-touch sequence automation
+- Deliverability optimization and analytics
+- A/B testing and performance optimization
+
+#### iLMS (Lead Management System)
+**Description:** Intelligent lead management and nurturing system
+**Features:**
+- Automated lead processing
+- Lead scoring and qualification
+- Nurturing and follow-up automation
+- Pipeline development and management
+- Performance analytics and reporting
+
+#### Lead Generation Platform
+**Description:** AI-powered lead generation system
+**Features:**
+- Intelligent prospect identification
+- Multi-channel lead capture
+- Lead qualification and scoring
+- Real-time lead notifications
+
+#### Lead Stream
+**Description:** Real-time website visitor tracking and identification
+**Features:**
+- Anonymous visitor identification
+- Behavioral tracking and scoring
+- Real-time alerts and notifications
+- CRM integration and sync
+
+### VOICE AI & DIALER SOLUTIONS
+
+#### DialerAI
+**Description:** Intelligent auto-dialing platform with AI optimization
+**Features:**
+- Smart dialing technology with predictive algorithms
+- AI-powered call detection
+- Local presence dialing
+- Compliance and quality management
+- Performance optimization and analytics
+
+#### SIM Dialer
+**Description:** Authentic local presence calling solution
+**Features:**
+- Local numbers for improved answer rates
+- Advanced calling features
+- Compliance monitoring
+- Real-time performance tracking
+
+#### SalesAI Agent
+**Description:** 24/7 AI sales representative
+**Features:**
+- Unlimited conversation capacity
+- 24/7 operation availability
+- Advanced lead qualification
+- Multi-channel communication
+- Custom AI training capabilities
+
+#### VoiceAI Agent
+**Description:** Intelligent phone conversation platform
+**Features:**
+- Conversation recording and analysis
+- Sales intelligence extraction
+- Sentiment analysis and coaching
+- Performance scoring and recommendations
+
+#### Voice Bot
+**Description:** AI-powered phone assistant
+**Features:**
+- Natural voice interactions
+- Automated call handling
+- Multi-turn conversations
+- Integration with CRM systems
+
+#### Sales Tune
+**Description:** AI-powered sales performance optimization
+**Features:**
+- Performance analytics and insights
+- AI-powered coaching recommendations
+- Team development tools
+- Conversion optimization
+
+### CHAT & TEXT AI AUTOMATION
+
+#### Chat Bot
+**Description:** 24/7 AI-powered website engagement
+**Features:**
+- Intelligent visitor engagement
+- Lead qualification and capture
+- Custom conversation flows
+- CRM integration and handoff to human agents
+
+#### WhatsApp Bot
+**Description:** AI-powered business messaging on WhatsApp
+**Features:**
+- Automated customer conversations
+- Template message automation
+- Media sharing capabilities
+- CRM sync and alerts
+
+#### Text-to-Speech
+**Description:** AI-powered voice generation
+**Features:**
+- Natural AI voices
+- Content creation tools
+- Business applications
+- Multi-language support
+
+### CLOUD TELEPHONY INFRASTRUCTURE
+
+#### iGCT (Global Cloud Telephony)
+**Description:** Enterprise cloud communication platform
+**Features:**
+- Worldwide coverage with local numbers
+- Predictive dialer and IVR
+- Call recording and transcription
+- Sentiment analysis and coaching
+- High-quality VoIP infrastructure
+
+#### Call Center Platform
+**Description:** Complete call center automation solution
+**Features:**
+- Smart dialing technology
+- Conversation intelligence
+- Real-time dashboard and reporting
+- Agent performance tracking
+- Campaign ROI analysis
+
+## SERVICES OFFERED
+
+### AI Digital Marketing
+**Description:** Comprehensive AI-driven marketing services
+**Services:**
+- Predictive audience targeting and segmentation
+- Automated content creation and optimization
+- Real-time campaign performance optimization
+- Cross-channel attribution and ROI tracking
+- Lead generation focus
+- Account-based marketing (ABM) campaigns
+
+### AI Website Designing
+**Description:** Conversion-optimized website design for B2B companies
+**Services:**
+- Data-driven design process
+- AI-powered user experience optimization
+- B2B-focused features and forms
+- SEO optimization for B2B keywords
+- Ongoing optimization and testing
+
+### Sales Outsourcing
+**Description:** Expert sales teams on-demand
+**Services:**
+- Experienced sales professionals (SDRs, AEs, managers)
+- Integrated sales operations
+- Flexible engagement models
+- Performance-based pricing available
+- CRM integration and training
+
+### Data Enrichment
+**Description:** Transform incomplete records into sales-ready leads
+**Services:**
+- Contact information enrichment
+- Company intelligence addition
+- Behavioral and intent data
+- 95% data quality improvement
+- Email deliverability enhancement
+
+### Lead Research as a Service
+**Description:** Professional prospect discovery and qualification
+**Services:**
+- Dedicated research specialists
+- Comprehensive lead profiles
+- Custom research parameters
+- Quality assurance and verification
+- Complete contact information and intelligence
+
+### SDR as a Service
+**Description:** Professional sales development on-demand
+**Services:**
+- Pre-trained and certified SDR team
+- Proven prospecting methodology
+- Multi-touch outreach sequences
+- Transparent reporting and ROI tracking
+- Qualified pipeline delivery in 30 days
+
+### Email Campaign Management
+**Description:** Professional B2B email marketing services
+**Services:**
+- Strategic campaign development
+- Professional execution and design
+- Performance optimization
+- 340% higher response rates
+- 65% better conversion rates
+
+### LinkedIn Outreach
+**Description:** Professional B2B social selling automation
+**Services:**
+- Strategic LinkedIn lead generation
+- Automated campaign management
+- Performance monitoring and optimization
+- 25% higher response rates than email
+- Relationship building and nurturing
+
+### Custom Workflow Automation
+**Description:** Tailored business process automation solutions
+**Services:**
+- Custom process design and mapping
+- API development and system connectivity
+- Data migration and synchronization
+- 60% reduction in operational overhead
+- Ongoing support and optimization
+
+### Voice/Chat AI Custom Deployment
+**Description:** Enterprise AI implementation services
+**Services:**
+- Custom solution architecture
+- Enterprise security and compliance integration
+- Legacy system integration
+- 24/7 technical support and monitoring
+- Multi-language and localization support
+
+## PRICING STRUCTURE
+
+### Starter Plan
+**Price:** $49/user/month
+**Features:**
+- Up to 1,000 contacts per month
+- Basic email automation sequences
+- CRM integration (3 platforms)
+- Email and chat support
+
+### Professional Plan
+**Price:** $99/user/month
+**Features:**
+- Up to 5,000 contacts per month
+- Advanced automation workflows
+- Full platform access and integrations
+- Phone support and success manager
+
+### Enterprise Plan
+**Price:** Custom pricing
+**Features:**
+- Unlimited contacts and usage
+- Custom integrations and workflows
+- Dedicated support and SLA
+- Advanced security and compliance
+- SOC 2 Type II certification
+- GDPR, CCPA, and HIPAA compliance
+- Single sign-on (SSO) integration
+- Dedicated customer success manager
+
+### Free Trial
+**Duration:** 14 days
+**Includes:**
+- 100 verified contacts in your industry
+- Full platform access
+- Pre-built automation templates
+- CRM integration setup assistance
+- Personal onboarding and training
+- No credit card required
+
+## INDUSTRY SOLUTIONS
+
+### Technology & IT Companies
+**Specialized Features:**
+- Technographic filtering and data
+- Intent data for technical buyers
+- Developer-friendly outreach
+- SaaS product launch support
+- Cloud service adoption campaigns
+
+### SDR Teams
+**Specialized Features:**
+- Auto-generated lead lists
+- Pre-built email sequences
+- Meeting booking integrations
+- Performance dashboards
+- AI-powered lead scoring and prioritization
+
+### Call Centers
+**Specialized Features:**
+- Predictive and progressive auto-dialing
+- Conversation intelligence and analysis
+- Real-time performance monitoring
+- Compliance monitoring and alerts
+- 45% increase in connect rates
+
+### Marketing Agencies
+**Specialized Features:**
+- White-label platform capabilities
+- Client-specific dashboards
+- Agency admin panel for multi-client management
+- 80% profit margins for agencies
+- Co-branded marketing materials
+
+### Professional Services
+**Specialized Features:**
+- Industry-specific templates
+- Consultative selling approaches
+- Long sales cycle management
+- Relationship-focused outreach
+
+### Manufacturing & Industrial
+**Specialized Features:**
+- Complex B2B sales processes
+- Technical buyer identification
+- Long-term relationship building
+- Account-based marketing
+
+### Healthcare & Life Sciences
+**Specialized Features:**
+- HIPAA-compliant infrastructure
+- Healthcare-specific compliance
+- Medical industry expertise
+- Regulatory adherence
+
+## INTEGRATION CAPABILITIES
+
+### CRM Integrations
+**Supported Platforms:**
+- Salesforce
+- HubSpot
+- Pipedrive
+- Microsoft Dynamics
+- Zoho CRM
+- 20+ additional CRM platforms
+- Real-time data synchronization
+- Two-way data sync
+
+### API & Technical Integration
+**Features:**
+- REST API access
+- Webhook support
+- Custom integrations
+- JavaScript, Python, and PHP SDKs
+- Postman collection available
+- Rate limiting and security controls
+
+### Marketing Tool Integrations
+**Supported Platforms:**
+- Marketing automation platforms
+- Email service providers
+- Social media management tools
+- Analytics and reporting platforms
+
+## SECURITY & COMPLIANCE
+
+### Security Measures
+**Features:**
+- End-to-end data encryption (AES-256)
+- Multi-factor authentication (MFA)
+- Role-based access controls
+- Regular security audits and penetration testing
+- SOC 2 Type II certification
+- ISO 27001 compliance
+
+### Privacy Compliance
+**Regulations:**
+- GDPR (General Data Protection Regulation)
+- CCPA (California Consumer Privacy Act)
+- PIPEDA (Canada privacy legislation)
+- LGPD (Brazil data protection law)
+- Data Processing Agreements (DPAs)
+- Right to deletion and data portability
+
+### Industry-Specific Compliance
+**Certifications:**
+- HIPAA-ready for healthcare organizations
+- FERPA compliance for educational institutions
+- FedRAMP for government contractors
+- PCI DSS compliance for payment data
+- NIST Cybersecurity Framework alignment
+
+## PERFORMANCE BENCHMARKS & RESULTS
+
+### Customer Success Metrics
+**Results Achieved:**
+- 3x increase in qualified leads
+- 50% reduction in sales cycle
+- 70% lower cost per lead
+- 90%+ data accuracy
+- 300% revenue increase in 90 days (SaaS startup case)
+- 250% lead generation improvement (B2B agency case)
+- 180% conversion rate increase (enterprise tech case)
+- 400% pipeline growth (manufacturing case)
+
+### Email Performance Benchmarks
+**Industry Standards:**
+- Response rates by industry and company size
+- Lead conversion rates and qualification metrics
+- Sales cycle acceleration factors
+- ROI and cost-per-acquisition benchmarks
+
+### Automation Performance
+**Metrics:**
+- Before and after implementation results
+- Feature-specific performance improvements
+- User adoption and engagement statistics
+- Long-term sustainability and growth metrics
+
+## SUPPORT & TRAINING
+
+### Support Channels
+**Available Support:**
+- 24/7 online help center and documentation
+- Live chat support during business hours
+- Email support with guaranteed response times
+- Phone support for urgent technical issues
+- Dedicated customer success managers
+
+### Training Resources
+**Available Resources:**
+- Weekly live webinars
+- On-demand video courses
+- Implementation playbooks
+- Certification tracks
+- Step-by-step tutorials
+- Feature-specific training videos
+- Sales automation certification courses
+
+### Documentation
+**Resources Available:**
+- Complete user guide
+- API reference documentation
+- Code samples and SDKs
+- Troubleshooting guides
+- Best practices documentation
+- Video library and tutorials
+
+## PARTNER PROGRAM
+
+### Partner Tiers
+**Program Types:**
+- Referral Partners (commission-based)
+- Reseller Partners (margin-based pricing)
+- Technology Partners (integration partnerships)
+- Agency Partners (white-label solutions)
+
+### Partner Benefits
+**Included Benefits:**
+- Competitive commission and margin structures
+- Co-branded marketing materials and campaigns
+- Technical training and certification programs
+- Dedicated partner success management
+- Partner portal with sales and marketing tools
+- Lead sharing and co-selling opportunities
+
+## COMPETITIVE ADVANTAGES
+
+### Platform Advantages
+**Key Differentiators:**
+- 3x better results compared to competitors
+- 50% lower costs than alternatives
+- Superior performance vs Outreach, Sales Loft, HubSpot Sales Hub
+- All-in-one platform eliminating tool sprawl
+- 1,851% ROI with AI agents (vs human sales teams)
+- $174,636 annual savings per AI agent deployment
+
+### Technology Advantages
+**Advanced Features:**
+- AI-powered personalization at scale
+- Real-time data enrichment and validation
+- Multi-channel automation capabilities
+- Advanced conversation intelligence
+- Predictive analytics and forecasting
+- Custom AI model training
+
+## CONTACT & GETTING STARTED
+
+### Contact Information
+**How to Reach Us:**
+- Sales Inquiry: Response within 2 hours
+- Technical Support: 24/7 availability
+- Live Chat: During business hours
+- Phone Support: Priority and enterprise customers
+- Email Support: Guaranteed response times
+
+### Getting Started Options
+**Available Paths:**
+1. Free Trial (14 days, no credit card required)
+2. Live Demo (Feature tour with expert)
+3. Expert Consultation (Custom solution design)
+4. Live Q&A (30-minute consultation)
+
+### Implementation Support
+**Available Services:**
+- Quick setup guide (under 5 minutes)
+- Guided onboarding process
+- CRM integration assistance
+- Team training and adoption
+- Success manager assignment
+- Custom implementation planning
+
+## COMPANY MILESTONES & NEWS
+
+### Recent Achievements
+**Company Updates:**
+- Q4 2024 platform updates and new features
+- Customer success milestone announcements
+- Partnership and integration launches
+- Industry award recognition and achievements
+
+### Media Coverage
+**Press & Recognition:**
+- Industry publication features
+- Thought leadership articles
+- Podcast appearances
+- Customer case study spotlights
+- Executive interviews available
+
+### Future Roadmap
+**Upcoming Developments:**
+- Continued AI model improvements
+- Additional platform integrations
+- Enhanced security features
+- International expansion
+- New product launches
+
+## TEAM & LEADERSHIP
+
+### Executive Team
+**Leadership Background:**
+- Sales automation industry veterans
+- Former VPs from Fortune 500 companies
+- AI and machine learning experts
+- Customer success and support leaders
+
+### Advisory Board
+**Expert Advisors:**
+- Sales methodology thought leaders
+- Technology and innovation advisors
+- Go-to-market strategy experts
+- Customer experience specialists
+
+### Company Culture
+**Values & Benefits:**
+- Remote-first culture with flexible schedules
+- Competitive compensation and equity
+- Professional development and learning budget
+- Direct impact on customer success stories
+- Comprehensive health and wellness benefits
+- Unlimited PTO and sabbatical options
+
+## CAREER OPPORTUNITIES
+
+### Current Openings
+**Available Positions:**
+- AI/ML Engineers and Data Scientists
+- Sales Development Representatives
+- Customer Success Managers
+- Product Marketing Specialists
+
+### Why Work at SalesCentri
+**Employee Benefits:**
+- Cut​ting-edge AI technology work
+- Help customers achieve remarkable results
+- Contribute to solutions impacting thousands of businesses
+- Real difference in B2B sales landscape
+- Latest technology and equipment
+- Team retreats and collaboration events
+
+This comprehensive knowledge base contains all the essential information about SalesCentri's products, services, pricing, features, benefits, and company information that can be used to power an AI sales assistant with RAG capabilities.
